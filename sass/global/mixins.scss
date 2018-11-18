@@ -1,0 +1,153 @@
+// Универсальный контейнер
+@mixin container ($leftMobile:15px, $rightMobile:15px, $leftTablet:24px, $rightTablet:24px) {
+  margin: 0 auto;
+  padding-left: $leftMobile;
+  padding-right: $rightMobile;
+  padding-top: 0;
+  padding-bottom: 0;
+  max-width: $tablet-width;
+
+  @media (min-width: $tablet-width) {
+    max-width: $desktop-width;
+    padding-left: $leftTablet;
+    padding-right: $rightTablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: $desktop-width;
+    max-width: $container-desktop-width-maxi;
+  }
+}
+
+// Медиа на размеры экранов
+@mixin mobile-only {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+// Медиа для ретины
+@mixin retina($retinaX) {
+  @if $retinaX == 2 {
+    @media (min-resolution: $retina2x-dpi), (min-resolution: $retina2x-dppx) {
+      @content;
+    }
+  }
+
+  @if $retinaX == 3 {
+    @media (min-resolution: $retina3x-dpi), (min-resolution: $retina3x-dppx) {
+      @content;
+    }
+  }
+}
+
+// Шрифты
+@mixin font ($font-size, $line-height, $font-weight) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+// Фоновое изображение для хедера страниц
+@mixin header-img ($name-page) {
+  background-image: url('../img/bg-' + $name-page + '-mobile@1x.jpg');
+
+  @include mobile-only {
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url('../img/bg-' + $name-page + '-mobile@2x.jpg');
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url('../img/bg-' + $name-page + '-tablet@1x.jpg');
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url('../img/bg-' + $name-page + '-tablet@2x.jpg');
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url('../img/bg-' + $name-page + '-desktop@1x.jpg');
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url('../img/bg-' + $name-page + '-desktop@2x.jpg');
+    }
+  }
+}
+
+// Интерактивное подчеркивание по наведению - исчезновение
+@mixin underline-lose-hover ($fat, $bottom, $color, $color-hover, $pos:0, $width:100%) {
+  color: $color;
+  text-decoration: none;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: $width;
+    transform: scaleX(1);
+    height: $fat;
+    bottom: $bottom;
+    left: $pos;
+    background-color: $color;
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+  }
+
+  &:hover {
+    color: $color-hover;
+  }
+
+  &:hover::before {
+    transform: scaleX(0);
+    transform-origin: bottom left;
+  }
+}
+
+// Интерактивное подчеркивание по наведению - появление
+@mixin underline-appear-hover ($fat, $bottom, $color, $color-hover, $pos:0, $width:100%) {
+  color: $color;
+  text-decoration: none;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: $width;
+    transform: scaleX(0);
+    height: $fat;
+    bottom: $bottom;
+    left: $pos;
+    background-color: $color-hover;
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+  }
+
+  &:hover {
+    color: $color-hover;
+  }
+
+  &:hover::before {
+    transform: scaleX(1);
+    background-color: $color-hover;
+    transform-origin: bottom left;
+  }
+}
