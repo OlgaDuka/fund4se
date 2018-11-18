@@ -14,7 +14,6 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var imagemin = require('gulp-imagemin');
-var webp = require('gulp-webp');
 var svgmin = require('gulp-svgmin');
 var svgstore = require('gulp-svgstore');
 var rigger = require('gulp-rigger');
@@ -154,28 +153,6 @@ gulp.task('img:minify', function(done) {
 gulp.task('img-prod', gulp.series('img:del', 'img:copy', 'img:minify'));
 gulp.task('img-dev', gulp.series('img:del', 'img:copy'));
 
-// CONTENT IMAGES
-
-gulp.task('content:del', function(done) {
-  return del('build/img/content', done);
-});
-
-gulp.task('content:copy', function(done) {
-  return gulp.src('img/content/*.{png,jpg}')
-    .pipe(gulp.dest('build/img/content'));
-    done();
-});
-
-gulp.task('content:convert', function(done) {
-  return gulp.src('build/img/content/*.{png,jpg}')
-    .pipe(webp({quality: 90}))
-    .pipe(gulp.dest('build/img/content'));
-    done();
-});
-;
-gulp.task('content', gulp.series('content:del', 'content:copy', 'content:convert'));
-
-
 // SVG-SPRITE
 
 gulp.task('svg-sprite:del', function(done) {
@@ -238,7 +215,6 @@ gulp.task('dev', gulp.series('clean',
     'fonts',
     'favicons',
     'img-dev',
-    'content',
     'svg-sprite'
   )
 ));
@@ -253,7 +229,6 @@ gulp.task('build', gulp.series('clean',
     'fonts',
     'favicons',
     'img-prod',
-    'content',
     'svg-sprite'
   )
 ));
