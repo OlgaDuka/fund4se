@@ -1,9 +1,24 @@
-$mobile-widths-only: "(min-width: 20px) and (max-width: 659px)";
-$tablet-widths: "(min-width: 660px)";
-$tablet-widths-only: "(min-width: 660px) and (max-width: 959px)";
-$desktop-widths: "(min-width: 960px)";
+// resolutions
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
 
-$black: rgba(0, 0, 0, 1);
-$black-30: rgba(0, 0, 0, 0.3);
-$white: rgba(255, 255, 255, 1);
-$white-30:rgba(255, 255, 255, 0.3);
+// retina
+$retina2x-dpi: 144dpi;
+$retina2x-dppx: 1.5dppx;
+$retina3x-dpi: 288dpi;
+$retina3x-dppx: 3dppx;
+
+// fonts
+$default-font-family: "Roboto-light", Arial, sans-serif;
+$default-font-color: #1b1b1b;
+
+// color
+$white: #fff;
+
+$red-peach: #e75e68;
+$sky-blue: #0a6a9e;
+$navi-blue: #00528c;
+
+$blue: #002B67;
+$red: #e15c66;

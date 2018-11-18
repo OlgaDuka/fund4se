@@ -1,5 +1,5 @@
 // Универсальный контейнер
-@mixin container ($leftMobile:15px, $rightMobile:15px, $leftTablet:24px, $rightTablet:24px) {
+@mixin container ($leftMobile:18px, $rightMobile:17px, $leftTablet:24px, $rightTablet:24px) {
   margin: 0 auto;
   padding-left: $leftMobile;
   padding-right: $rightMobile;
@@ -8,14 +8,13 @@
   max-width: $tablet-width;
 
   @media (min-width: $tablet-width) {
-    max-width: $desktop-width;
+    max-width: 1050px;
     padding-left: $leftTablet;
     padding-right: $rightTablet;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: $desktop-width;
-    max-width: $container-desktop-width-maxi;
+    max-width: 1170px;
   }
 }
 
@@ -60,10 +59,39 @@
 }
 
 // Шрифты
-@mixin font ($font-size, $line-height, $font-weight) {
+@mixin font-thin ($font-size, $line-height) {
+  font-family: "Roboto-thin", Arial, sans-serif;
   font-size: $font-size;
-  font-weight: $font-weight;
   line-height: $line-height;
+  font-weight: 100;
+}
+
+@mixin font-light ($font-size, $line-height) {
+  font-family: "Roboto-light", Arial, sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: 300;
+}
+
+@mixin font-regular ($font-size, $line-height) {
+  font-family: "Roboto-regular", Arial, sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: 400;
+}
+
+@mixin font-bold ($font-size, $line-height) {
+  font-family: "Roboto-bold", Arial, sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: 700;
+}
+
+@mixin font-black ($font-size, $line-height) {
+  font-family: "Roboto-black", Arial, sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: 900;
 }
 
 // Фоновое изображение для хедера страниц
