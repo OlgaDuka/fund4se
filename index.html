@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>FUND4SE</title>
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
+//= templates/head.html
+
 <body>
-  <h1>I am begining new project</h1>
-  <h2>Good luck</h2>
+
+  <header class="header">
+
+    //= templates/header-top.html
+
+    <div class="header__hero header__hero--">
+<!--      <picture>
+        <source media="(min-width: 992px)" srcset="img/bg-solutions-desktop@1x.jpg 1x, img/bg-solutions-desktop@2x.jpg 2x">
+        <source media="(min-width: 750px)" srcset="img/bg-solutions-tablet@1x.jpg 1x, img/bg-solutions-tablet@2x.jpg 2x">
+        <img  class="header__img" src="img/bg-solutions-mobile@1x.jpg" srcset="img/bg-solutions-mobile@1x.jpg 1x, img/bg-solutions-mobile@2x.jpg 2x" alt="solutions">
+      </picture>
+-->
+    </div>
+  </header>
+
+  <main class="main">
+
+  </main>
+
+      //= templates/footer.html
+
+      <!-- Тут подключаются обязательные для всего сайта скрипты -->
+      //= templates/js.html
+      <!-- Скрипты для отдельной страницы подключайте сюда -->
+      <script src="js/animate.js"></script>
+
 </body>
+
 </html>
