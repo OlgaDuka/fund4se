@@ -1,0 +1,43 @@
+.menu {
+  background-color: $white;
+  color: $blue;
+
+  &--opened .menu__list {
+    display: flex;
+  }
+}
+
+.menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.menu-item {
+  line-height: 0;
+
+  @include tablet {
+    text-align: center;
+    flex-grow: 1;
+  }
+}
+
+.menu-item a {
+  color: $blue;
+  text-decoration: none;
+
+  @include font-regular(24px, 53px);
+  transition-property: color, background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}

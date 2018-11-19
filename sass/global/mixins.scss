@@ -1,5 +1,5 @@
 // Универсальный контейнер
-@mixin container ($leftMobile:18px, $rightMobile:17px, $leftTablet:24px, $rightTablet:24px) {
+@mixin container ($leftMobile:18px, $rightMobile:18px, $leftTablet:24px, $rightTablet:24px) {
   margin: 0 auto;
   padding-left: $leftMobile;
   padding-right: $rightMobile;
