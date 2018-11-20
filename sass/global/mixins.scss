@@ -1,20 +1,23 @@
 // Универсальный контейнер
-@mixin container ($leftMobile:18px, $rightMobile:18px, $leftTablet:24px, $rightTablet:24px) {
+@mixin container ($lMob:18px, $rMob:18px, $lTabl:50px, $rTabl:50px, $lDesk:135px, $rDesk:0) {
   margin: 0 auto;
-  padding-left: $leftMobile;
-  padding-right: $rightMobile;
+  width: $mobile-width;
+  padding-left: $lMob;
+  padding-right: $rMob;
   padding-top: 0;
   padding-bottom: 0;
   max-width: $tablet-width;
 
   @media (min-width: $tablet-width) {
-    max-width: 1050px;
-    padding-left: $leftTablet;
-    padding-right: $rightTablet;
+    max-width: $desktop-mini;
+    padding-left: $lTabl;
+    padding-right: $rTabl;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1170px;
+    max-width: $desktop-width;
+    padding-left: $lDesk;
+    padding-right: $rDesk;
   }
 }
 

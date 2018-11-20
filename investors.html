@@ -4,18 +4,70 @@
 
 <body>
 
-  <header class="header">
-
-    //= templates/header-top.html
-
-    <div class="header__hero header__hero--">
-      <h1 class="header__title">About us</h1>
-      <p class="header__text"></p>
-    </div>
-  </header>
+  //= templates/header.html
 
   <main class="main">
+    <div class="main__hero">
+      <h1 class="main__title">For Investors</h1>
+      <p class="main__text">We are your trusted partner. We seek thousands companies for you, scrutinizes them and selects few the best to invest your capital.</p>
+    </div>
 
+    <section class="criteria">
+      <h2 class="criteria__title">In our portfolio we target companies at <span>Series A2</span> (basic manufacturing is established) - <span>Series C</span> (scaling) financing rounds, which meet the following criteria:</h2>
+      <div class="criteria__wrap-img">
+        <picture>
+          <source media="(min-width: 1330px)" srcset="img/company1-desktop@1x.jpg 1x, img/company1-desktop@2x.jpg 2x">
+        <!--  <source media="(min-width: 768px)" srcset="img/company1-tablet@1x.jpg 1x, img/company1-tablet@2x.jpg 2x"> -->
+          <img class="criteria__img" src="img/company1-mobile@1x.jpg" srcset="img/company1-mobile@1x.jpg 1x, img/company1-mobile@2x.jpg 2x" alt="company1">
+        </picture>
+        <picture>
+          <source media="(min-width: 1330px)" srcset="img/company2-desktop@1x.jpg 1x, img/company2-desktop@2x.jpg 2x">
+        <!--  <source media="(min-width: 768px)" srcset="img/company2-tablet@1x.jpg 1x, img/company2-tablet@2x.jpg 2x"> -->
+          <img class="criteria__img" src="img/company2-mobile@1x.jpg" srcset="img/company2-mobile@1x.jpg 1x, img/company2-mobile@2x.jpg 2x" alt="company2">
+        </picture>
+      </div>
+      <ul class="criteria__list">
+        <li class="criteria__item">Volume of the target market exceeds <span>$1 bln</span></li>
+        <li class="criteria__item">Target market growth rate exceeds <span>10% a year</span></li>
+        <li class="criteria__item">The technology is cutting-edge, reliable and <span>competitive one</span></li>
+        <li class="criteria__item">Essential cost improvement benefited by consumers</li>
+        <li class="criteria__item">Proven <span>technical process</span>, approved manufacture, ability to scale a production up</li>
+      </ul>
+    </section>
+
+    <section class="actionplan">
+      <h2 class="visually-hidden">Action plan before investmen</h2>
+      <picture>
+        <source media="(min-width: 1330px)" srcset="img/company3-desktop@1x.jpg 1x, img/company3-desktop@2x.jpg 2x">
+      <!--  <source media="(min-width: 768px)" srcset="img/company2-tablet@1x.jpg 1x, img/company3-tablet@2x.jpg 2x"> -->
+        <img class="actionplan__img" src="img/company3-mobile@1x.jpg" srcset="img/company3-mobile@1x.jpg 1x, img/company3-mobile@2x.jpg 2x" alt="company2">
+      </picture>
+      <p class="actionplan__text">Prior to <span>investment</span> we make a scrutinious due diligence of each company in our short list. We study the <span>traction, evaluate the team</span>, meet other investors, check company's plans and sources, assesses the sources that FUND4SE may offer to the company. We find out whether the company is very promising itself or we may <span>create a synergy</span> of the company's technology and FUND4SE's sources.</p>
+    </section>
+
+    <section class="result">
+      <h2 class="visually-hidden">Result of investmen</h2>
+      <p class="result__text">We make investment in just a few companies of thousands, the most promising ones, with <span>target IRR of investment at least 30%.</span></p>
+      <p class="result__text">The target investment period is <span>3-5 years.</span></p>
+    </section>
+
+    <section class="feedback">
+      <h2 class="feedback__title main__title">Write to <span>Us</span></h2>
+      <form class="feedback__form" id="feedback">
+        <span class="feedback__note desktop-only">Please fill in all the required fields</span>
+        <input class="feedback__input" type="text" id="name" name="name" placeholder="Robert Miller" required>
+        <label for="name" class="feedback__label">Fool name*</label>
+        <input class="feedback__input" type="email" id="email" name="email" placeholder="robert_M_gmail.com" required>
+        <label for="email" class="feedback__label">Your E-mail</label>
+        <input class="feedback__input" type="text" id="subject" name="subject">
+        <label for="subject" class="feedback__label feedback__label--big">Message subject</label>
+        <textarea class="feedback__textarea" id="message" name="message"></textarea>
+        <label for="message" class="feedback__label feedback__label--big">Message text*</label>
+        <input class="feedback__input" type="file" id="file" name="file">
+        <label for="file" class="feedback__label feedback__label--file">Add file (doc, pdf) ~5MB</label>
+        <button class="feedback__btn redbutton" type="submit">Send</button>
+      </form>
+    </section>
   </main>
 
       //= templates/footer.html

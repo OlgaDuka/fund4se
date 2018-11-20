@@ -2,42 +2,64 @@
   background-color: $white;
   color: $blue;
 
-  &--opened .menu__list {
-    display: flex;
+  &--opened {
+    width: 100%;
+
+    .menu__list {
+      display: flex;
+    }
   }
 }
 
 .menu__list {
   margin: 0;
   padding: 0;
+  margin-top: 46px;
+  padding-left: 50px;
+  width: 100%;
   list-style: none;
   display: none;
   flex-direction: column;
   justify-content: space-between;
+  align-self: stretch;
 
   @include tablet {
+    margin-top: 0;
+    width: 340px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    align-self: center;
+  }
+
+  @include desktop {
+    width: 440px;
   }
 }
 
 .menu-item {
-  line-height: 0;
 
-  @include tablet {
-    text-align: center;
-    flex-grow: 1;
+  a {
+    color: $blue;
+    text-decoration: none;
+
+    @include font-light(24px, 53px);
+    transition-property: color, background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+
+    @include tablet {
+
+      @include font-light(12px, 14px);
+    }
+
+    @include desktop {
+
+      @include font-light(15px, 18px);
+    }
   }
-}
 
-.menu-item a {
-  color: $blue;
-  text-decoration: none;
-
-  @include font-regular(24px, 53px);
-  transition-property: color, background-color;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-out;
+  &--active a {
+    @include font-bold(24px, 53px);
+  }
 }

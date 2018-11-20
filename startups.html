@@ -4,18 +4,68 @@
 
 <body>
 
-  <header class="header">
-
-    //= templates/header-top.html
-
-    <div class="header__hero header__hero--">
-      <h1 class="header__title">About us</h1>
-      <p class="header__text"></p>
-    </div>
-  </header>
+  //= templates/header.html
 
   <main class="main">
 
+    <div class="main__hero">
+      <h1 class="main__title">For<br> Startups</h1>
+      <p class="main__text">We are actively seeking for investment projects. We offer not just financing but "smart money". It means that besides the funding we help your project to build a network of partners, to organize your operations in the most effective way, to develop your marketing and sales activities, to obtain resources essential for the project, to prepare the company to become public.</p>
+    </div>
+
+    <section class="requirements">
+      <h2 class="requirements__title">Here are our requirements to the projects <span>we invest in:</span></h2>
+      <ul class="requirements__list">
+        <ol class="requirements__item">The target industry is
+          <ul class="requirements__sublist">
+            <li class="requirements__subitem">Renewable and “green” energy</li>
+            <li class="requirements__subitem">Energy and related costs savings</li>
+            <li class="requirements__subitem">Efficiency in energy generation</li>
+            <li class="requirements__subitem">Facility maintenance efficiency</li>
+            <li class="requirements__subitem">Sustainability and wellness</li>
+          </ul>
+        </ol>
+        <ol class="requirements__item">Target market
+          <ul class="requirements__sublist">
+            <li class="requirements__subitem">Exceeds<br><span>$1 bln</span></li>
+            <li class="requirements__subitem">With growth rate exceeding 10% a year<br><span>10%</span></li>
+          </ul>
+        </ol>
+        <ol class="requirements__item">Your technology is
+          <li class="requirements__subitem">Cutting-edge</li>
+          <li class="requirements__subitem">Reliable</li>
+          <li class="requirements__subitem">Competitive one</li>
+        </ol>
+        <ol class="requirements__item">You possess a
+          <li class="requirements__subitem">Proven technical process</li>
+          <li class="requirements__subitem">Approved manufacture</li>
+          <li class="requirements__subitem">Ability to scale a production up</li>
+        </ol>
+        <ol class="requirements__item">Your consumers of benefit from sufficient cost savings</ol>
+        <ol class="requirements__item">You have an existing orders pipeline (as an advantage)</ol>
+      </ul>
+    </section>
+
+    <div class="main__wrap">
+      <p class="main__invitation">If your project fits our requirements please send us its description and we will definitely discuss investment <span>opportunity with you.</span></p>
+    </div>
+
+    <section class="feedback">
+      <h2 class="feedback__title main__title">Write to <span>Us</span></h2>
+      <form class="feedback__form" id="feedback">
+        <input class="feedback__input" type="text" id="name" name="name" required>
+        <label for="name" class="feedback__label">Fool name*</label>
+        <input class="feedback__input" type="email" id="email" name="email" required>
+        <label for="email" class="feedback__label">Your E-mail</label>
+        <input class="feedback__input" type="text" id="subject" name="subject">
+        <label for="subject" class="feedback__label feedback__label--big">Message subject</label>
+        <textarea class="feedback__textarea" id="message" name="message"></textarea>
+        <label for="message" class="feedback__label feedback__label--big">Message text*</label>
+        <input class="feedback__input" type="file" id="file" name="file">
+        <label for="file" class="feedback__label feedback__label--file">Add file (doc, pdf) ~5MB</label>
+        <button class="feedback__btn redbutton" type="submit">Send</button>
+      </form>
+    </section>
   </main>
 
       //= templates/footer.html

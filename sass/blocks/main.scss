@@ -1,0 +1,17 @@
+.main {
+  margin-top: 54px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  background-color: $white;
+  flex-grow: 1;
+
+  @include tablet {
+    margin-top: 62px;
+  }
+
+  @include desktop {
+    margin-top: 88px;
+  }
+
+}
