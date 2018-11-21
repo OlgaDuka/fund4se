@@ -1,0 +1,60 @@
+.footer {
+  @include container();
+  width: 100%;
+  padding-bottom: 112px;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    height: 160px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+}
+
+.footer__logo {
+  width: 90px;
+  height: 25px;
+}
+
+.footer__wrap {
+
+}
+
+.footer__text {
+  width: 270px;
+
+  @include tablet {
+    margin-top: 0;
+    width: 202px;
+    @include font-light(12px, 20px);
+  }
+}
+
+.footer .contacts__links {
+  @include tablet {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.footer .contacts__link--mailto {
+  @include font-bold();
+
+  @include tablet {
+    @include font-bold(12px, 20px);
+  }
+}
+
+.footer .contacts__link--call {
+
+  @include tablet {
+    @include font-bold(12px, 20px);
+  }
+}
+
+
+.footer__menu .menu__list {
+  flex-direction: column;
+}

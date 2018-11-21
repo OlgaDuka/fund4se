@@ -35,7 +35,7 @@
     }
   }
 
-  @include tablet {
+  @include desktop {
     @include font-thin(46px, 54px);
 
     span {
@@ -46,6 +46,17 @@
 
 .main__text {
 
+  @include font-light();
+
+  @include tablet {
+
+    @include font-light(12px, 20px);
+  }
+
+  @include desktop {
+
+    @include font-light();
+  }
 }
 
 .main__wrap {

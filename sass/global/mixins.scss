@@ -1,7 +1,7 @@
 // Универсальный контейнер
-@mixin container ($lMob:18px, $rMob:18px, $lTabl:50px, $rTabl:50px, $lDesk:135px, $rDesk:0) {
+@mixin container ($lMob:18px, $rMob:18px, $lTabl:50px, $rTabl:50px, $lDesk:135px, $rDesk:135px) {
   margin: 0 auto;
-  width: $mobile-width;
+  min-width: $mobile-width;
   padding-left: $lMob;
   padding-right: $rMob;
   padding-top: 0;
@@ -137,9 +137,13 @@
     background-position: center;
   }
 
-  &:hover::before {
-    top: 0;
-    left: 0;
+  &:hover {
+    transform: translate(3px, 3px);
+
+    &::before {
+      top: 0;
+      left: 0;
+    }
   }
 
   &:active {

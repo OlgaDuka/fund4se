@@ -1,0 +1,97 @@
+.contacts {
+  @include container(0, 0, 50px, 50px, 135px, 135px);
+  margin-bottom: 60px;
+  width: 100%;
+  height: auto;
+  min-height: 486px;
+  background-image: url("../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  @include mobile-only {
+    @include retina(2) {
+      background-image: url("../img/map-mobile@2x.jpg");
+    }
+  }
+
+  @include tablet {
+    background-image: url("../img/map-tablet@1x.jpg");
+
+    @include retina(2) {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
+  }
+
+  @include desktop {
+    background-image: url("../img/map-desktop@1x.jpg");
+
+    @include retina(2) {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
+  }
+}
+
+.contacts__map {
+}
+
+
+.contacts__wrap {
+  width: 284px;
+  height: 250px;
+  padding: 22px 0 22px 27px;
+  background-color: $white;
+  position: absolute;
+  top: 62px;
+  left: 18px;
+
+  &::after {
+    content: "";
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    top: -36px;
+    right: 18px;
+    background-image: url("../img/svg-sprite/logo-map.svg");
+  }
+
+  @include tablet {
+    top: 22px;
+    left: 25px;
+
+    &::after {
+      right: -36px;
+    }
+  }
+
+  @include desktop {
+    top: 98px;
+    left: 115px;
+  }
+}
+
+.contacts__title {
+  @include font-bold();
+}
+
+.contacts__text {
+
+}
+
+.contacts__links {
+
+}
+
+.contacts__link {
+  color: $default-font-color;
+}
+
+.contacts__link--mailto {
+
+}
+
+.contacts__link--call {
+  text-decoration: none;
+  @include font-bold();
+}

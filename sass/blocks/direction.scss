@@ -1,21 +1,62 @@
 .directions {
 
+  @include container();
+  margin-bottom: 42px;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @include desktop {
+    margin-bottom: 125px;
+  }
 }
 
 .directions__title {
+  color: $red-peach;
 
+  @include font-thin(36px, 59px);
+
+  @include tablet {
+
+    @include font-thin(30px, 49px);
+  }
+
+  @include desktop {
+
+    @include font-thin(48px, 79px);
+  }
 }
 
 .directions__business {
+  margin: 0;
+  min-width: 289px;
+  max-width: 510px;
 
+  @include tablet {
+
+    &:first-of-type {
+      margin-right: 70px;
+    }
+  }
+
+  @include desktop {
+
+    &:first-of-type {
+      margin-right: 150px;
+    }
+  }
 }
 
 .directions__img {
-
+  width: 100%;
 }
 
 .directions__info {
-
+  margin-bottom: 58px;
 }
 
 .directions__desc {

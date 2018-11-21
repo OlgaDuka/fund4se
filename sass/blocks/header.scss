@@ -1,5 +1,5 @@
 .header {
-  @include container();
+  @include container(18px, 18px, 21px, 33px, 44px, 42px);
   width: 100%;
   padding-top: 15px;
   display: flex;
@@ -22,26 +22,6 @@
 
   @include desktop {
     height: 88px;
-  }
-}
-
-.header__logo {
-  width: 100px;
-  height: 29px;
-  background-color: $white;
-  background-image: url("../img/svg-sprite/logo-main.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  @include tablet {
-    width: 90px;
-    height: 25px;
-  }
-
-  @include desktop {
-    width: 137px;
-    height: 38px;
   }
 }
 

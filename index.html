@@ -9,48 +9,67 @@
   <main class="main">
     <section class="content">
       <figure class="content__main">
-        <picture>
-          <source media="(min-width: 1330px)" srcset="img/main-desktop@1x.jpg 1x, img/main-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/main-tablet@1x.jpg 1x, img/main-tablet@2x.jpg 2x">
-          <img class="content__img" src="img/main-mobile@1x.jpg" srcset="img/main-mobile@1x.jpg 1x, img/main-mobile@2x.jpg 2x" alt="Face site">
-        </picture>
+        <div class="content__img-wrap">
+          <picture>
+            <source media="(min-width: 1040px)" srcset="img/main-desktop@1x.jpg 1x, img/main-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/main-tablet@1x.jpg 1x, img/main-tablet@2x.jpg 2x">
+            <img class="content__img" src="img/main-mobile@1x.jpg" srcset="img/main-mobile@1x.jpg 1x, img/main-mobile@2x.jpg 2x" alt="Face site">
+          </picture>
+        </div>
         <figcaption class="content__info">
           <h2 class="content__title main__title">We invest in <span>sustainable development</span>. You invest in sustainable <span>profitable fund</span></h2>
-          <p class="content__text main__text">Fund for Sustainability and Energy (FUND4SE) is a Singapore-based fund (in process of VCFM license obtaining) dedicated to equity investment into companies promoting outstanding solutions based on cutting-edge technologies and having high commercial potential including high inflow of orders for procurement and deployment of such solutions.</p>
+          <p class="content__text main__text">Fund for Sustainability and Energy (FUND4SE) is a Singapore&#8209;based fund (in process of VCFM license obtaining) dedicated to equity investment into companies promoting outstanding solutions based on cutting-edge technologies and having high commercial potential including high inflow of orders for procurement and deployment of such solutions.</p>
           <a href="#" class="content__link">About FUND4SE</a>
         </figcaption>
       </figure>
     </section>
 
     <section class="directions">
-      <h2 class="directions__title">For Investors</h2>
+      <h2 class="visually-hidden">The qoal of our business</h2>
       <figure class="directions__business">
+        <h3 class="directions__title">For Investors</h3>
         <picture>
-          <source media="(min-width: 1330px)" srcset="img/investors-desktop@1x.jpg 1x, img/investors-desktop@2x.jpg 2x">
+          <source media="(min-width: 1040px)" srcset="img/investors-desktop@1x.jpg 1x, img/investors-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/investors-tablet@1x.jpg 1x, img/investors-tablet@2x.jpg 2x">
           <img class="directions__img" src="img/investors-mobile@1x.jpg" srcset="img/investors-mobile@1x.jpg 1x, img/investors-mobile@2x.jpg 2x" alt="For investors">
         </picture>
         <figcaption class="directions__info">
-          <p class="directions__desc">We are your trusted partner. We are seeking  thousands companies for you, scrutinizes them and selects few the best to invest your capital. Our business is multiplying your capital.</p>
+          <p class="directions__desc main__text">We are your trusted partner. We are seeking  thousands companies for you, scrutinizes them and selects few the best to invest your capital. Our business is multiplying your capital.</p>
+          <a href="#" class="directions__link">Learn more</a>
+        </figcaption>
+      </figure>
+
+      <figure class="directions__business">
+        <h3 class="directions__title">For Startups</h3>
+        <picture>
+          <source media="(min-width: 1040px)" srcset="img/startups-desktop@1x.jpg 1x, img/startups-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/startups-tablet@1x.jpg 1x, img/startups-tablet@2x.jpg 2x">
+          <img class="directions__img" src="img/startups-mobile@1x.jpg" srcset="img/startups-mobile@1x.jpg 1x, img/startups-mobile@2x.jpg 2x" alt="For startups">
+        </picture>
+        <figcaption class="directions__info">
+          <p class="directions__desc main__text">If your project meets our criteria please apply for our financing. We do offer "smart money" - it means that besides the funding we help your project to build a network of partners, to organize your operations in the most effective way, to develop your marketing and sales activities, to obtain resources essential for the project, to prepare the company to become public</p>
           <a href="#" class="directions__link">Learn more</a>
         </figcaption>
       </figure>
     </section>
 
-    <section class="directions">
-      <h2 class="directions__title">For Startups</h2>
-      <figure class="directions__business">
-        <picture>
-          <source media="(min-width: 1330px)" srcset="img/startups-desktop@1x.jpg 1x, img/startups-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/startups-tablet@1x.jpg 1x, img/startups-tablet@2x.jpg 2x">
-          <img class="directions__img" src="img/startups-mobile@1x.jpg" srcset="img/startups-mobile@1x.jpg 1x, img/startups-mobile@2x.jpg 2x" alt="For startups">
-        </picture>
-        <figcaption class="directions__info">
-          <p class="directions__desc">If your project meets our criteria please apply for our financing. We do offer "smart money" - it means that besides the funding we help your project to build a network of partners, to organize your operations in the most effective way, to develop your marketing and sales activities, to obtain resources essential for the project, to prepare the company to become public</p>
-          <a href="#" class="directions__link">Learn more</a>
-        </figcaption>
-      </figure>
+    <section class="contacts">
+      <div class="contacts__map map" id="map"></div>
+      <div class="contacts__wrap">
+        <h2 class="contacts__title">F4SE</h2>
+        <p class="contacts__text">Fund for Sustainability and Energy<br>
+          1 George street #10-01<br>
+          Singapore<br>
+          049145
+        </p>
+
+        <p class="contacts__links">
+          <a class="contacts__link  contacts__link--mailto" href="mailto:info@f4se.com">info@f4se.com</a><br>
+          <a class="contacts__link  contacts__link--call" href="tel:+65 9116 1074">+65 9116 1074</a><br>
+        </p>
+      </div>
     </section>
+
 
   </main>
 
