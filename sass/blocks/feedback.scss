@@ -1,0 +1,37 @@
+.feedback {
+
+}
+
+.feedback__title {
+
+}
+
+.feedback__form {
+
+}
+
+.feedback__input {
+
+}
+
+.feedback__label {
+
+}
+
+.feedback__label--big {
+
+}
+
+.feedback__textarea {
+
+}
+
+.feedback__label--file {
+
+}
+
+.feedback__btn {
+  border: none;
+  background-color: transparent;
+  @include redbutton(134px, 48px, 16px, 26px, 21px);
+}

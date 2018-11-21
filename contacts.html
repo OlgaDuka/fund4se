@@ -9,9 +9,28 @@
   <main class="main">
 
     <div class="main__hero">
-      <h1 class="main__title">About us</h1>
+      <h1 class="main__title">Contact us</h1>
       <p class="main__text"></p>
     </div>
+
+    <section class="feedback">
+      <h2 class="feedback__title main__title">Write to <span>Us</span></h2>
+      <form class="feedback__form" id="feedback">
+        <span class="feedback__note desktop-only">Please fill in all the required fields</span>
+        <input class="feedback__input" type="text" id="name" name="name" required>
+        <label for="name" class="feedback__label">Fool name*</label>
+        <input class="feedback__input" type="email" id="email" name="email" required>
+        <label for="email" class="feedback__label">Your E-mail</label>
+        <input class="feedback__input" type="text" id="subject" name="subject">
+        <label for="subject" class="feedback__label feedback__label--big">Message subject</label>
+        <textarea class="feedback__textarea" id="message" name="message"></textarea>
+        <label for="message" class="feedback__label feedback__label--big">Message text*</label>
+        <input class="feedback__input" type="file" id="file" name="file">
+        <label for="file" class="feedback__label feedback__label--file">Add file (doc, pdf) ~5MB</label>
+        <button class="feedback__btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
 
   </main>
 

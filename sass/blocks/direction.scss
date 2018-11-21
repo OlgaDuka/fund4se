@@ -1,0 +1,36 @@
+.directions {
+
+}
+
+.directions__title {
+
+}
+
+.directions__business {
+
+}
+
+.directions__img {
+
+}
+
+.directions__info {
+
+}
+
+.directions__desc {
+
+}
+
+.directions__link {
+  @include redbutton(158px, 48px);
+
+  @include tablet {
+
+    @include redbutton(125px, 38px, 12px, 20px, 20px);
+  }
+
+  @include desktop {
+    @include redbutton(158px, 48px);
+  }
+}

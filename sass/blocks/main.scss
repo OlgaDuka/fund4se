@@ -15,3 +15,43 @@
   }
 
 }
+
+.main__hero {
+
+}
+
+.main__title {
+  @include font-thin(32px, 38px);
+
+  span {
+    @include font-bold(32px, 38px);
+  }
+
+  @include tablet {
+    @include font-thin(24px, 28px);
+
+    span {
+      @include font-bold(24px, 28px);
+    }
+  }
+
+  @include tablet {
+    @include font-thin(46px, 54px);
+
+    span {
+      @include font-bold(46px, 54px);
+    }
+  }
+}
+
+.main__text {
+
+}
+
+.main__wrap {
+
+}
+
+.main__invitation {
+
+}
