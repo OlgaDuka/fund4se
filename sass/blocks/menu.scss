@@ -15,7 +15,7 @@
   margin: 0;
   padding: 0;
   margin-top: 46px;
-  padding-left: 50px;
+  padding-left: 48px;
   width: 100%;
   list-style: none;
   display: none;
@@ -25,7 +25,7 @@
 
   @include tablet {
     margin-top: 0;
-    width: 340px;
+    width: 355px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -33,7 +33,7 @@
   }
 
   @include desktop {
-    width: 440px;
+    width: 460px;
   }
 }
 
@@ -59,7 +59,51 @@
     }
   }
 
-  &--active a {
-    @include font-bold(24px, 53px);
+  &--active {
+    position: relative;
+
+    a {
+      @include font-bold(24px, 53px);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -48px;
+      top: 22px;
+      width: 30px;
+      height: 10px;
+      background-image: url('../img/svg-sprite/arrow-red.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+    @include tablet {
+      padding-left: 18px;
+
+      a {
+        @include font-bold(12px, 14px);
+      }
+
+      &::before {
+        left: 0;
+        top: 9px;
+        width: 12px;
+      }
+    }
+
+    @include desktop {
+      padding-left: 24px;
+
+      a {
+        @include font-bold(15px, 18px);
+      }
+
+      &::before {
+        top: 8px;
+        width: 17px;
+      }
+    }
   }
 }

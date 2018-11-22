@@ -6,10 +6,10 @@
   padding-right: $rMob;
   padding-top: 0;
   padding-bottom: 0;
-  max-width: $tablet-width;
+  max-width: 703px;
 
   @media (min-width: $tablet-width) {
-    max-width: $desktop-mini;
+    max-width: 1270px;
     padding-left: $lTabl;
     padding-right: $rTabl;
   }
@@ -148,6 +148,34 @@
 
   &:active {
     background-color: $button-active;
+  }
+}
+
+// Заголовки
+@mixin title($color, $fs-mob, $li-mob, $fs-tabl, $li-tabl, $fs-desk, $li-desk, $col_underline:transparent, $case:lowercase) {
+  color: $color;
+  @include font-thin($fs-mob, $li-mob);
+
+  span {
+    @include font-bold($fs-mob, $li-mob);
+    border-bottom: 1px solid $col_underline;
+    text-transform: $case;
+  }
+
+  @include tablet {
+    @include font-thin($fs-tabl, $li-tabl);
+
+    span {
+      @include font-bold($fs-tabl, $li-tabl);
+    }
+  }
+
+  @include desktop {
+    @include font-thin($fs-desk, $li-desk);
+
+    span {
+      @include font-bold($fs-desk, $li-desk);
+    }
   }
 }
 

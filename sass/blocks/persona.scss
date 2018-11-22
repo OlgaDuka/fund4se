@@ -1,5 +1,9 @@
 .persona {
-
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .persona__img {
@@ -7,25 +11,48 @@
 }
 
 .persona__info {
-
+  width: 160px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .persona__title {
+  margin-top: 0;
+  margin-bottom: 10px;
 
+  @include title($blue, 24px, 28px, 24px, 28px, 36px, 42px, transparent, uppercase);
+
+  &--team {
+    @include title($blue, 24px, 28px, 18px, 21px, 24px, 28px, transparent, uppercase);
+  }
 }
 
 .persona__wrap {
+  color: $blue;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -23px;
+    width: 20px;
+    height: 1px;
+    border-top: 1px solid $red-peach;
+    transform: rotate(-45deg);
+  }
 
 }
 
 .persona__post {
-
+  @include font-bold(14px, 23px)
 }
 
 .persona__email {
-
+  @include font-light(14px, 23px)
 }
 
 .persona__desc {
-
+  @include font-light(14px, 23px)
 }

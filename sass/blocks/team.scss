@@ -1,9 +1,20 @@
 .team {
-
+  @include container();
 }
 
 .team__title {
+  width: 210px;
+  position: relative;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 80px;
+    height: 1px;
+    border-top: 1px solid $red-peach;
+  }
 }
 
 .team__wrap {

@@ -5,6 +5,7 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-self: center;
   background-color: $white;
   height: 54px;
   position: fixed;
@@ -56,6 +57,8 @@
 
   &--opened {
     display: block;
+    padding-left: 50px;
+    padding-bottom: 33px;
   }
 
   @include tablet {

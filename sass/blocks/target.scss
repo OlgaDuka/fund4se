@@ -1,15 +1,161 @@
 .target {
-
+  @include container();
 }
 
 .target__title {
+  position: relative;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 80px;
+    height: 1px;
+    border-top: 1px solid $red-peach;
+  }
+
+  @include tablet {
+    padding-left: 123px;
+
+    &::before {
+      top: 17px;
+      left: 0;
+      width: 100px;
+      height: 1px;
+      border-top: 1px solid $red-peach;
+    }
+  }
+
+  @include desktop {
+    padding-left: 190px;
+
+    &::before {
+      top: 26px;
+      width: 143px;
+      height: 1px;
+      border-top: 1px solid $red-peach;
+    }
+  }
 }
 
 .target__list {
+  margin: 0;
+  margin-bottom: 100px;
+  padding: 0;
+  list-style: none;
+  position: relative;
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 454px;
+    background-image: url('../img/svg-sprite/target-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+  }
+
+  @include tablet {
+    margin-top: 45px;
+    width: 667px;
+    height: 351px;
+
+    &::after {
+      width: 100%;
+      height: 350px;
+      background-image: url('../img/svg-sprite/target.svg');
+    }
+  }
+
+  @include desktop {
+    margin-top: 120px;
+    width: 100%;
+    height: 450px;
+
+    &::after {
+      height: 100%;
+      background-position: left center;
+    }
+  }
 }
 
 .target__item {
+  margin-left: 78px;
+  margin-bottom: 45px;
+  width: 180px;
+  color: $blue;
+  @include font-light(18px, 26px);
 
+  @include tablet {
+    width: 140px;
+    margin-left: 0;
+    margin-bottom: 0;
+    position: absolute;
+
+    @include font-light(14px, 20px);
+
+    &:nth-child(1) {
+      top: 20px;
+      left: 95px;
+    }
+
+    &:nth-child(2) {
+      top: 160px;
+      left: 210px;
+    }
+
+    &:nth-child(3) {
+      top: 20px;
+      right: 210px;
+      text-align: right;
+    }
+
+    &:nth-child(4) {
+      top: 160px;
+      right: 100px;
+      text-align: right;
+    }
+
+    &:nth-child(5) {
+      bottom: 20px;
+      left: 95px;
+    }
+  }
+
+  @include desktop {
+    width: 250px;
+
+    @include font-light(24px, 35px);
+
+    &:nth-child(1) {
+      top: 10px;
+      left: 140px;
+    }
+
+    &:nth-child(2) {
+      top: 180px;
+      left: 300px;
+    }
+
+    &:nth-child(3) {
+      top: 10px;
+      right: 170px;
+      text-align: left;
+    }
+
+    &:nth-child(4) {
+      top: 180px;
+      right: 20px;
+      text-align: left;
+    }
+
+    &:nth-child(5) {
+      bottom: 20px;
+      left: 140px;
+    }
+  }
 }

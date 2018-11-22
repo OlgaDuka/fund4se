@@ -1,5 +1,6 @@
 .leaders {
-
+  @include container();
+  margin-bottom: 100px;
 }
 
 .leaders__wrap {
@@ -7,9 +8,55 @@
 }
 
 .leaders__title {
+  width: 210px;
+  position: relative;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 80px;
+    height: 1px;
+    border-top: 1px solid $red-peach;
+  }
+
+  @include tablet {
+    padding-left: 123px;
+    width: auto;
+
+    &::before {
+      top: 17px;
+      left: 0;
+      width: 100px;
+      height: 1px;
+      border-top: 1px solid $red-peach;
+    }
+  }
+
+  @include desktop {
+    padding-left: 190px;
+
+    &::before {
+      top: 26px;
+      width: 143px;
+      height: 1px;
+      border-top: 1px solid $red-peach;
+    }
+  }
 }
 
 .leaders__text {
+  color: $blue;
+  margin-bottom: 30px;
+  padding: 0;
 
+  @include font-light(18px, 30px);
+
+  @include tablet {
+    margin-left: 123px;
+    width: 381px;
+
+    @include font-light(12px, 20px);
+  }
 }

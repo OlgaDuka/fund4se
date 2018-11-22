@@ -13,49 +13,100 @@
   @include desktop {
     margin-top: 88px;
   }
-
 }
 
 .main__hero {
 
-}
+  @include container(0, 0, 50px, 0, 135px, 0);
+  padding-top: 55%;
+  padding-bottom: 80px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
 
-.main__title {
-  @include font-thin(32px, 38px);
+  &--about {
+    @include header-img('about');
+  }
 
-  span {
-    @include font-bold(32px, 38px);
+  &--investors {
+    @include header-img('investors');
+  }
+
+  &--startups {
+    @include header-img('startups');
+  }
+
+  &--contacts {
+    @include header-img('contacts');
   }
 
   @include tablet {
-    @include font-thin(24px, 28px);
-
-    span {
-      @include font-bold(24px, 28px);
-    }
+    margin-bottom: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 227px;
+    flex-direction: row;
   }
 
   @include desktop {
-    @include font-thin(46px, 54px);
-
-    span {
-      @include font-bold(46px, 54px);
-    }
+    height: 382px;
   }
 }
 
+.main__title {
+  color: $red-peach;
+  padding-left: 18px;
+  padding-right: 18px;
+
+  @include font-thin(70px, 66px);
+
+  @include tablet {
+    margin-top: 60px;
+    margin-bottom: 0;
+    width: 197px;
+    @include font-thin(44px, 41px);
+  }
+
+  @include desktop {
+    margin-top: 80px;
+    width: 414px;
+
+    @include font-thin(88px, 83px);
+  }
+}
+
+.main__subtitle {
+
+  @include title($blue, 42px, 49px, 30px, 35px, 42px, 49px);
+}
+
 .main__text {
+  padding-left: 18px;
+  padding-right: 18px;
 
   @include font-light();
 
   @include tablet {
 
     @include font-light(12px, 20px);
+
+//    &--about {
+      margin-top: 50px;
+      margin-left: 20px;
+      width: 307px;
+//    }
   }
 
   @include desktop {
 
     @include font-light();
+    margin-top: 80px;
+    width: 522px;
+
   }
 }
 

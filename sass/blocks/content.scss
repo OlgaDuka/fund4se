@@ -84,7 +84,8 @@
 }
 
 .content__title {
-  color: $navi-blue;
+
+  @include title($navi-blue, 32px, 38px, 24px, 28px, 46px, 54px, $red-peach);
 }
 
 .content__text {
