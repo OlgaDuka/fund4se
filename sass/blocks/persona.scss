@@ -3,7 +3,35 @@
   margin-bottom: 30px;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+    margin-bottom: 40px;
+
+    &--lider1 {
+      margin-bottom: 30px;
+      margin-right: 20px;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+    }
+
+    &--lider2 {
+      margin-bottom: 30px;
+      margin-top: 100px;
+    }
+  }
+
+  @include desktop {
+
+    &--lider1 {
+      margin-right: 57px;
+    }
+
+    &--lider2 {
+      margin-top: 190px;
+    }
+  }
 }
 
 .persona__img {
@@ -12,9 +40,85 @@
 
 .persona__info {
   width: 160px;
-  margin-left: 20px;
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  @include tablet {
+    width: 180px;
+    margin-left: 34px;
+
+    &--right {
+      align-items: flex-end;
+      margin-left: 0;
+      margin-right: 34px;
+
+      .persona__title,
+      .persona__email,
+      .persona__post,
+      .persona__desc {
+        text-align: right;
+      }
+
+      .persona__wrap::after {
+        top: 62px;
+        left: auto;
+        right: -40px;
+      }
+    }
+
+    &--team {
+      width: 193px;
+
+      .persona__wrap::after {
+        top: 75px;
+      }
+    }
+  }
+
+  @include desktop {
+    width: 260px;
+    margin-left: 40px;
+
+    .persona__email,
+    .persona__post {
+      margin-left: 50px;
+    }
+
+    &--right {
+      align-items: flex-end;
+      margin-left: 0;
+      margin-right: 41px;
+
+      .persona__email,
+      .persona__post {
+        margin-left: 0;
+        margin-right: 47px;
+      }
+
+      .persona__wrap::after {
+        top: 117px;
+        left: auto;
+        right: 0;
+      }
+    }
+
+    &--team {
+      width: 193px;
+      margin-right: 0;
+      margin-left: 28px;
+
+      .persona__email,
+      .persona__post {
+        margin-left: 0;
+      }
+
+      .persona__wrap::after {
+        top: 90px;
+        left: -40px;
+      }
+    }
+  }
 }
 
 .persona__title {
@@ -29,30 +133,98 @@
 }
 
 .persona__wrap {
+  display: flex;
+  flex-direction: column;
   color: $blue;
-  position: relative;
+  position: absolute;
+  top: -150px;
+  left: 110px;
 
   &::after {
     content: "";
     position: absolute;
-    top: 20px;
-    left: -23px;
-    width: 20px;
+    top: 90px;
+    left: -40px;
+    width: 40px;
     height: 1px;
     border-top: 1px solid $red-peach;
     transform: rotate(-45deg);
+    z-index: -1;
   }
 
+  @include tablet {
+    position: static;
+    width: 160px;
+  }
+
+  @include desktop {
+    width: 180px;
+
+    &::after {
+      top: 117px;
+      left: 0;
+    }
+  }
 }
 
 .persona__post {
-  @include font-bold(14px, 23px)
+
+  @include font-bold(14px, 23px);
+
+  @include tablet {
+
+    &--team {
+      @include font-bold(12px, 20px);
+    }
+  }
+
+  @include desktop {
+
+    &--team {
+      @include font-bold(13px, 21px);
+    }
+  }
 }
 
 .persona__email {
-  @include font-light(14px, 23px)
+
+  @include font-light(14px, 23px);
+
+  @include tablet {
+
+    &--team {
+      @include font-light(12px, 20px);
+    }
+  }
+
+  @include tablet {
+
+    &--team {
+      @include font-light(13px, 21px);
+    }
+  }
 }
 
 .persona__desc {
-  @include font-light(14px, 23px)
+  width: 284px;
+  @include font-light(14px, 23px);
+
+  @include tablet {
+    width: 100%;
+
+    @include font-light(12px, 20px);
+  }
+
+  @include desktop {
+    @include font-light(14px, 23px);
+  }
+
+  &--team {
+    @include font-light(13px, 21px);
+
+    @include tablet {
+
+      @include font-light(11px, 18px);
+    }
+  }
 }

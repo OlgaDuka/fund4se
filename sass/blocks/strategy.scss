@@ -87,7 +87,7 @@
     width: 150px;
     @include font-thin(222px, 364px);
     color: $default-font-color;
-    opacity: 0.05;
+    opacity: 0.08;
   }
 
   &:nth-child(1)::before {

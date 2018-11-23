@@ -1,12 +1,16 @@
 .team {
   @include container();
+
+  @include tablet {
+    margin-bottom: 20px;
+  }
 }
 
 .team__title {
   width: 210px;
   position: relative;
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
     top: -30px;
@@ -15,8 +19,42 @@
     height: 1px;
     border-top: 1px solid $red-peach;
   }
+
+  @include tablet {
+    margin-bottom: 50px;
+
+    &::after {
+      left: auto;
+      top: -384px;
+      right: -162px;
+      width: 160px;
+      height: 404px;
+      border-top: 1px solid $red-peach;
+      border-bottom: 1px solid $red-peach;
+      border-right: 1px solid $red-peach;
+      z-index: -1;
+    }
+  }
+
+  @include desktop {
+    width: 320px;
+
+    &::after {
+      top: -500px;
+      right: -382px;
+      width: 382px;
+      height: 532px;
+    }
+  }
 }
 
 .team__wrap {
+  display: flex;
+  flex-direction: column;
 
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
