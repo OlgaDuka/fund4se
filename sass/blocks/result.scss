@@ -1,7 +1,44 @@
 .result {
+  @include container();
+  margin-bottom: 70px;
+  padding-top: 410px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/svg-sprite/libra.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 285px;
+
+  @include tablet {
+    padding-top: 0;
+    background-position: top 30px right 50px;
+    background-size: 244px;
+  }
+
+  @include desktop {
+    background-position: top 40px right 200px;
+    background-size: 372px;
+  }
 
 }
 
 .result__text {
+  margin-bottom: 40px;
+  position: relative;
+  @include title($blue, 24px, 39px, 24px, 39px, 36px, 59px);
 
+  @include red-line(80px, -34px);
+
+  &:last-child::before {
+    width: 194px;
+  }
+
+  @include tablet {
+    width: 49%;
+    padding: 0;
+  }
+
+  @include desktop {
+    width: 47%;
+  }
 }

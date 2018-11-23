@@ -34,10 +34,20 @@
 
   &--investors {
     @include header-img('investors');
+
+    .main__text {
+
+      @include font-light(20px, 33px);
+    }
   }
 
   &--startups {
     @include header-img('startups');
+
+    .main__text {
+
+      @include font-light(20px, 33px);
+    }
   }
 
   &--contacts {
@@ -50,10 +60,26 @@
     padding-bottom: 0;
     height: 227px;
     flex-direction: row;
+
+    &--about,
+    &--investors,
+    &--startups {
+     .main__text {
+        @include font-light(12px, 20px);
+      }
+    }
   }
 
   @include desktop {
     height: 382px;
+
+    &--about,
+    &--investors,
+    &--startups {
+     .main__text {
+        @include font-light(20px, 33px);
+      }
+    }
   }
 }
 
@@ -90,15 +116,16 @@
 
   @include font-light();
 
+  &--blue {
+    color: $blue;
+  }
+
   @include tablet {
 
     @include font-light(12px, 20px);
-
-//    &--about {
-      margin-top: 50px;
-      margin-left: 20px;
-      width: 307px;
-//    }
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 307px;
   }
 
   @include desktop {

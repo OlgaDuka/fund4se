@@ -1,23 +1,155 @@
 .criteria {
-
+  @include container();
 }
 
 .criteria__title {
+  position: relative;
 
+  @include title($blue, 36px, 49px, 30px, 35px, 42px, 49px, transparent, none);
+
+  @include red-line(77px, -30px);
+
+  @include tablet {
+    max-width: 487px;
+    margin-left: 123px;
+
+    @include red-line(101px, 18px, -123px);
+  }
+
+  @include desktop {
+    max-width: 820px;
+    margin-left: 186px;
+    margin-bottom: 60px;
+
+    @include red-line(143px, 18px, -186px);
+  }
 }
 
 .criteria__wrap-img {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 
+  @include tablet {
+    margin-bottom: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
 
 .criteria__img {
+  margin-bottom: 17px;
+  flex-grow: 1;
 
+  img {
+    width: 100%;
+  }
+
+  @include tablet {
+    &:nth-of-type(1) {
+      margin-right: 10px;
+    }
+
+    &:nth-of-type(2) {
+      margin-left: 10px;
+    }
+  }
+
+  @include tablet {
+    &:nth-of-type(1) {
+      margin-right: 18px;
+    }
+
+    &:nth-of-type(2) {
+      margin-left: 18px;
+    }
+  }
 }
 
 .criteria__list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
 
+  @include tablet {
+    margin-bottom: 50px;
+  }
+
+  @include desktop {
+    margin-bottom: 100px;
+  }
 }
 
 .criteria__item {
+  margin-bottom: 40px;
+  padding-left: 22px;
+  padding-right: 18px;
 
+  @include title($blue, 24px, 29px, 24px, 39px, 36px, 59px);
+
+  border-left: 1px solid $red-peach;
+
+  @include tablet {
+    padding-left: 44px;
+    padding-right: 0;
+
+    &:nth-of-type(1) {
+      width: 320px;
+    }
+
+    &:nth-of-type(2) {
+      width: 320px;
+      align-self: flex-end;
+    }
+
+    &:nth-of-type(3) {
+      width: 460px;
+      padding-right: 40px;
+      align-self: center;
+    }
+
+    &:nth-of-type(4) {
+      width: 286px;
+      align-self: flex-end;
+    }
+
+    &:nth-of-type(5) {
+      width: 370px;
+    }
+  }
+
+  @include desktop {
+    padding-left: 63px;
+
+    &:nth-of-type(1) {
+      width: 428px;
+    }
+
+    &:nth-of-type(2) {
+      width: 565px;
+      align-self: flex-end;
+    }
+
+    &:nth-of-type(3) {
+      width: 850px;
+      padding-right: 380px;
+      align-self: center;
+    }
+
+    &:nth-of-type(4) {
+      width: 426px;
+      align-self: flex-end;
+    }
+
+    &:nth-of-type(5) {
+      width: 550px;
+    }
+  }
 }

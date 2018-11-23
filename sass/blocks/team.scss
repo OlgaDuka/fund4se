@@ -10,15 +10,7 @@
   width: 210px;
   position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: 0;
-    width: 80px;
-    height: 1px;
-    border-top: 1px solid $red-peach;
-  }
+  @include red-line(80px, -30px);
 
   @include tablet {
     margin-bottom: 50px;

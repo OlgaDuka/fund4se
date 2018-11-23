@@ -1,23 +1,195 @@
 .requirements {
-
+  @include container();
 }
 
 .requirements__title {
+  position: relative;
+
+  @include title($blue, 42px, 49px, 30px, 35px, 42px, 49px, transparent, none);
+  @include red-line(80px, -35px);
+
+  @include tablet {
+    width: 540px;
+    padding-left: 124px;
+    @include red-line(100px, 18px);
+  }
+
+  @include desktop {
+    width: 760px;
+    padding-left: 187px;
+    @include red-line(143px, 24px);
+  }
 
 }
 
 .requirements__list {
-
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .requirements__item {
+  margin-left: 57px;
+  margin-bottom: 30px;
+  position: relative;
 
+  @include title($blue, 36px, 42px, 24px, 28px, 36px, 42px, transparent, none);
+
+  &::before {
+    content: attr(data-num);
+    color: $red-peach;
+    position: absolute;
+    top: 0;
+    left: -57px;
+  }
+
+  @include tablet {
+    margin-left: 30px;
+
+    &::before {
+      left: -30px;
+    }
+  }
+
+  @include desktop {
+    margin-left: 178px;
+
+    &::before {
+      left: -40px;
+    }
+  }
 }
 
 .requirements__sublist {
+  margin-left: -57px;
+  margin-top: 42px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
+  @include tablet {
+    margin-left: 0;
+  }
+
+  @include desktop {
+    margin-left: 10px;
+  }
 }
 
 .requirements__subitem {
+  color: $blue;
 
+  &--industry {
+    width: 134px;
+    height: 170px;
+    margin-bottom: 20px;
+    padding-top: 85px;
+    padding-left: 16px;
+    @include font-light(16px, 23px);
+    border-radius: 12px;
+    border: 1px solid $red-peach;
+    background-repeat: no-repeat;
+
+    @include tablet {
+      width: 180px;
+      height: 130px;
+      margin-bottom: 34px;
+      padding-top: 72px;
+      padding-left: 22px;
+      @include font-light(14px, 20px);
+    }
+
+    @include desktop {
+      width: 278px;
+      height: 201px;
+      margin-bottom: 57px;
+      padding-top: 113px;
+      padding-left: 29px;
+      @include font-light(24px, 35px);
+    }
+  }
+
+  &--img1 {
+    background-image: url("../img/svg-sprite/industry1.svg");
+    background-position: left 10px top 10px;
+    background-size: 45px 45px;
+  }
+
+  &--img2 {
+    background-image: url("../img/svg-sprite/industry2.svg");
+    background-size: 30px 35px;
+    background-position: left 18px top 15px;
+  }
+
+  &--img3 {
+    background-image: url("../img/svg-sprite/industry3.svg");
+    background-size: 37px 32px;
+    background-position: left 17px top 21px;
+  }
+
+  &--img4 {
+    background-image: url("../img/svg-sprite/industry4.svg");
+    background-size: 36px 22px;
+    background-position: left 20px top 24px;
+  }
+
+  &--img5 {
+    background-image: url("../img/svg-sprite/industry5.svg");
+    background-size: 34px 32px;
+    background-position: left 24px top 18px;
+  }
+
+  @include tablet {
+    &--img1 {
+      background-position: left 15px top 14px;
+      background-size: 34px 34px;
+    }
+
+    &--img2 {
+      background-position: left 20px top 13px;
+    }
+
+    &--img3 {
+      background-size: 30px 28px;
+      background-position: left 21px top 17px;
+    }
+
+    &--img4 {
+      background-size: 30px 14px;
+      background-position: left 17px top 22px;
+    }
+
+    &--img5 {
+      background-size: 30px 28px;
+      background-position: left 20px top 16px;
+    }
+  }
+
+  @include desktop {
+    &--img1 {
+      background-position: left 25px top 21px;
+      background-size: 45px 44px;
+    }
+
+    &--img2 {
+      background-position: left 30px top 27px;
+    }
+
+    &--img3 {
+      background-size: 37px 32px;
+      background-position: left 22px top 26px;
+    }
+
+    &--img4 {
+      background-size: 36px 22px;
+      background-position: left 29px top 28px;
+    }
+
+    &--img5 {
+      background-size: 34px 32px;
+      background-position: left 22px top 18px;
+    }
+  }
 }

@@ -1,11 +1,20 @@
 .actionplan {
-
+  @include container(0, 0);
+  margin-bottom: 80px;
 }
 
-.actionplan__img {
-
+.actionplan__img img {
+  width: 100%;
 }
 
 .actionplan__text {
+  padding-left: 20px;
+  padding-right: 20px;
 
+  @include title($blue, 24px, 39px, 24px, 39px, 36px, 59px, $red-peach);
+
+  @include tablet {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

@@ -38,38 +38,19 @@
   width: 210px;
   position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: 0;
-    width: 80px;
-    height: 1px;
-    border-top: 1px solid $red-peach;
-  }
+  @include red-line(80px, -30px);
 
   @include tablet {
     padding-left: 123px;
     width: auto;
 
-    &::before {
-      top: 17px;
-      left: 0;
-      width: 100px;
-      height: 1px;
-      border-top: 1px solid $red-peach;
-    }
+    @include red-line(100px, 17px);
   }
 
   @include desktop {
     padding-left: 190px;
 
-    &::before {
-      top: 26px;
-      width: 143px;
-      height: 1px;
-      border-top: 1px solid $red-peach;
-    }
+    @include red-line(143px, 26px);
   }
 }
 
