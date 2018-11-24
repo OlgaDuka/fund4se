@@ -43,11 +43,70 @@
     left: -57px;
   }
 
+  &--img1,
+  &--img2 {
+    margin-bottom: 50px;
+    padding-bottom: 130px;
+  }
+
+  &--img2 {
+    margin-bottom: 107px;
+    padding-bottom: 190px;
+  }
+
+  &--img1::after,
+  &--img2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 114px;
+    height: 91px;
+    background-image: url("../img/svg-sprite/saving.svg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 114px 91px;
+  }
+
+  &--img2::after {
+    width: 106px;
+    height: 145px;
+    background-image: url("../img/svg-sprite/order.svg");
+    background-size: 106px 145px;
+  }
+
   @include tablet {
     margin-left: 30px;
 
     &::before {
       left: -30px;
+    }
+
+    &--img1,
+    &--img2 {
+      margin-bottom: 130px;
+      padding-bottom: 30px;
+      padding-left: 202px;
+      max-width: 500px;
+    }
+
+    &--img1::before,
+    &--img2::before {
+      top: 20px;
+    }
+
+    &--img1::after {
+      width: 132px;
+      height: 100px;
+      background-position: left 10px bottom;
+      background-size: 122px 100px;
+    }
+
+    &--img2::after {
+      width: 112px;
+      height: 140px;
+      background-position: left 10px bottom;
+      background-size: 102px 140px;
     }
   }
 
@@ -56,6 +115,33 @@
 
     &::before {
       left: -40px;
+    }
+
+    &--img1,
+    &--img2 {
+      margin-bottom: 150px;
+      padding-bottom: 30px;
+      padding-left: 335px;
+      max-width: 835px;
+    }
+
+    &--img1::before,
+    &--img2::before {
+      top: 20px;
+    }
+
+    &--img1::after {
+      width: 215px;
+      height: 163px;
+      background-position: left 15px bottom;
+      background-size: 200px 163px;
+    }
+
+    &--img2::after {
+      width: 188px;
+      height: 230px;
+      background-position: left 20px bottom;
+      background-size: 168px 230px;
     }
   }
 }
@@ -69,46 +155,62 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
+  &--market {
+    justify-content: flex-start;
+  }
+
   @include tablet {
     margin-left: 0;
+    //justify-content: space-evenly;
+
+    &--industry {
+      &::after {
+        content: "";
+        width: 180px;
+      }
+    }
   }
 
   @include desktop {
     margin-left: 10px;
+
+    &--industry {
+      &::after {
+        content: "";
+        width: 278px;
+      }
+    }
   }
 }
 
-.requirements__subitem {
+.requirements__industry {
   color: $blue;
+  width: 134px;
+  height: 170px;
+  margin-bottom: 20px;
+  padding-top: 85px;
+  padding-left: 16px;
+  @include font-light(16px, 23px);
+  border-radius: 12px;
+  border: 1px solid $red-peach;
+  background-repeat: no-repeat;
 
-  &--industry {
-    width: 134px;
-    height: 170px;
-    margin-bottom: 20px;
-    padding-top: 85px;
-    padding-left: 16px;
-    @include font-light(16px, 23px);
-    border-radius: 12px;
-    border: 1px solid $red-peach;
-    background-repeat: no-repeat;
+  @include tablet {
+    width: 180px;
+    height: 130px;
+    margin-bottom: 34px;
+    padding-top: 72px;
+    padding-left: 22px;
+    @include font-light(14px, 20px);
+  }
 
-    @include tablet {
-      width: 180px;
-      height: 130px;
-      margin-bottom: 34px;
-      padding-top: 72px;
-      padding-left: 22px;
-      @include font-light(14px, 20px);
-    }
-
-    @include desktop {
-      width: 278px;
-      height: 201px;
-      margin-bottom: 57px;
-      padding-top: 113px;
-      padding-left: 29px;
-      @include font-light(24px, 35px);
-    }
+  @include desktop {
+    width: 278px;
+    height: 201px;
+    margin-bottom: 57px;
+    padding-top: 113px;
+    padding-left: 29px;
+    @include font-light(24px, 35px);
   }
 
   &--img1 {
@@ -192,4 +294,241 @@
       background-position: left 22px top 18px;
     }
   }
+}
+
+.requirements__market {
+  color: $blue;
+  width: 140px;
+  height: 250px;
+  padding-top: 150px;
+  padding-left: 12px;
+  padding-right: 12px;
+  @include font-light(18px, 21px);
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: left 13px top;
+  background-size: 114px 113px;
+
+  span {
+    @include font-bold(24px, 28px);
+  }
+
+  &--img1 {
+    background-image: url("../img/svg-sprite/market1.svg");
+  }
+
+  &--img2 {
+    background-image: url("../img/svg-sprite/market2.svg");
+  }
+
+  @include tablet {
+    width: 172px;
+    height: 260px;
+    margin-left: 0px;
+    margin-right: 56px;
+    padding-top: 160px;
+    padding-left: 0;
+    padding-right: 0;
+    background-position: left 25px top;
+    background-size: 122px 122px;
+
+    span {
+      @include font-bold(36px, 42px);
+    }
+  }
+
+  @include desktop {
+    width: 232px;
+    height: 385px;
+    margin-right: 112px;
+    padding-top: 295px;
+    @include font-light(24px, 28px);
+    background-position: left top;
+    background-size: 232px 232px;
+
+    span {
+      @include font-bold(42px, 49px);
+    }
+
+    &--img2 {
+      padding-top: 270px;
+      background-position: left 15px top 15px;
+      background-size: 202px 202px;
+    }
+  }
+}
+
+.requirements__technology {
+  color: $blue;
+  width: 142px;
+  height: 220px;
+  margin-bottom: 30px;
+  padding-top: 180px;
+  padding-left: 12px;
+  padding-right: 12px;
+  @include font-light(18px, 21px);
+  text-align: center;
+  background-repeat: no-repeat;
+
+  &--img1 {
+    background-position: left 10px top;
+    background-size: 114px 163px;
+    background-image: url("../img/svg-sprite/technology1.svg");
+  }
+
+  &--img2 {
+    background-position: left 10px top 10px;
+    background-size: 114px 145px;
+    background-image: url("../img/svg-sprite/technology2.svg");
+  }
+
+  &--img3 {
+    align-self: flex-end;
+    height: 180px;
+    padding-top: 140px;
+    background-position: left 10px top 10px;
+    background-size: 114px 115px;
+    background-image: url("../img/svg-sprite/technology3.svg");
+  }
+
+  @include tablet {
+    width: 160px;
+    height: 240px;
+    margin-bottom: 30px;
+    padding-top: 200px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    &--img1 {
+      background-position: left 15px top;
+      background-size: 122px 171px;
+      background-image: url("../img/svg-sprite/technology1.svg");
+    }
+
+    &--img2 {
+      background-position: left 18px top 10px;
+      background-size: 122px 155px;
+      background-image: url("../img/svg-sprite/technology2.svg");
+    }
+
+    &--img3 {
+      background-position: left 23px top 40px;
+      background-size: 114px 115px;
+      background-image: url("../img/svg-sprite/technology3.svg");
+    }
+  }
+
+  @include desktop {
+    width: 167px;
+    height: 300px;
+    margin-bottom: 30px;
+    padding-top: 260px;
+    padding-left: 12px;
+    padding-right: 12px;
+    @include font-light(24px, 28px);
+
+    &--img1 {
+      background-position: left top;
+      background-size: 160px 223px;
+      background-image: url("../img/svg-sprite/technology1.svg");
+    }
+
+    &--img2 {
+      background-position: left top 10px;
+      background-size: 167px 213px;
+      background-image: url("../img/svg-sprite/technology2.svg");
+    }
+
+    &--img3 {
+      width: 214px;
+      background-position: left top 10px;
+      background-size: 214px 217px;
+      background-image: url("../img/svg-sprite/technology3.svg");
+    }
+  }
+}
+
+.requirements__possess {
+  color: $blue;
+  width: 142px;
+  height: 190px;
+  margin-bottom: 20px;
+  padding-top: 150px;
+  padding-left: 0;
+  padding-right: 0;
+  @include font-light(18px, 21px);
+  text-align: center;
+  background-repeat: no-repeat;
+
+  &--img1 {
+    background-position: left 10px top;
+    background-size: 114px 138px;
+    background-image: url("../img/svg-sprite/possess1.svg");
+  }
+
+  &--img2 {
+    background-position: left 10px top 20px;
+    background-size: 114px 105px;
+    background-image: url("../img/svg-sprite/possess2.svg");
+  }
+
+  &--img3 {
+    background-position: left 10px top 20px;
+    background-size: 114px 116px;
+    background-image: url("../img/svg-sprite/possess3.svg");
+  }
+
+  @include tablet {
+
+    &--img1 {
+      background-position: left 10px top 10px;
+      background-size: 95px 115px;
+      background-image: url("../img/svg-sprite/possess1.svg");
+    }
+
+    &--img2 {
+      background-position: left 10px top 13px;
+      background-size: 122px 112px;
+      background-image: url("../img/svg-sprite/possess2.svg");
+    }
+
+    &--img3 {
+      background-position: left 10px top;
+      background-size: 122px 124px;
+      background-image: url("../img/svg-sprite/possess3.svg");
+    }
+  }
+
+  @include desktop {
+    height: 320px;
+    margin-bottom: 20px;
+    padding-top: 250px;
+    padding-left: 0;
+    padding-right: 0;
+    @include font-light(24px, 28px);
+    text-align: center;
+    background-repeat: no-repeat;
+
+    &--img1 {
+      width: 190px;
+      background-position: left 10px top;
+      background-size: 168px 204px;
+      background-image: url("../img/svg-sprite/possess1.svg");
+    }
+
+    &--img2 {
+      width: 255px;
+      background-position: left 20px top 20px;
+      background-size: 204px 188px;
+      background-image: url("../img/svg-sprite/possess2.svg");
+    }
+
+    &--img3 {
+      width: 190px;
+      background-position: left 3px top 20px;
+      background-size: 184px 188px;
+      background-image: url("../img/svg-sprite/possess3.svg");
+    }
+  }
+
 }
