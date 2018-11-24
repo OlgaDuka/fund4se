@@ -1,5 +1,6 @@
 .invitation {
   @include container();
+  margin-bottom: 80px;
   width: 284px;
   height: 436px;
   background-image: url("../img/svg-sprite/bg-red-mobile.svg");
