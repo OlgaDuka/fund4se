@@ -1,5 +1,6 @@
 .team {
   @include container();
+  margin-bottom: 86px;
 
   @include tablet {
     margin-bottom: 20px;
@@ -8,9 +9,10 @@
 
 .team__title {
   width: 210px;
+  margin-bottom: 49px;
   position: relative;
 
-  @include red-line(80px, -30px);
+  @include red-line(80px, -37px);
 
   @include tablet {
     margin-bottom: 50px;

@@ -1,6 +1,6 @@
 .leaders {
   @include container();
-  margin-bottom: 100px;
+  margin-bottom: 99px;
 
   @include tablet {
     margin-bottom: 0;
@@ -36,9 +36,12 @@
 
 .leaders__title {
   width: 210px;
+  margin-bottom: 13px;
   position: relative;
 
-  @include red-line(80px, -30px);
+  @include title($blue, 42px, 49px, 30px, 35px, 42px, 49px, transparent, none);
+
+  @include red-line(80px, -37px);
 
   @include tablet {
     padding-left: 123px;
@@ -56,10 +59,10 @@
 
 .leaders__text {
   color: $blue;
-  margin-bottom: 30px;
+  margin-bottom: 46px;
   padding: 0;
 
-  @include font-light(18px, 30px);
+  @include font-light(18px, 29px);
 
   @include tablet {
     margin-left: 123px;

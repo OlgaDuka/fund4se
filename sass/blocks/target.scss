@@ -4,8 +4,9 @@
 
 .target__title {
   position: relative;
+  margin-bottom: 47px;
 
-  @include red-line(80px, -30px);
+  @include red-line(80px, -36px);
 
   @include tablet {
     padding-left: 123px;
@@ -22,8 +23,9 @@
 
 .target__list {
   margin: 0;
-  margin-bottom: 100px;
   padding: 0;
+  padding-top: 5px;
+  margin-bottom: 136px;
   list-style: none;
   position: relative;
 
@@ -32,8 +34,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 60px;
-    height: 454px;
+    width: 63px;
+    height: 458px;
     background-image: url('../img/svg-sprite/target-mobile.svg');
     background-repeat: no-repeat;
     background-position: top center;
@@ -65,8 +67,8 @@
 }
 
 .target__item {
-  margin-left: 78px;
-  margin-bottom: 45px;
+  margin-left: 80px;
+  margin-bottom: 48px;
   width: 180px;
   color: $blue;
   @include font-light(18px, 26px);

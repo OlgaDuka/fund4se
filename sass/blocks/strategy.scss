@@ -1,5 +1,6 @@
 .strategy {
   @include container();
+  margin-bottom: 17px;
 
   @include tablet {
     margin-bottom: 100px;
@@ -8,9 +9,10 @@
 
 .strategy__title {
   width: 230px;
+  margin-bottom: 89px;
   position: relative;
 
-  @include red-line(80px, -30px);
+  @include red-line(80px, -37px);
 
   @include tablet {
     padding-left: 123px;
@@ -30,7 +32,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-left: 62px;
+  padding-left: 61px;
   display: flex;
   flex-direction: column;
 
@@ -53,17 +55,21 @@
 }
 
 .strategy__item {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 0;
+  padding-bottom: 94px;
   color: $blue;
   @include font-light(18px, 30px);
   position: relative;
 
+  span {
+    border-bottom: 1px solid $red-peach;
+  }
+
   &::before {
     content: "";
     position: absolute;
-    top: -130px;
-    left: -62px;
+    top: -195px;
+    left: -61px;
     height: 324px;
     width: 150px;
     @include font-thin(222px, 364px);
