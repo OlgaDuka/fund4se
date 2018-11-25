@@ -6,6 +6,12 @@
   var button = panel.querySelector('.header__burger');
   var contacts = panel.querySelector('.header__contacts');
 
+  // Выводим имя прикрепленного файла
+  $(".feedback__file-upload input[type=file]").change(function(){
+      var filename = $(this).val().replace(/.*\\/, "");
+      $("#filename").val(filename);
+  });
+
   // Закрываем меню, если JS работает
   menu.classList.remove('menu--nojs');
 

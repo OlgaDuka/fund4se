@@ -24,8 +24,8 @@
   align-self: stretch;
 
   @include tablet {
-    margin-top: 0;
-    width: 355px;
+    margin-top: 2px;;
+    width: 387px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -33,11 +33,12 @@
   }
 
   @include desktop {
-    width: 460px;
+    width: 469px;
   }
 }
 
 .menu-item {
+  position: relative;
 
   a {
     color: $blue;
@@ -59,8 +60,32 @@
     }
   }
 
+  &:hover::before {
+    content: "";
+    position: absolute;
+    left: -48px;
+    top: 22px;
+    width: 30px;
+    height: 10px;
+    background-image: url('../img/svg-sprite/arrow-red.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    @include tablet {
+      left: -17px;
+      top: 9px;
+      width: 12px;
+    }
+
+    @include desktop {
+      left: -22px;
+      top: 8px;
+      width: 17px;
+    }
+  }
+
   &--active {
-    position: relative;
 
     a {
       @include font-bold(24px, 53px);
@@ -80,27 +105,26 @@
     }
 
     @include tablet {
-      padding-left: 18px;
 
       a {
         @include font-bold(12px, 14px);
       }
 
       &::before {
-        left: 0;
+        left: -17px;
         top: 9px;
         width: 12px;
       }
     }
 
     @include desktop {
-      padding-left: 24px;
 
       a {
         @include font-bold(15px, 18px);
       }
 
       &::before {
+        left: -22px;
         top: 8px;
         width: 17px;
       }

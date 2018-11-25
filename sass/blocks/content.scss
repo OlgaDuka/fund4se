@@ -1,13 +1,13 @@
 .content {
-  @include container(0, 0, 50px, 0, 135px, 0);
-  margin-bottom: 50px;
+  @include container(0, 0, 50px, 0, 133px, 0);
+  margin-bottom: 25px;
 
   @include tablet {
-    margin-bottom: 71px;
+    margin-bottom: 31px;
   }
 
   @include desktop {
-    margin-bottom: 94px;
+    margin-bottom: 40px;
   }
 }
 
@@ -27,23 +27,22 @@
 
   &::after {
     content: "";
-    width: 93%;
-    height: 5px;
+    width: 90%;
+    height: 10px;
     background-color: $red-peach;
     position: absolute;
     left: 50%;
     bottom: 3px;
     transform: translateX(-50%);
-    z-index: 1;
+    z-index: -1;
   }
 
   @include tablet {
     margin-left: 50px;
-    flex-grow: 1;
 
     &::after {
-      width: 5px;
-      height: 86%;
+      width: 10px;
+      height: 85%;
       top: 4%;
       left: -4px;
       transform: none;
@@ -54,18 +53,16 @@
     margin-left: 99px;
 
     &::after {
-      width: 7px;
-      height: 85%;
+      height: 89%;
       top: 50%;
-      left: -6px;
-      transform: translateY(-52%);
+      left: -7px;
+      transform: translateY(-50%);
     }
   }
 }
 
 .content__img {
   width: 100%;
-  z-index: 5;
 }
 
 .content__info {
@@ -84,12 +81,30 @@
 }
 
 .content__title {
+  margin-bottom: 20px;
+  @include title($navi-blue, 32px, 37px, 24px, 28px, 46px, 54px, $red-peach);
 
-  @include title($navi-blue, 32px, 38px, 24px, 28px, 46px, 54px, $red-peach);
+  @include tablet {
+    margin-top: 25px;
+    margin-bottom: 14px;
+  }
+
+  @include desktop {
+    margin-top: 55px;
+    margin-bottom: 34px;
+  }
 }
 
 .content__text {
+  @include tablet {
+    margin-bottom: 18px;;
+    @include font-light(12px, 20px);
+  }
 
+  @include desktop {
+    margin-bottom: 28px;
+    @include font-light(16px, 26px);
+  }
 }
 
 .content__link {

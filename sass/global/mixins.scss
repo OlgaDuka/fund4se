@@ -98,10 +98,10 @@
 }
 
 // Кнопка
-@mixin redbutton ($width, $height, $fs:$default-fs, $li:$default-li, $width-arrow:25px) {
+@mixin redbutton ($width, $height, $fs:$default-fs, $li:$default-li, $width-arrow:25px, $offset-right:15px) {
   width: $width;
   height: $height;
-  padding-right: $width-arrow;
+  padding-right: $width-arrow + $offset-right;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,6 +138,7 @@
   }
 
   &:hover {
+    cursor: pointer;
     transform: translate(3px, 3px);
 
     &::before {

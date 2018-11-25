@@ -75,6 +75,11 @@
   border-bottom: 1px solid $gray;
 }
 
+.feedback__textarea {
+  margin-top: 25px;
+  height: 50px;
+}
+
 .feedback__label {
   position: absolute;
   top: 20px;
@@ -85,38 +90,9 @@
   color: $blue;
   @include font-thin(18px, 21px);
 
-  span {
+  sup {
     @include font-light(18px, 21px);
     color: $red-peach;
-  }
-
-  &--file {
-    text-decoration: underline;
-    padding-left: 40px;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    cursor: pointer;
-
-    span {
-      color: $blue;
-      line-height: 36px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 24px;
-      height: 24px;
-      background-image: url("../img/svg-sprite/attached-file.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
   }
 }
 
@@ -134,16 +110,58 @@
 }
 
 .feedback__file-upload {
+  width: 100%;
+  height: 70px;
+  margin-top: 25px;
+  margin-bottom: 0;
   position: relative;
   overflow: hidden;
-
-  &:hover {
-    color: $red-peach;
-  }
 
   input[type="file"] {
     display: none;
   }
+
+  &:hover label span {
+    color: $red-peach;
+  }
+
+  label {
+    padding-top: 0;
+    padding-left: 40px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+    span {
+      @include font-light(16px, 19px);
+      text-decoration: underline;
+      color: $blue;
+      line-height: 50px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 24px;
+      height: 24px;
+      background-image: url("../img/svg-sprite/attached-file.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.feedback__filename {
+  margin-bottom: 20px;
+  background: #fff;
+  border: 0;
+  color: $blue;
 }
 
 //
