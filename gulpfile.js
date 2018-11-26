@@ -176,10 +176,9 @@ gulp.task('svg-sprite', gulp.series('svg-sprite:del', 'svg-sprite:copy'));
 
 //GH-PAGES
 
-gulp.task('deploy', function(done) {
+gulp.task('deploy', function() {
   return gulp.src('build/**/*')
     .pipe(ghPages());
-    done();
 });
 
 // LIVE SERVER
