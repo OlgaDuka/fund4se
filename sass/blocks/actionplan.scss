@@ -11,7 +11,7 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  @include title($blue, 24px, 39px, 24px, 39px, 36px, 59px, $red-peach);
+  @include title($navi-blue, 24px, 39px, 24px, 39px, 36px, 59px, $red-peach);
 
   @include tablet {
     padding-left: 0;

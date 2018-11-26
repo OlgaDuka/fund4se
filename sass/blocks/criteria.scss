@@ -5,7 +5,7 @@
 .criteria__title {
   position: relative;
 
-  @include title($blue, 36px, 49px, 30px, 35px, 42px, 49px, transparent, none);
+  @include title($navi-blue, 36px, 49px, 30px, 35px, 42px, 49px, transparent, none);
 
   @include red-line(77px, -30px);
 
@@ -92,7 +92,7 @@
   padding-left: 22px;
   padding-right: 18px;
 
-  @include title($blue, 24px, 29px, 24px, 39px, 36px, 59px);
+  @include title($navi-blue, 24px, 29px, 24px, 39px, 36px, 59px);
 
   border-left: 1px solid $red-peach;
 

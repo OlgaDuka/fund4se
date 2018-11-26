@@ -25,7 +25,7 @@
 .result__text {
   margin-bottom: 40px;
   position: relative;
-  @include title($blue, 24px, 39px, 24px, 39px, 36px, 59px);
+  @include title($navi-blue, 24px, 39px, 24px, 39px, 36px, 59px);
 
   @include red-line(80px, -34px);
 

@@ -3,7 +3,11 @@
   margin-bottom: 17px;
 
   @include tablet {
-    margin-bottom: 100px;
+    margin-bottom: 68px;
+  }
+
+  @include tablet {
+    margin-bottom: 119px;
   }
 }
 
@@ -15,6 +19,7 @@
   @include red-line(80px, -37px);
 
   @include tablet {
+    margin-bottom: 36px;
     padding-left: 123px;
     width: auto;
 
@@ -98,7 +103,8 @@
   }
 
   @include tablet {
-    width: 177px;
+    width: 179px;
+    margin-top: 20px;
     padding-top: 0;
     padding-bottom: 0;
 
@@ -113,29 +119,22 @@
       @include font-thin(144px, 236px);
     }
 
-    &:nth-child(1) {
-      padding-top: 20px;
-    }
-
     &:nth-child(2) {
-      margin-top: 60px;
-    }
-
-    &:nth-child(3) {
-      margin-top: 20px;
+      margin-top: 76px;
     }
 
     &:nth-child(4) {
-      margin-top: 20px;
+      margin-top: 38px;
     }
 
     &:nth-child(5) {
-      margin-top: 60px;
+      margin-top: 90px;
     }
   }
 
   @include desktop {
     width: 252px;
+    margin-top: 119px;
     margin-right: 87px;
     margin-left: 70px;
 
@@ -148,26 +147,24 @@
       @include font-thin(288px, 472px);
     }
 
-    &:nth-child(1) {
-      padding-top: 20px;
-    }
-
     &:nth-child(2) {
-      margin-top: 60px;
+      width: 256px;
+      margin-top: 241px;
       margin-right: 90px;
     }
 
     &:nth-child(3) {
-      margin-top: 20px;
+      margin-top: 117px;
       margin-right: 0;
     }
 
     &:nth-child(4) {
-      margin-top: 20px;
+      margin-top: 117px;
+      margin-left: 72px;
     }
 
     &:nth-child(5) {
-      margin-top: 60px;
+      margin-top: 208px;
     }
   }
 }

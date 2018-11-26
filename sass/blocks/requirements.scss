@@ -5,7 +5,7 @@
 .requirements__title {
   position: relative;
 
-  @include title($blue, 42px, 49px, 30px, 35px, 42px, 49px, transparent, none);
+  @include title($navi-blue, 42px, 49px, 30px, 35px, 42px, 49px, transparent, none);
   @include red-line(80px, -35px);
 
   @include tablet {
@@ -33,7 +33,7 @@
   margin-bottom: 30px;
   position: relative;
 
-  @include title($blue, 36px, 42px, 24px, 28px, 36px, 42px, transparent, none);
+  @include title($navi-blue, 36px, 42px, 24px, 28px, 36px, 42px, transparent, none);
 
   &::before {
     content: attr(data-num);

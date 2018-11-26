@@ -55,7 +55,7 @@
   }
 
   @include tablet {
-    margin-bottom: 60px;
+    margin-bottom: 78px;
     padding-top: 0;
     padding-bottom: 0;
     height: 227px;
@@ -71,6 +71,7 @@
   }
 
   @include desktop {
+    margin-bottom: 119px;
     height: 382px;
 
     &--about,
@@ -92,14 +93,16 @@
   @include font-thin(70px, 66px);
 
   @include tablet {
-    margin-top: 60px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 55px;
     margin-bottom: 0;
     width: 197px;
     @include font-thin(44px, 41px);
   }
 
   @include desktop {
-    margin-top: 80px;
+    margin-top: 98px;
     width: 414px;
 
     @include font-thin(88px, 83px);
@@ -108,7 +111,7 @@
 
 .main__subtitle {
 
-  @include title($blue, 42px, 49px, 30px, 35px, 42px, 49px);
+  @include title($navi-blue, 42px, 49px, 30px, 35px, 42px, 49px);
 }
 
 .main__text {
@@ -124,15 +127,15 @@
   @include tablet {
 
     @include font-light(12px, 20px);
-    margin-top: 50px;
-    margin-left: 20px;
+    margin-top: 40px;
+    padding: 0;
     width: 307px;
   }
 
   @include desktop {
 
     @include font-light();
-    margin-top: 80px;
+    margin-top: 98px;
     width: 522px;
 
   }

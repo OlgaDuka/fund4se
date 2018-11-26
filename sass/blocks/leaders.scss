@@ -7,7 +7,7 @@
   }
 
   @include desktop {
-    margin-bottom: 60px;
+    margin-bottom: 83px;
   }
 }
 
@@ -20,6 +20,7 @@
   }
 
   @include desktop {
+    margin-bottom: 113px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -39,7 +40,7 @@
   margin-bottom: 13px;
   position: relative;
 
-  @include title($blue, 42px, 49px, 30px, 35px, 42px, 49px, transparent, none);
+  @include title($navi-blue, 42px, 49px, 30px, 35px, 42px, 49px, transparent, none);
 
   @include red-line(80px, -37px);
 
@@ -65,6 +66,7 @@
   @include font-light(18px, 29px);
 
   @include tablet {
+    margin-bottom: 40px;
     margin-left: 123px;
     width: 381px;
 
@@ -72,6 +74,7 @@
   }
 
   @include desktop {
+    margin-top: 30px;
     margin-left: 0;
     width: 566px;
 

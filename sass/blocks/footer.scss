@@ -12,7 +12,7 @@
     padding-bottom: 20px;
   }
 
-  @include tablet {
+  @include desktop {
     height: 240px;
     flex-direction: column;
     flex-wrap: wrap;
@@ -31,6 +31,7 @@
     width: 140px;
     height: 42px;
     margin-top: 5px;
+    margin-left: 0;
   }
 
   @include desktop {
@@ -44,24 +45,25 @@
 }
 
 .footer__text {
-  width: 270px;
+  width: 276px;
 
   &:nth-of-type(2) {
-    margin-top: 8px;
-    margin-bottom: -3px;
+    margin-top: 5px;
+    margin-bottom: -6px;
   }
 
   @include tablet {
     margin-top: 10px;
-    width: 240px;
-    padding-right: 35px;
+    margin-bottom: 0;
+    width: 230px;
+    padding-right: 25px;
 
     @include font-light(12px, 20px);
 
     &:nth-of-type(2) {
       margin-top: 0;
       margin-left: 30px;
-      padding-right: 60px;
+      padding-right: 50px;
     }
   }
 
@@ -82,12 +84,17 @@
 
 }
 
-.footer .contacts__links {
+.footer__links {
+  width: 120px;
+  margin-top: 20px;
+  margin-bottom: 0;
 
   @include tablet {
-    margin-top: 0;
+    width: 230px;
+    margin-top: 10px;
     margin-bottom: 0;
     margin-left: 30px;
+    padding-right: 120px;
     width: 240px;
   }
 
@@ -96,26 +103,30 @@
   }
 }
 
-.footer .contacts__link--mailto {
+.footer__link--mailto {
+  color: $default-font-color;
   @include font-bold();
 
   @include tablet {
-    @include font-bold(12px, 20px);
+    @include font-bold(12px, 12px);
   }
 
-  @include tablet {
-    @include font-bold(16px, 26px);
+  @include desktop {
+    @include font-bold();
   }
 }
 
-.footer .contacts__link--call {
+.footer__link--call {
+  color: $default-font-color;
+  text-decoration: none;
+  @include font-bold();
 
   @include tablet {
-    @include font-bold(12px, 20px);
+    @include font-bold(12px, 12px);
   }
 
-  @include tablet {
-    @include font-bold(16px, 26px);
+  @include desktop {
+    @include font-bold();
   }
 }
 
@@ -134,15 +145,9 @@
   }
 
   @include desktop {
-    margin: 0;
     margin-top: 73px;
-    padding: 0;
     width: 170px;
     @include font-light(16px, 26px);
-
-    .menu-item::before {
-      top: 5px;
-    }
   }
 }
 

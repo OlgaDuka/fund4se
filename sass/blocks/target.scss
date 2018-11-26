@@ -1,5 +1,14 @@
 .target {
   @include container();
+  margin-bottom: 136px;
+
+  @include tablet {
+    margin-bottom: 79px;
+  }
+
+  @include desktop {
+    margin-bottom: 137px;
+  }
 }
 
 .target__title {
@@ -10,14 +19,16 @@
 
   @include tablet {
     padding-left: 123px;
+    margin-bottom: 44px;
 
     @include red-line(100px, 17px);
   }
 
   @include desktop {
-    padding-left: 190px;
+    padding-left: 187px;
+    margin-bottom: 140px;
 
-    @include red-line(143px, 26px);
+    @include red-line(143px, 24px);
   }
 }
 
@@ -25,7 +36,6 @@
   margin: 0;
   padding: 0;
   padding-top: 5px;
-  margin-bottom: 136px;
   list-style: none;
   position: relative;
 
@@ -43,7 +53,7 @@
   }
 
   @include tablet {
-    margin-top: 45px;
+    padding-top: 0;
     width: 667px;
     height: 351px;
 
@@ -55,7 +65,6 @@
   }
 
   @include desktop {
-    margin-top: 120px;
     width: 100%;
     height: 450px;
 
@@ -116,29 +125,29 @@
 
     &:nth-child(1) {
       top: 10px;
-      left: 140px;
+      left: 150px;
     }
 
     &:nth-child(2) {
-      top: 180px;
+      top: 185px;
       left: 300px;
     }
 
     &:nth-child(3) {
       top: 10px;
-      right: 170px;
+      right: 160px;
       text-align: left;
     }
 
     &:nth-child(4) {
-      top: 180px;
-      right: 20px;
+      top: 192px;
+      right: 12px;
       text-align: left;
     }
 
     &:nth-child(5) {
-      bottom: 20px;
-      left: 140px;
+      bottom: 15px;
+      left: 150px;
     }
   }
 }
