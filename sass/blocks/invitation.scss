@@ -9,15 +9,18 @@
   background-position: top center;
 
   @include tablet {
-    width: 768px;
+    margin-bottom: 68px;
+    width: 668px;
     height: 198px;
     background-image: url("../img/svg-sprite/bg-red-tablet.svg");
   }
 
   @include desktop {
+    margin-bottom: 115px;
     width: 1440px;
     height: 283px;
     background-image: url("../img/svg-sprite/bg-red.svg");
+    background-size: 1170px;
   }
 
 }
@@ -32,7 +35,8 @@
   }
 
   @include tablet {
-    padding: 37px 55px 0 34px;
+    padding: 0;
+    padding-top: 37px;
     @include font-light(24px, 28px);
 
     span {
