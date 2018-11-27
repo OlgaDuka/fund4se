@@ -1,7 +1,7 @@
 .result {
   @include container();
-  margin-bottom: 70px;
-  padding-top: 410px;
+  margin-bottom: 105px;
+  padding-top: 390px;
   display: flex;
   flex-direction: column;
   background-image: url("../img/svg-sprite/libra.svg");
@@ -10,12 +10,14 @@
   background-size: 285px;
 
   @include tablet {
+    margin-bottom: 34px;
     padding-top: 0;
     background-position: top 30px right 50px;
     background-size: 244px;
   }
 
   @include desktop {
+    margin-bottom: 145px;
     background-position: top 40px right 200px;
     background-size: 372px;
   }
@@ -23,22 +25,32 @@
 }
 
 .result__text {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   position: relative;
-  @include title($navi-blue, 24px, 39px, 24px, 39px, 36px, 59px);
+  @include title-light($navi-blue, 24px, 39px, 24px, 39px, 36px, 59px, transparent, none);
 
-  @include red-line(80px, -34px);
+  @include red-line(80px, -30px);
 
   &:last-child::before {
     width: 194px;
   }
 
   @include tablet {
+
+    @include red-line(80px, -36px);
     width: 49%;
     padding: 0;
+    margin-bottom: 52px;
   }
 
   @include desktop {
+    margin-bottom: 22px;
     width: 47%;
+
+    @include red-line(72px, -106px);
+
+    &:last-child::before {
+      top: -25px;
+    }
   }
 }

@@ -1,17 +1,30 @@
 .actionplan {
   @include container(0, 0);
-  margin-bottom: 80px;
+  margin-bottom: 112px;
+
+  @include tablet {
+    margin-bottom: 157px;
+  }
+
+  @include desktop {
+    margin-bottom: 172px;
+  }
 }
 
 .actionplan__img img {
   width: 100%;
+  margin-bottom: 5px;
+
+  @include desktop {
+    margin-bottom: 68px;
+  }
 }
 
 .actionplan__text {
   padding-left: 20px;
   padding-right: 20px;
 
-  @include title($navi-blue, 24px, 39px, 24px, 39px, 36px, 59px, $red-peach);
+  @include title-light($navi-blue, 24px, 39px, 24px, 39px, 36px, 59px, $red-peach);
 
   @include tablet {
     padding-left: 0;

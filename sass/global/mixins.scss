@@ -180,6 +180,33 @@
   }
 }
 
+@mixin title-light($color, $fs-mob, $li-mob, $fs-tabl, $li-tabl, $fs-desk, $li-desk, $col_underline:transparent, $case:lowercase) {
+  color: $color;
+  @include font-light($fs-mob, $li-mob);
+
+  span {
+    @include font-bold($fs-mob, $li-mob);
+    border-bottom: 1px solid $col_underline;
+    text-transform: $case;
+  }
+
+  @include tablet {
+    @include font-light($fs-tabl, $li-tabl);
+
+    span {
+      @include font-bold($fs-tabl, $li-tabl);
+    }
+  }
+
+  @include desktop {
+    @include font-light($fs-desk, $li-desk);
+
+    span {
+      @include font-bold($fs-desk, $li-desk);
+    }
+  }
+}
+
 // Красная линия над текстом или заголовком (псевдоэлемент)
 @mixin red-line ($width, $top, $left:0) {
 
