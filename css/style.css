@@ -1572,7 +1572,7 @@ input[type=tel] {
 
 .requirements__item {
   margin-left: 57px;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   position: relative;
   color: #0f254c;
   font-family: "Roboto-thin", Arial, sans-serif;
@@ -1629,6 +1629,7 @@ input[type=tel] {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .requirements__sublist--market {
+    margin-bottom: 40px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
@@ -1640,6 +1641,9 @@ input[type=tel] {
   margin-bottom: 20px;
   padding-top: 85px;
   padding-left: 16px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-family: "Roboto-light", Arial, sans-serif;
   font-size: 16px;
   line-height: 23px;
@@ -1671,8 +1675,8 @@ input[type=tel] {
 .requirements__market {
   color: #315f87;
   width: 140px;
-  height: 250px;
-  padding-top: 150px;
+  height: 248px;
+  padding-top: 143px;
   padding-left: 12px;
   padding-right: 12px;
   font-family: "Roboto-light", Arial, sans-serif;
@@ -1684,6 +1688,8 @@ input[type=tel] {
   background-position: left 13px top;
   background-size: 114px 113px; }
   .requirements__market span {
+    display: block;
+    margin-top: 7px;
     font-family: "Roboto-bold", Arial, sans-serif;
     font-size: 24px;
     line-height: 28px;
@@ -1697,7 +1703,7 @@ input[type=tel] {
   color: #315f87;
   width: 142px;
   height: 220px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   padding-top: 180px;
   padding-left: 12px;
   padding-right: 12px;
@@ -1727,7 +1733,7 @@ input[type=tel] {
 .requirements__possess {
   color: #315f87;
   width: 142px;
-  height: 190px;
+  height: 200px;
   margin-bottom: 20px;
   padding-top: 150px;
   padding-left: 0;
@@ -2369,11 +2375,13 @@ input[type=tel] {
       padding-left: 50px;
       padding-right: 50px; }
     .invitation {
-      width: 768px;
+      margin-bottom: 68px;
+      width: 668px;
       height: 198px;
       background-image: url("../img/svg-sprite/bg-red-tablet.svg"); }
     .invitation__text {
-      padding: 37px 55px 0 34px;
+      padding: 0;
+      padding-top: 37px;
       font-family: "Roboto-light", Arial, sans-serif;
       font-size: 24px;
       line-height: 28px;
@@ -2609,6 +2617,8 @@ input[type=tel] {
       max-width: 1270px;
       padding-left: 50px;
       padding-right: 50px; }
+    .requirements {
+      margin-bottom: 80px; }
     .requirements__title {
       font-family: "Roboto-thin", Arial, sans-serif;
       font-size: 30px;
@@ -2620,7 +2630,8 @@ input[type=tel] {
         line-height: 35px;
         font-weight: 700; }
     .requirements__title {
-      width: 540px;
+      width: 550px;
+      margin-bottom: 74px;
       padding-left: 124px; }
       .requirements__title::before {
         content: "";
@@ -2641,35 +2652,43 @@ input[type=tel] {
         line-height: 28px;
         font-weight: 700; }
     .requirements__item {
+      margin-bottom: 45px;
       margin-left: 30px; }
       .requirements__item::before {
         left: -30px; }
-      .requirements__item--img1, .requirements__item--img2 {
-        margin-bottom: 130px;
+      .requirements__item--img1 {
+        margin-top: 82px;
         padding-bottom: 30px;
-        padding-left: 202px;
-        max-width: 500px; }
+        padding-left: 232px;
+        max-width: 550px; }
+      .requirements__item--img2 {
+        margin-top: 100px;
+        padding-bottom: 30px;
+        padding-left: 232px;
+        max-width: 550px; }
       .requirements__item--img1::before, .requirements__item--img2::before {
-        top: 20px; }
+        top: 12px; }
       .requirements__item--img1::after {
-        width: 132px;
+        width: 152px;
         height: 100px;
-        background-position: left 10px bottom;
+        background-position: left 30px bottom 7px;
         background-size: 122px 100px; }
       .requirements__item--img2::after {
-        width: 112px;
+        width: 136px;
         height: 140px;
-        background-position: left 10px bottom;
+        background-position: left 34px bottom;
         background-size: 102px 140px; }
     .requirements__sublist {
       margin-left: 0; }
+      .requirements__sublist--market {
+        margin-bottom: 66px; }
       .requirements__sublist--industry::after {
         content: "";
         width: 180px; }
     .requirements__industry {
       width: 180px;
       height: 130px;
-      margin-bottom: 34px;
+      margin-bottom: 40px;
       padding-top: 72px;
       padding-left: 22px;
       font-family: "Roboto-light", Arial, sans-serif;
@@ -2708,12 +2727,15 @@ input[type=tel] {
     .requirements__technology {
       width: 160px;
       height: 240px;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
       padding-top: 200px;
       padding-left: 12px;
-      padding-right: 12px; }
+      padding-right: 12px;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
       .requirements__technology--img1 {
-        background-position: left 15px top;
+        margin-left: 30px;
+        background-position: left 0 top;
         background-size: 122px 171px;
         background-image: url("../img/svg-sprite/technology1.svg"); }
       .requirements__technology--img2 {
@@ -2721,19 +2743,23 @@ input[type=tel] {
         background-size: 122px 155px;
         background-image: url("../img/svg-sprite/technology2.svg"); }
       .requirements__technology--img3 {
+        margin-right: 15px;
         background-position: left 23px top 40px;
         background-size: 114px 115px;
         background-image: url("../img/svg-sprite/technology3.svg"); }
     .requirements__possess--img1 {
-      background-position: left 10px top 10px;
+      width: 180px;
+      background-position: left 40px top 0;
       background-size: 95px 115px;
       background-image: url("../img/svg-sprite/possess1.svg"); }
     .requirements__possess--img2 {
-      background-position: left 10px top 13px;
+      margin-right: 10px;
+      background-position: left 10px top 3px;
       background-size: 122px 112px;
       background-image: url("../img/svg-sprite/possess2.svg"); }
     .requirements__possess--img3 {
-      background-position: left 10px top;
+      margin-right: 30px;
+      background-position: left 10px top -5px;
       background-size: 122px 124px;
       background-image: url("../img/svg-sprite/possess3.svg"); }
     .result {
@@ -3113,7 +3139,7 @@ input[type=tel] {
             align-self: center; }
       .criteria__item:nth-of-type(4) {
         margin-bottom: -20px;
-        width: 430px;
+        width: 433px;
         -ms-flex-item-align: end;
             align-self: flex-end; }
       .criteria__item:nth-of-type(5) {
@@ -3285,9 +3311,11 @@ input[type=tel] {
       padding-left: 135px;
       padding-right: 135px; }
     .invitation {
+      margin-bottom: 115px;
       width: 1440px;
       height: 283px;
-      background-image: url("../img/svg-sprite/bg-red.svg"); }
+      background-image: url("../img/svg-sprite/bg-red.svg");
+      background-size: 1170px; }
     .invitation__text {
       padding: 50px 71px 0 74px;
       font-family: "Roboto-light", Arial, sans-serif;
@@ -3522,14 +3550,15 @@ input[type=tel] {
         line-height: 49px;
         font-weight: 700; }
     .requirements__title {
-      width: 760px;
-      padding-left: 187px; }
+      width: 765px;
+      margin-bottom: 119px;
+      padding-left: 180px; }
       .requirements__title::before {
         content: "";
-        width: 143px;
+        width: 145px;
         height: 1px;
         position: absolute;
-        top: 24px;
+        top: 21px;
         left: 0;
         border-bottom: 1px solid #c96164; }
     .requirements__item {
@@ -3543,28 +3572,38 @@ input[type=tel] {
         line-height: 42px;
         font-weight: 700; }
     .requirements__item {
-      margin-left: 178px; }
+      margin-bottom: 95px;
+      margin-left: 172px; }
       .requirements__item::before {
-        left: -40px; }
-      .requirements__item--img1, .requirements__item--img2 {
-        margin-bottom: 150px;
+        left: -50px; }
+      .requirements__item--img1 {
+        margin-bottom: 140px;
         padding-bottom: 30px;
         padding-left: 335px;
-        max-width: 835px; }
+        max-width: 800px; }
+      .requirements__item--img2 {
+        margin-bottom: 136px;
+        padding-left: 335px;
+        max-width: 830px; }
       .requirements__item--img1::before, .requirements__item--img2::before {
-        top: 20px; }
+        top: 27px; }
       .requirements__item--img1::after {
         width: 215px;
         height: 163px;
-        background-position: left 15px bottom;
+        background-position: left 2px bottom -10px;
         background-size: 200px 163px; }
       .requirements__item--img2::after {
         width: 188px;
         height: 230px;
-        background-position: left 20px bottom;
+        background-position: left 10px bottom -25px;
         background-size: 168px 230px; }
     .requirements__sublist {
-      margin-left: 10px; }
+      margin-left: 8px;
+      margin-top: 72px; }
+      .requirements__sublist--market {
+        margin-bottom: 166px; }
+      .requirements__sublist--technology {
+        margin-top: 82px; }
       .requirements__sublist--industry::after {
         content: "";
         width: 278px; }
@@ -3615,8 +3654,10 @@ input[type=tel] {
     .requirements__technology {
       width: 167px;
       height: 300px;
-      margin-bottom: 30px;
-      padding-top: 260px;
+      margin-bottom: 85px;
+      margin-left: 0;
+      margin-right: 0;
+      padding-top: 275px;
       padding-left: 12px;
       padding-right: 12px;
       font-family: "Roboto-light", Arial, sans-serif;
@@ -3628,18 +3669,22 @@ input[type=tel] {
         background-size: 160px 223px;
         background-image: url("../img/svg-sprite/technology1.svg"); }
       .requirements__technology--img2 {
+        margin-left: 35px;
         background-position: left top 10px;
         background-size: 167px 213px;
         background-image: url("../img/svg-sprite/technology2.svg"); }
       .requirements__technology--img3 {
+        margin-right: 65px;
         width: 214px;
         background-position: left top 10px;
         background-size: 214px 217px;
         background-image: url("../img/svg-sprite/technology3.svg"); }
     .requirements__possess {
       height: 320px;
-      margin-bottom: 20px;
-      padding-top: 250px;
+      margin-bottom: 100px;
+      margin-left: 0;
+      margin-right: 0;
+      padding-top: 272px;
       padding-left: 0;
       padding-right: 0;
       font-family: "Roboto-light", Arial, sans-serif;
@@ -3650,17 +3695,18 @@ input[type=tel] {
       background-repeat: no-repeat; }
       .requirements__possess--img1 {
         width: 190px;
-        background-position: left 10px top;
+        background-position: left 10px top 18px;
         background-size: 168px 204px;
         background-image: url("../img/svg-sprite/possess1.svg"); }
       .requirements__possess--img2 {
         width: 255px;
-        background-position: left 20px top 20px;
+        background-position: left 20px top 34px;
         background-size: 204px 188px;
         background-image: url("../img/svg-sprite/possess2.svg"); }
       .requirements__possess--img3 {
+        margin-right: 70px;
         width: 190px;
-        background-position: left 3px top 20px;
+        background-position: left top 35px;
         background-size: 184px 188px;
         background-image: url("../img/svg-sprite/possess3.svg"); }
     .result {
