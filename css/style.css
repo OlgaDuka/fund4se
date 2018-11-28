@@ -451,6 +451,10 @@ input[type=tel] {
   background-position: center;
   position: relative; }
 
+.contacts__map {
+  width: 100%;
+  min-height: 486px; }
+
 .contacts__wrap {
   width: 284px;
   height: 250px;
@@ -820,6 +824,9 @@ input[type=tel] {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 290px 290px; }
+  .feedback__form--contacts {
+    background-image: url("../img/svg-sprite/feedback.svg");
+    background-size: 280px 208px; }
 
 .feedback__btn {
   border: none;
@@ -1999,6 +2006,8 @@ input[type=tel] {
       min-height: 260px;
       background-size: contain;
       background-image: url("../img/map-tablet@1x.jpg"); }
+    .contacts__map {
+      min-height: 260px; }
     .contacts__wrap {
       top: 20px;
       left: 70px; }
@@ -2296,6 +2305,8 @@ input[type=tel] {
       background-position: left top 12px;
       background-size: 150px 150px;
       position: relative; }
+      .feedback__form--contacts {
+        background-size: 200px 148px; }
     .feedback__btn {
       position: absolute;
       bottom: 42px;
@@ -2976,6 +2987,8 @@ input[type=tel] {
       min-height: 440px;
       margin-bottom: 100px;
       background-image: url("../img/map-desktop@1x.jpg"); }
+    .contacts__map {
+      min-height: 440px; }
     .contacts__wrap {
       top: 100px;
       left: 253px; }
@@ -3252,6 +3265,9 @@ input[type=tel] {
       padding-left: 417px;
       background-position: left top 12px;
       background-size: 314px 312px; }
+      .feedback__form--contacts {
+        background-position: left -75px top 12px;
+        background-size: 419px 311px; }
     .footer {
       max-width: 1440px;
       padding-left: 135px;
