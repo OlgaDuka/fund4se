@@ -111,8 +111,8 @@
     &--img1::after {
       width: 152px;
       height: 100px;
-      background-position: left 30px bottom 7px;
-      background-size: 122px 100px;
+      background-position: left 30px bottom 5px;
+      background-size: 120px 100px;
     }
 
     &--img2::after {
@@ -153,14 +153,14 @@
       width: 215px;
       height: 163px;
       background-position: left 2px bottom -10px;
-      background-size: 200px 163px;
+      background-size: 170px 163px;
     }
 
     &--img2::after {
       width: 188px;
       height: 230px;
       background-position: left 10px bottom -25px;
-      background-size: 168px 230px;
+      background-size: 130px 230px;
     }
   }
 }
