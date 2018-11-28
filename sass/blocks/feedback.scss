@@ -41,12 +41,21 @@
   background-position: top center;
   background-size: 290px 290px;
 
+  &--contacts {
+    background-image: url("../img/svg-sprite/feedback.svg");
+    background-size: 280px 208px;
+  }
+
   @include tablet {
     padding-top: 0;
     padding-left: 192px;
     background-position: left top 12px;
     background-size: 150px 150px;
     position: relative;
+
+    &--contacts {
+      background-size: 200px 148px;
+    }
   }
 
   @include desktop {
@@ -54,6 +63,11 @@
     padding-left: 417px;
     background-position: left top 12px;
     background-size: 314px 312px;
+
+    &--contacts {
+      background-position: left -75px top 12px;
+      background-size: 419px 311px;
+    }
   }
 }
 

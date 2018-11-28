@@ -39,6 +39,17 @@
 }
 
 .contacts__map {
+  width: 100%;
+  min-height: 486px;
+
+  @include tablet {
+    min-height: 260px;
+  }
+
+  @include desktop {
+    min-height: 440px;
+  }
+
 }
 
 
