@@ -16,6 +16,7 @@ var rename = require('gulp-rename');
 var imagemin = require('gulp-imagemin');
 var svgmin = require('gulp-svgmin');
 var svgstore = require('gulp-svgstore');
+var imageminJpegRecompress = require('imagemin-jpeg-recompress');
 var rigger = require('gulp-rigger');
 var del = require('del');
 var ghPages = require('gulp-gh-pages');
@@ -140,8 +141,13 @@ gulp.task('img:copy', function(done) {
 });
 
 gulp.task('img:minify', function(done) {
-  return gulp.src('build/img/**/*.{png,jpg,gif,svg}')
+  return gulp.src('img/**/*.{png,jpg,gif,svg}')
     .pipe(imagemin([
+      imageminJpegRecompress({
+        progressive: true,
+        max: 70,
+        min: 65
+      }),
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
