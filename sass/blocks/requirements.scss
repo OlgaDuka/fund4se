@@ -2,7 +2,11 @@
   @include container();
 
   @include tablet {
-    margin-bottom: 80px;
+    margin-bottom: 85px;
+  }
+
+  @include desktop {
+    margin-bottom: 125px;
   }
 }
 
@@ -49,8 +53,7 @@
     left: -57px;
   }
 
-  &--img1,
-  &--img2 {
+  &--img1 {
     margin-bottom: 50px;
     padding-bottom: 130px;
   }
@@ -92,20 +95,24 @@
     &--img1 {
       margin-top: 82px;
       padding-bottom: 30px;
-      padding-left: 232px;
-      max-width: 550px;
+      padding-left: 0;
+      padding-right: 300px;
+      max-width: 600px;
     }
 
     &--img2 {
       margin-top: 100px;
       padding-bottom: 30px;
-      padding-left: 232px;
-      max-width: 550px;
+      padding-left: 0;
+      padding-right: 300px;
+      max-width: 600px;
     }
 
-    &--img1::before,
-    &--img2::before {
-      top: 12px;
+    &--img1::after,
+    &--img2::after {
+      top: -20px;
+      left: auto;
+      right: 0;
     }
 
     &--img1::after {
@@ -118,6 +125,7 @@
     &--img2::after {
       width: 136px;
       height: 140px;
+      right: 20px;
       background-position: left 34px bottom;
       background-size: 102px 140px;
     }
@@ -133,34 +141,37 @@
 
     &--img1 {
       margin-bottom: 140px;
-      padding-bottom: 30px;
-      padding-left: 335px;
-      max-width: 800px;
+      padding-bottom: 40px;
+      padding-right: 473px;
+      max-width: 923px;
     }
 
     &--img2 {
-      margin-bottom: 136px;
-      padding-left: 335px;
-      max-width: 830px;
+      margin-bottom: 0;
+      padding-right: 500px;
+      max-width: 950px;
     }
 
     &--img1::before,
     &--img2::before {
-      top: 27px;
+      top: 18px;
     }
 
     &--img1::after {
       width: 215px;
       height: 163px;
-      background-position: left 2px bottom -10px;
-      background-size: 170px 163px;
+      top: -40px;
+      background-position: left 2px bottom;
+      background-size: 200px 163px;
     }
 
     &--img2::after {
       width: 188px;
       height: 230px;
-      background-position: left 10px bottom -25px;
-      background-size: 130px 230px;
+      top: -97px;
+      right: 57px;
+      background-position: left 10px bottom;
+      background-size: 157px 215px;
     }
   }
 }
