@@ -1599,7 +1599,7 @@ input[type=tel] {
     position: absolute;
     top: 0;
     left: -57px; }
-  .requirements__item--img1, .requirements__item--img2 {
+  .requirements__item--img1 {
     margin-bottom: 50px;
     padding-bottom: 130px; }
   .requirements__item--img2 {
@@ -2630,7 +2630,7 @@ input[type=tel] {
       padding-left: 50px;
       padding-right: 50px; }
     .requirements {
-      margin-bottom: 80px; }
+      margin-bottom: 85px; }
     .requirements__title {
       font-family: "Roboto-thin", Arial, sans-serif;
       font-size: 30px;
@@ -2671,15 +2671,19 @@ input[type=tel] {
       .requirements__item--img1 {
         margin-top: 82px;
         padding-bottom: 30px;
-        padding-left: 232px;
-        max-width: 550px; }
+        padding-left: 0;
+        padding-right: 300px;
+        max-width: 600px; }
       .requirements__item--img2 {
         margin-top: 100px;
         padding-bottom: 30px;
-        padding-left: 232px;
-        max-width: 550px; }
-      .requirements__item--img1::before, .requirements__item--img2::before {
-        top: 12px; }
+        padding-left: 0;
+        padding-right: 300px;
+        max-width: 600px; }
+      .requirements__item--img1::after, .requirements__item--img2::after {
+        top: -20px;
+        left: auto;
+        right: 0; }
       .requirements__item--img1::after {
         width: 152px;
         height: 100px;
@@ -2688,6 +2692,7 @@ input[type=tel] {
       .requirements__item--img2::after {
         width: 136px;
         height: 140px;
+        right: 20px;
         background-position: left 34px bottom;
         background-size: 102px 140px; }
     .requirements__sublist {
@@ -3556,6 +3561,8 @@ input[type=tel] {
       max-width: 1440px;
       padding-left: 135px;
       padding-right: 135px; }
+    .requirements {
+      margin-bottom: 125px; }
     .requirements__title {
       font-family: "Roboto-thin", Arial, sans-serif;
       font-size: 42px;
@@ -3595,25 +3602,28 @@ input[type=tel] {
         left: -50px; }
       .requirements__item--img1 {
         margin-bottom: 140px;
-        padding-bottom: 30px;
-        padding-left: 335px;
-        max-width: 800px; }
+        padding-bottom: 40px;
+        padding-right: 473px;
+        max-width: 923px; }
       .requirements__item--img2 {
-        margin-bottom: 136px;
-        padding-left: 335px;
-        max-width: 830px; }
+        margin-bottom: 0;
+        padding-right: 500px;
+        max-width: 950px; }
       .requirements__item--img1::before, .requirements__item--img2::before {
-        top: 27px; }
+        top: 18px; }
       .requirements__item--img1::after {
         width: 215px;
         height: 163px;
-        background-position: left 2px bottom -10px;
-        background-size: 170px 163px; }
+        top: -40px;
+        background-position: left 2px bottom;
+        background-size: 200px 163px; }
       .requirements__item--img2::after {
         width: 188px;
         height: 230px;
-        background-position: left 10px bottom -25px;
-        background-size: 130px 230px; }
+        top: -97px;
+        right: 57px;
+        background-position: left 10px bottom;
+        background-size: 157px 215px; }
     .requirements__sublist {
       margin-left: 8px;
       margin-top: 72px; }
