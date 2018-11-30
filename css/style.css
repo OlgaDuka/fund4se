@@ -824,9 +824,6 @@ input[type=tel] {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 290px 290px; }
-  .feedback__form--contacts {
-    background-image: url("../img/svg-sprite/feedback.svg");
-    background-size: 280px 208px; }
 
 .feedback__btn {
   border: none;
@@ -1640,6 +1637,11 @@ input[type=tel] {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
+  .requirements__sublist--industry {
+    max-width: 530px; }
+    .requirements__sublist--industry::after {
+      content: "";
+      width: 134px; }
 
 .requirements__industry {
   color: #315f87;
@@ -1979,7 +1981,7 @@ input[type=tel] {
 
 @media (min-width: 768px) {
     .actionplan {
-      max-width: 1270px;
+      max-width: 920px;
       padding-left: 50px;
       padding-right: 50px; }
     .actionplan {
@@ -1998,7 +2000,7 @@ input[type=tel] {
       padding-left: 0;
       padding-right: 0; }
     .contacts {
-      max-width: 1270px;
+      max-width: 920px;
       padding-left: 50px;
       padding-right: 50px; }
     .contacts {
@@ -2022,7 +2024,7 @@ input[type=tel] {
   .contacts__links {
     margin-top: 4px; }
     .content {
-      max-width: 1270px;
+      max-width: 920px;
       padding-left: 50px;
       padding-right: 0; }
     .content {
@@ -2121,7 +2123,7 @@ input[type=tel] {
       .content__link:active {
         background-color: #b3575a; }
     .criteria {
-      max-width: 1270px;
+      max-width: 920px;
       padding-left: 50px;
       padding-right: 50px; }
     .criteria__title {
@@ -2193,7 +2195,7 @@ input[type=tel] {
       .criteria__item:nth-of-type(5) {
         width: 370px; }
     .directions {
-      max-width: 1270px;
+      max-width: 920px;
       padding-left: 50px;
       padding-right: 50px; }
     .directions {
@@ -2273,7 +2275,7 @@ input[type=tel] {
       .directions__link:active {
         background-color: #b3575a; }
     .feedback {
-      max-width: 1270px;
+      max-width: 920px;
       padding-left: 50px;
       padding-right: 50px; }
     .feedback {
@@ -2305,9 +2307,6 @@ input[type=tel] {
       background-position: left top 12px;
       background-size: 150px 150px;
       position: relative; }
-      .feedback__form--contacts {
-        background-position: left -37px top 37px;
-        background-size: 200px 148px; }
     .feedback__btn {
       position: absolute;
       bottom: 42px;
@@ -2315,7 +2314,7 @@ input[type=tel] {
     .feedback__file-upload {
       margin-top: 14px; }
     .footer {
-      max-width: 1270px;
+      max-width: 920px;
       padding-left: 50px;
       padding-right: 50px; }
     .footer {
@@ -2373,7 +2372,7 @@ input[type=tel] {
       .footer__menu .menu__list .menu-item::before {
         top: 5px; }
     .header {
-      max-width: 1270px;
+      max-width: 920px;
       padding-left: 21px;
       padding-right: 33px; }
     .header {
@@ -2383,7 +2382,7 @@ input[type=tel] {
     .header__contacts {
       display: none; }
     .invitation {
-      max-width: 1270px;
+      max-width: 920px;
       padding-left: 50px;
       padding-right: 50px; }
     .invitation {
@@ -2404,7 +2403,7 @@ input[type=tel] {
         line-height: 28px;
         font-weight: 700; }
     .leaders {
-      max-width: 1270px;
+      max-width: 920px;
       padding-left: 50px;
       padding-right: 50px; }
     .leaders {
@@ -2451,7 +2450,7 @@ input[type=tel] {
     .main {
       margin-top: 62px; }
     .main__hero {
-      max-width: 1270px;
+      max-width: 920px;
       padding-left: 50px;
       padding-right: 0; }
       .main__hero--about {
@@ -2544,8 +2543,12 @@ input[type=tel] {
               flex-direction: row;
       margin-bottom: 0; }
       .persona--team1, .persona--team2 {
+        max-width: 297px;
         margin-bottom: 50px; }
+      .persona--team3 {
+        max-width: 297px; }
       .persona--lider1 {
+        max-width: 325px;
         margin-right: 24px;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: reverse;
@@ -2555,6 +2558,7 @@ input[type=tel] {
             -ms-flex-pack: end;
                 justify-content: flex-end; }
       .persona--lider2 {
+        max-width: 325px;
         margin-top: 125px;
         margin-right: 6px; }
     .persona__info {
@@ -2626,7 +2630,7 @@ input[type=tel] {
         line-height: 18px;
         font-weight: 300; }
     .requirements {
-      max-width: 1270px;
+      max-width: 920px;
       padding-left: 50px;
       padding-right: 50px; }
     .requirements {
@@ -2699,9 +2703,11 @@ input[type=tel] {
       margin-left: 0; }
       .requirements__sublist--market {
         margin-bottom: 66px; }
-      .requirements__sublist--industry::after {
-        content: "";
-        width: 180px; }
+      .requirements__sublist--industry {
+        max-width: 700px; }
+        .requirements__sublist--industry::after {
+          content: "";
+          width: 180px; }
     .requirements__industry {
       width: 180px;
       height: 130px;
@@ -2780,7 +2786,7 @@ input[type=tel] {
       background-size: 122px 124px;
       background-image: url("../img/svg-sprite/possess3.svg"); }
     .result {
-      max-width: 1270px;
+      max-width: 920px;
       padding-left: 50px;
       padding-right: 50px; }
     .result {
@@ -2811,7 +2817,7 @@ input[type=tel] {
         left: 0;
         border-bottom: 1px solid #c96164; }
     .strategy {
-      max-width: 1270px;
+      max-width: 920px;
       padding-left: 50px;
       padding-right: 50px; }
     .strategy {
@@ -2833,6 +2839,7 @@ input[type=tel] {
     .strategy__list {
       padding-left: 0;
       width: 100%;
+      max-width: 710px;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
@@ -2870,7 +2877,7 @@ input[type=tel] {
       .strategy__item:nth-child(5) {
         margin-top: 90px; }
     .target {
-      max-width: 1270px;
+      max-width: 920px;
       padding-left: 50px;
       padding-right: 50px; }
     .target {
@@ -2921,7 +2928,7 @@ input[type=tel] {
         bottom: 20px;
         left: 95px; }
     .team {
-      max-width: 1270px;
+      max-width: 920px;
       padding-left: 50px;
       padding-right: 50px; }
     .team {
@@ -2940,6 +2947,7 @@ input[type=tel] {
         border-right: 1px solid #c96164;
         z-index: -1; }
     .team__wrap {
+      max-width: 700px;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
@@ -3271,9 +3279,6 @@ input[type=tel] {
       padding-left: 417px;
       background-position: left top 12px;
       background-size: 314px 312px; }
-      .feedback__form--contacts {
-        background-position: left -75px top 12px;
-        background-size: 419px 311px; }
     .footer {
       max-width: 1440px;
       padding-left: 135px;
@@ -3461,9 +3466,13 @@ input[type=tel] {
       left: -22px;
       top: 8px;
       width: 17px; }
+    .persona--team1, .persona--team2, .persona--team3 {
+      max-width: 349px; }
     .persona--lider1 {
+      max-width: 547px;
       margin-right: 57px; }
     .persona--lider2 {
+      max-width: 547px;
       margin-top: 186px;
       margin-right: 0; }
     .persona__info {
@@ -3631,9 +3640,11 @@ input[type=tel] {
         margin-bottom: 166px; }
       .requirements__sublist--technology {
         margin-top: 82px; }
-      .requirements__sublist--industry::after {
-        content: "";
-        width: 278px; }
+      .requirements__sublist--industry {
+        max-width: 100%; }
+        .requirements__sublist--industry::after {
+          content: "";
+          width: 278px; }
     .requirements__industry {
       width: 278px;
       height: 201px;
@@ -3782,6 +3793,7 @@ input[type=tel] {
         left: 0;
         border-bottom: 1px solid #c96164; }
     .strategy__list {
+      max-width: 1170px;
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start; }
@@ -3870,7 +3882,9 @@ input[type=tel] {
         top: -503px;
         right: -385px;
         width: 385px;
-        height: 532px; } }
+        height: 532px; }
+    .team__wrap {
+      max-width: 100%; } }
 
 @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1440px) and (min-resolution: 144dpi), (min-width: 1440px) and (min-resolution: 1.5dppx) {
     .contacts {
