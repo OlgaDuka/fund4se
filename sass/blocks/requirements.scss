@@ -190,6 +190,15 @@
     justify-content: flex-start;
   }
 
+  &--industry {
+    max-width: 530px;
+
+    &::after {
+      content: "";
+      width: 134px;
+    }
+  }
+
   @include tablet {
     margin-left: 0;
 
@@ -198,6 +207,8 @@
     }
 
     &--industry {
+      max-width: 700px;
+
       &::after {
         content: "";
         width: 180px;
@@ -218,6 +229,7 @@
     }
 
     &--industry {
+      max-width: 100%;
       &::after {
         content: "";
         width: 278px;

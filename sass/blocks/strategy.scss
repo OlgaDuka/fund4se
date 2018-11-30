@@ -44,6 +44,7 @@
   @include tablet {
     padding-left: 0;
     width: 100%;
+    max-width: 710px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -55,6 +56,7 @@
   }
 
   @include desktop {
+    max-width: 1170px;
     justify-content: flex-start;
   }
 }

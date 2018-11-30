@@ -31,16 +31,23 @@
 
     &--team1,
     &--team2 {
+      max-width: 297px;
       margin-bottom: 50px;
     }
 
+    &--team3 {
+      max-width: 297px;
+    }
+
     &--lider1 {
+      max-width: 325px;
       margin-right: 24px;
       flex-direction: row-reverse;
       justify-content: flex-end;
     }
 
     &--lider2 {
+      max-width: 325px;
       margin-top: 125px;
       margin-right: 6px;
     }
@@ -48,11 +55,19 @@
 
   @include desktop {
 
+    &--team1,
+    &--team2,
+    &--team3 {
+      max-width: 349px;
+    }
+
     &--lider1 {
+      max-width: 547px;
       margin-right: 57px;
     }
 
     &--lider2 {
+      max-width: 547px;
       margin-top: 186px;
       margin-right: 0;
     }
