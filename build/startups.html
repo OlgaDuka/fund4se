@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FUND4SE</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#000000">
+  <link rel="manifest" href="img/favicons/manifest.json">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+  <script type="text/javascript" src="js/libraries/picturefill.min.js" async=""></script>
+</head>
+
+<body>
+
+  <div class="header" id="top">
+  
+    <div class="header__logo logo">
+      <h1 class="header__title visually-hidden">FUND4SE</h1>
+    </div>
+  
+    <button class="header__burger">Toggle menu</button>
+  
+    <nav class="header__menu menu menu--nojs">
+      <ul class="menu__list">
+        <li class="menu-item menu-item--active"><a href="index.html">Main</a></li>
+        <li class="menu-item"><a href="about.html">About</a></li>
+        <li class="menu-item"><a href="investors.html">For Investors</a></li>
+        <li class="menu-item"><a href="startups.html">For Startups</a></li>
+        <li class="menu-item"><a href="contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
+  
+    <div class="header__contacts">
+      <p class="contacts__text">Fund for Sustainability and Energy<br>
+        1 George street #10-01<br>
+        Singapore<br>
+        049145
+      </p>
+      <p class="contacts__links">
+        <a class="contacts__link  contacts__link--call" href="tel:+65 9116 1074">+65 9116 1074</a><br>
+        <a class="contacts__link  contacts__link--mailto" href="mailto:info@f4se.com">info@f4se.com</a><br>
+      </p>
+    </div>
+  
+  </div>
+
+  <main class="main">
+
+    <div class="main__hero main__hero--startups">
+      <h1 class="main__title">For<br> Startups</h1>
+      <p class="main__text main__text--blue">We are actively seeking for investment projects. We offer not just financing but "smart money". It means that besides the funding we help your project to build a network of partners, to organize your operations in the most effective way, to develop your marketing and sales activities, to obtain resources essential for the project, to prepare the company to become public.</p>
+    </div>
+
+    <section class="requirements">
+      <h2 class="requirements__title">Here are our requirements to the projects <span>we invest in:</span></h2>
+      <ul class="requirements__list">
+        <li class="requirements__item" data-num="1.">The target industry is
+          <ul class="requirements__sublist requirements__sublist--industry">
+            <li class="requirements__industry requirements__industry--img1">Renewable and “green” energy</li>
+            <li class="requirements__industry requirements__industry--img2">Energy and related costs savings</li>
+            <li class="requirements__industry requirements__industry--img3">Efficiency in energy generation</li>
+            <li class="requirements__industry requirements__industry--img4">Facility maintenance efficiency</li>
+            <li class="requirements__industry requirements__industry--img5">Sustainability and wellness</li>
+          </ul>
+        </li>
+        <li class="requirements__item" data-num="2.">The target market
+          <ul class="requirements__sublist requirements__sublist--market">
+            <li class="requirements__market requirements__market--img1">Exceeds<br><span>$1 bln</span></li>
+            <li class="requirements__market requirements__market--img2">With growth rate exceeding 10% a year<br><span>10%</span></li>
+          </ul>
+        </li>
+        <li class="requirements__item" data-num="3.">Your technology is
+          <ul class="requirements__sublist requirements__sublist--technology">
+            <li class="requirements__technology requirements__technology--img1">Cutting-edge</li>
+            <li class="requirements__technology requirements__technology--img2">Reliable</li>
+            <li class="requirements__technology requirements__technology--img3">Competitive one</li>
+          </ul>
+        </li>
+        <li class="requirements__item" data-num="4.">You possess a
+          <ul class="requirements__sublist">
+            <li class="requirements__possess requirements__possess--img1">Proven technical process</li>
+            <li class="requirements__possess requirements__possess--img2">Approved manufacture</li>
+            <li class="requirements__possess requirements__possess--img3">Ability to scale a production up</li>
+          </ul>
+        </li>
+        <li class="requirements__item requirements__item--img1" data-num="5.">Your consumers benefit from sufficient cost savings</li>
+        <li class="requirements__item requirements__item--img2" data-num="6.">You have an existing orders pipeline (as an advantage)</li>
+      </ul>
+    </section>
+
+    <div class="invitation">
+      <p class="invitation__text">If your project fits our requirements please send us its description and we will definitely discuss investment <span>opportunity with you.</span></p>
+    </div>
+
+    <section class="feedback">
+      <h2 class="feedback__title">Write to <span>Us</span></h2>
+      <form class="feedback__form" id="feedback">
+        <div class="feedback__input-box">
+          <input class="feedback__input" type="text" id="name" name="name" autocomplete="off" required>
+          <label for="name" class="feedback__label">Full name<sup>*</sup></label>
+        </div>
+        <div class="feedback__input-box">
+          <input class="feedback__input" type="email" id="email" name="email" autocomplete="off" required>
+          <label for="email" class="feedback__label">Your E-mail</label>
+        </div>
+        <div class="feedback__input-box">
+          <input class="feedback__input" type="text" id="subject" name="subject" autocomplete="off" required>
+          <label for="subject" class="feedback__label">Subject</label>
+        </div>
+        <div class="feedback__input-box">
+          <textarea class="feedback__textarea" id="message" name="message" rows="1" wrap="off" autocomplete="off"></textarea>
+          <label for="message" class="feedback__label">Message text<sup>*</sup></label>
+        </div>
+        <div class="feedback__file-upload">
+          <label>
+            <input type="file" name="file">
+            <span>Add file (doc, pdf) ~5MB</span>
+          </label>
+        </div>
+        <input type="text" id="filename" class="feedback__filename" value="text.pdf" disabled>
+        <button class="feedback__btn" type="submit">Send</button>
+      </form>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__map map" id="map"></div>
+      <div class="contacts__wrap">
+        <h2 class="contacts__title">F4SE</h2>
+        <p class="contacts__text">Fund for Sustainability and Energy<br>
+          1 George street #10-01<br>
+          Singapore<br>
+          049145
+        </p>
+
+        <p class="contacts__links">
+          <a class="contacts__link  contacts__link--mailto" href="mailto:info@f4se.com">info@f4se.com</a><br>
+          <a class="contacts__link  contacts__link--call" href="tel:+65 9116 1074">+65 9116 1074</a><br>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+      <footer class="footer">
+      
+        <div class="footer__logo logo"></div>
+      
+        <p class="footer__text">We invest in sustainable development. You invest in sustainable profitable fund.</p>
+        <p class="footer__text">Fund for Sustainability and Energy 1&nbsp;George&nbsp;street #10-01 Singapore 049145</p>
+        <p class="footer__links">
+          <a class="footer__link  footer__link--call" href="tel:+65 9116 1074">+65 9116 1074</a>
+          <a class="footer__link  footer__link--mailto" href="mailto:info@f4se.com">info@f4se.com</a><br>
+        </p>
+      
+        <nav class="footer__menu menu">
+          <ul class="menu__list">
+            <li class="menu-item"><a href="index.html">Main</a></li>
+            <li class="menu-item"><a href="about.html">About</a></li>
+            <li class="menu-item"><a href="investors.html">For Investors</a></li>
+            <li class="menu-item"><a href="startups.html">For Startups</a></li>
+            <li class="menu-item"><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+      
+        <a class="footer__up-btn" id="footer__up-btn" href="#top" aria-label="Back_to_top"></a>
+      
+      </footer>
+
+      <!-- Тут подключаются обязательные для всего сайта скрипты -->
+      <script src="js/libraries/jquery.min.js"></script>
+      <script src="js/ie-support.min.js"></script>
+      <script src="js/libraries/svg4everybody.min.js"></script>
+      <script src="js/scroll.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- Скрипты для отдельной страницы подключайте сюда -->
+      <!--<script src="js/animate.js"></script>-->
+
+</body>
+
+</html>
