@@ -70,6 +70,17 @@
     }
   }
 
+  @include tablet-maxi {
+    &--about,
+    &--investors,
+    &--startups {
+     .main__text {
+        width: 50%;
+        @include font-light(16px, 26px);
+      }
+    }
+  }
+
   @include desktop {
     margin-bottom: 119px;
     height: 382px;

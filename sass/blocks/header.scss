@@ -1,6 +1,7 @@
 .header {
   @include container(18px, 18px, 21px, 33px, 44px, 57px);
   width: 100%;
+  padding-top: 0;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -14,6 +15,7 @@
   z-index: 10;
 
   &--opened {
+    padding-top: 10px;
     height: auto;
     flex-wrap: wrap;
   }

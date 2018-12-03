@@ -131,6 +131,10 @@
     }
   }
 
+  @include tablet-maxi {
+    margin-left: 123px;
+  }
+
   @include desktop {
     margin-bottom: 95px;
     margin-left: 172px;
@@ -192,6 +196,7 @@
 
   &--industry {
     max-width: 530px;
+    justify-content: space-around;
 
     &::after {
       content: "";
@@ -252,7 +257,7 @@
   background-repeat: no-repeat;
 
   @include tablet {
-    width: 180px;
+    min-width: 180px;
     height: 130px;
     margin-bottom: 40px;
     padding-top: 72px;

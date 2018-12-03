@@ -94,13 +94,32 @@
   padding-right: 18px;
 
   @include title-light($navi-blue, 24px, 39px, 24px, 39px, 36px, 59px);
+  position: relative;
 
-  border-left: 1px solid $red-peach;
+  &::before {
+    content: "";
+    width: 13px;
+    height: 9px;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    background-image: url("../img/svg-sprite/arrow-criteria.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
 
   @include tablet {
     margin-bottom: 25px;
     padding-left: 47px;
     padding-right: 0;
+
+    &::before {
+      top: 10px;
+      width: 26px;
+      height: 18px;
+      background-size: cover;
+    }
 
     &:nth-of-type(1) {
       width: 320px;
@@ -130,6 +149,12 @@
   @include desktop {
     margin-bottom: 12px;
     padding-left: 63px;
+
+    &::before {
+      top: 18px;
+      width: 30px;
+      height: 20px;
+    }
 
     &:nth-of-type(1) {
 

@@ -44,6 +44,19 @@
       margin-right: 24px;
       flex-direction: row-reverse;
       justify-content: flex-end;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: -51px;
+        top: 69px;
+        width: 100px;
+        height: 403px;
+        border-top: 1px solid $red-peach;
+        border-right: 1px solid $red-peach;
+        z-index: -1;
+      }
     }
 
     &--lider2 {
@@ -64,6 +77,16 @@
     &--lider1 {
       max-width: 547px;
       margin-right: 57px;
+
+      &::after {
+        right: -161px;
+        top: 107px;
+        width: 170px;
+        height: 531px;
+        border-top: 1px solid $red-peach;
+        border-right: 1px solid $red-peach;
+        z-index: -1;
+      }
     }
 
     &--lider2 {
@@ -174,7 +197,7 @@
   margin-top: 0;
   margin-bottom: 10px;
 
-//  @include title($navi-blue, 24px, 28px, 24px, 28px, 36px, 42px, transparent, uppercase);
+  @include title($navi-blue, 24px, 28px, 24px, 28px, 36px, 42px, transparent, uppercase);
 
   @include desktop {
     margin-bottom: 15px;
@@ -183,7 +206,7 @@
   &--team {
     margin-top: 4px;
     width: 140px;
-//    @include title($navi-blue, 24px, 28px, 18px, 21px, 24px, 28px, transparent, uppercase);
+    @include title($navi-blue, 24px, 28px, 18px, 21px, 24px, 28px, transparent, uppercase);
 
     @include desktop {
       margin-bottom: 12px;
