@@ -7,7 +7,8 @@
 *.sublime*
 css/*.css
 node_modules/
+.publish/
+build/
 design/
 npm-debug.*
-.publish
 Thumbs.db

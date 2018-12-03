@@ -50,7 +50,7 @@
   }
 
   @include desktop {
-    margin-left: 99px;
+    margin-left: 0;
 
     &::after {
       height: 89%;
@@ -72,11 +72,38 @@
   @include tablet {
     margin-left: 0;
     margin-right: 0;
-    max-width: 325px;
+    max-width: 45%;
+  }
+
+  @include tablet-maxi {
+    .content__title,
+    .content__title span {
+      font-size: 30px;
+      line-height: 36px;
+    }
   }
 
   @include desktop {
-    max-width: 490px;
+    max-width: 38%;
+    .content__title,
+    .content__title span {
+      font-size: 46px;
+      line-height: 54px;
+    }
+  }
+
+  @include desktop-maxi {
+    max-width: 45%;
+
+    .content__title {
+      font-size: 62px;
+      line-height: 70px;
+
+      span {
+        font-size: 58px;
+        line-height: 70px;
+      }
+    }
   }
 }
 

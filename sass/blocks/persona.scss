@@ -174,7 +174,7 @@
   margin-top: 0;
   margin-bottom: 10px;
 
-  @include title($navi-blue, 24px, 28px, 24px, 28px, 36px, 42px, transparent, uppercase);
+//  @include title($navi-blue, 24px, 28px, 24px, 28px, 36px, 42px, transparent, uppercase);
 
   @include desktop {
     margin-bottom: 15px;
@@ -183,7 +183,7 @@
   &--team {
     margin-top: 4px;
     width: 140px;
-    @include title($navi-blue, 24px, 28px, 18px, 21px, 24px, 28px, transparent, uppercase);
+//    @include title($navi-blue, 24px, 28px, 18px, 21px, 24px, 28px, transparent, uppercase);
 
     @include desktop {
       margin-bottom: 12px;

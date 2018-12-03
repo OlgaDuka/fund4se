@@ -272,55 +272,56 @@
   &--img1 {
     background-image: url("../img/svg-sprite/industry1.svg");
     background-position: left 10px top 10px;
-    background-size: 45px 45px;
+    background-size: 50px 50px;
   }
 
   &--img2 {
     background-image: url("../img/svg-sprite/industry2.svg");
-    background-size: 30px 35px;
+    background-size: 33px 37px;
     background-position: left 18px top 15px;
   }
 
   &--img3 {
     background-image: url("../img/svg-sprite/industry3.svg");
-    background-size: 37px 32px;
+    background-size: 42px 37px;
     background-position: left 17px top 21px;
   }
 
   &--img4 {
     background-image: url("../img/svg-sprite/industry4.svg");
-    background-size: 36px 22px;
+    background-size: 40px 27px;
     background-position: left 20px top 24px;
   }
 
   &--img5 {
     background-image: url("../img/svg-sprite/industry5.svg");
-    background-size: 34px 32px;
+    background-size: 38px 36px;
     background-position: left 24px top 18px;
   }
 
   @include tablet {
     &--img1 {
       background-position: left 15px top 14px;
-      background-size: 34px 34px;
+      background-size: 40px 40px;
     }
 
     &--img2 {
+      background-size: 30px 35px;
       background-position: left 20px top 13px;
     }
 
     &--img3 {
-      background-size: 30px 28px;
+      background-size: 35px 33px;
       background-position: left 21px top 17px;
     }
 
     &--img4 {
-      background-size: 30px 14px;
+      background-size: 35px 22px;
       background-position: left 17px top 22px;
     }
 
     &--img5 {
-      background-size: 30px 28px;
+      background-size: 33px 30px;
       background-position: left 20px top 16px;
     }
   }
@@ -328,25 +329,26 @@
   @include desktop {
     &--img1 {
       background-position: left 25px top 21px;
-      background-size: 45px 44px;
+      background-size: 55px 55px;
     }
 
     &--img2 {
+      background-size: 40px 45px;
       background-position: left 30px top 27px;
     }
 
     &--img3 {
-      background-size: 37px 32px;
+      background-size: 47px 42px;
       background-position: left 22px top 26px;
     }
 
     &--img4 {
-      background-size: 36px 22px;
+      background-size: 46px 35px;
       background-position: left 29px top 28px;
     }
 
     &--img5 {
-      background-size: 34px 32px;
+      background-size: 44px 42px;
       background-position: left 22px top 18px;
     }
   }

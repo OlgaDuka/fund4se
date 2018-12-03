@@ -7,6 +7,7 @@
   @include tablet {
     flex-direction: row;
     justify-content: space-between;
+    align-items: stretch;
     margin-bottom: 64px;
   }
 
@@ -37,21 +38,14 @@
 .directions__business {
   margin: 0;
   min-width: 289px;
-  max-width: 510px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 
   @include tablet {
-
-    &:first-of-type {
-      margin-right: 70px;
-    }
+    width: 48%;
   }
 
-  @include desktop {
-
-    &:first-of-type {
-      margin-right: 150px;
-    }
-  }
 }
 
 .directions__img {
@@ -75,7 +69,6 @@
     @include font-light(16px, 26px);
     margin-top: 19px;
     margin-bottom: 29px;
-    padding-right: 25px;
   }
 }
 
