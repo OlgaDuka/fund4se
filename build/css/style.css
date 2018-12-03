@@ -1040,7 +1040,11 @@ input[type=tel] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  background-image: url("../img/svg-sprite/f4n.svg");
+  background-repeat: no-repeat;
+  background-position: left 30% top 0;
+  background-size: contain; }
 
 .footer__logo {
   margin-top: 0;

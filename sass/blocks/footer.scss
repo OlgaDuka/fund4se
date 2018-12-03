@@ -4,6 +4,10 @@
   padding-bottom: 112px;
   display: flex;
   flex-direction: column;
+  background-image: url("../img/svg-sprite/f4n.svg");
+  background-repeat: no-repeat;
+  background-position: left 30% top 0;
+  background-size: contain;
 
   @include tablet {
     height: 160px;
