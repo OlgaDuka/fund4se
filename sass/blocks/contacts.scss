@@ -1,5 +1,5 @@
 .contacts {
-  @include container(0, 0, 50px, 50px, 135px, 135px);
+  @include container();
   margin-bottom: 63px;
   width: 100%;
   height: auto;

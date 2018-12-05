@@ -1,5 +1,5 @@
 .content {
-  @include container(0, 0, 50px, 0, 133px, 0);
+  @include container(0, 0, 50px, 0, 50px, 0);
   margin-bottom: 25px;
 
   @include tablet {
@@ -72,7 +72,7 @@
   @include tablet {
     margin-left: 0;
     margin-right: 0;
-    max-width: 45%;
+    max-width: 50%;
   }
 
   @include tablet-maxi {
@@ -109,7 +109,7 @@
 
 .content__title {
   margin-bottom: 20px;
-  @include title($navi-blue, 32px, 37px, 24px, 28px, 46px, 54px, $red-peach);
+  @include title($navi-blue, 32px, 37px, 24px, 28px, 44px, 54px, $red-peach);
 
   @include tablet {
     margin-top: 25px;

@@ -1,5 +1,5 @@
 // Универсальный контейнер
-@mixin container ($lMob:18px, $rMob:18px, $lTabl:50px, $rTabl:50px, $lDesk:135px, $rDesk:135px) {
+@mixin container ($lMob:18px, $rMob:18px, $lTabl:50px, $rTabl:50px, $lDesk:50px, $rDesk:50px) {
   margin: 0 auto;
   min-width: $mobile-width;
   padding-left: $lMob;
@@ -16,7 +16,7 @@
 
   @media (min-width: $desktop-width) {
     min-width: $desktop-width;
-    max-width: 100%;
+    max-width: $desktop-maxi;
     padding-left: $lDesk;
     padding-right: $rDesk;
   }
