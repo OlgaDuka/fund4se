@@ -7,8 +7,8 @@
   flex-direction: column;
   background-image: url("../img/svg-sprite/f4n.svg");
   background-repeat: no-repeat;
-  background-position: left 0 bottom -170px;
-  background-size:  910px 910px;
+  background-position: left 0 bottom 0;
+  background-size:  1000px 548px;
 
   @include tablet {
     height: 232px;
@@ -16,8 +16,8 @@
     flex-wrap: wrap;
     padding-top: 72px;
     padding-bottom: 20px;
-    background-position: right -400px bottom -358px;
-    background-size:  910px 910px;
+    background-position: left 300px bottom -33px;
+    background-size:  862px 274px;
   }
 
   @include desktop {
@@ -26,8 +26,7 @@
     flex-wrap: wrap;
     padding-top: 110px;
     padding-bottom: 20px;
-    background-position: left 483px bottom -310px;
-    background-size:  910px 910px;
+    background-position: left 483px bottom 0;
   }
 }
 

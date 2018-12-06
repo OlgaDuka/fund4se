@@ -40,7 +40,8 @@
 
 .team__wrap {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   background-color: transparent;
 
   @include tablet {

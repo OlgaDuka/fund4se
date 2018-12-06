@@ -1044,8 +1044,8 @@ input[type=tel] {
           flex-direction: column;
   background-image: url("../img/svg-sprite/f4n.svg");
   background-repeat: no-repeat;
-  background-position: left 0 bottom -170px;
-  background-size: 910px 910px; }
+  background-position: left 0 bottom 0;
+  background-size: 1000px 548px; }
 
 .footer__logo {
   margin-top: 0;
@@ -1222,8 +1222,8 @@ input[type=tel] {
 .leaders {
   margin: 0 auto;
   min-width: 320px;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 18px;
+  padding-right: 18px;
   padding-top: 0;
   padding-bottom: 0;
   max-width: 768px;
@@ -1242,10 +1242,12 @@ input[type=tel] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .leaders__title {
   width: 210px;
@@ -1449,6 +1451,8 @@ input[type=tel] {
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
+  min-width: 283px;
+  max-width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1466,9 +1470,6 @@ input[type=tel] {
   .persona--team3 .persona__wrap {
     top: -137px;
     left: 106px; }
-
-.persona__img {
-  width: 100%; }
 
 .persona__info {
   width: 160px;
@@ -1990,10 +1991,12 @@ input[type=tel] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: transparent; }
 
 @media (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (max-width: 767px) and (min-resolution: 144dpi), (min-width: 320px) and (max-width: 767px) and (min-resolution: 1.5dppx) {
@@ -2364,8 +2367,8 @@ input[type=tel] {
           flex-wrap: wrap;
       padding-top: 72px;
       padding-bottom: 20px;
-      background-position: right -400px bottom -358px;
-      background-size: 910px 910px; }
+      background-position: left 300px bottom -33px;
+      background-size: 862px 274px; }
     .footer__logo {
       width: 140px;
       height: 42px;
@@ -2451,10 +2454,8 @@ input[type=tel] {
     .leaders__wrap {
       margin-bottom: 40px; }
     .leaders__wrapper {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
@@ -3365,8 +3366,7 @@ input[type=tel] {
           flex-wrap: wrap;
       padding-top: 110px;
       padding-bottom: 20px;
-      background-position: left 483px bottom -310px;
-      background-size: 910px 910px; }
+      background-position: left 483px bottom 0; }
     .footer__logo {
       width: 144px;
       height: 44px; }

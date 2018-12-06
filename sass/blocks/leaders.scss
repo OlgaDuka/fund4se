@@ -1,5 +1,5 @@
 .leaders {
-  @include container(0, 0, 50px, 50px, 27px, 27px);
+  @include container(18px, 18px, 50px, 50px, 27px, 27px);
   margin-bottom: 99px;
 
   @include tablet {
@@ -28,10 +28,11 @@
 
 .leaders__wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 
   @include tablet {
-    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
   }
 }
