@@ -1,14 +1,7 @@
 .team {
   @include container();
-  margin-bottom: 86px;
-
-  @include tablet {
-    margin-bottom: 72px;
-  }
-
-  @include tablet {
-    margin-bottom: 110px;
-  }
+  margin-bottom: 0;
+  background-color: transparent;
 }
 
 .team__title {
@@ -20,12 +13,13 @@
 
   @include tablet {
     margin-bottom: 58px;
+    width: 100%;
 
     &::before {
       left: auto;
       top: 19px;
-      right: -161px;
-      width: 161px;
+      left: 230px;
+      width: 35%;
       height: 1px;
       border: none;
       border-top: 1px solid $red-peach;
@@ -35,13 +29,10 @@
 
   @include desktop {
     margin-bottom: 108px;
-    width: 333px;
 
     &::before {
       top: 27px;
       left: 314px;
-      width: calc(385px + ((100vw - 1440px) / 3) * 2);
-    //  width: 425px;
       height: 532px;
     }
   }
@@ -50,6 +41,7 @@
 .team__wrap {
   display: flex;
   flex-direction: column;
+  background-color: transparent;
 
   @include tablet {
     //max-width: 700px;

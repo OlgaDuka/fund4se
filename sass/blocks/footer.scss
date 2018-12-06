@@ -2,25 +2,32 @@
   @include container();
   width: 100%;
   padding-bottom: 112px;
+  padding-top: 86px;
   display: flex;
   flex-direction: column;
   background-image: url("../img/svg-sprite/f4n.svg");
   background-repeat: no-repeat;
-  background-position: left 30% top 0;
-  background-size: contain;
+  background-position: left 0 bottom -170px;
+  background-size:  910px 910px;
 
   @include tablet {
-    height: 160px;
+    height: 232px;
     flex-direction: column;
     flex-wrap: wrap;
+    padding-top: 72px;
     padding-bottom: 20px;
+    background-position: right -400px bottom -358px;
+    background-size:  910px 910px;
   }
 
   @include desktop {
-    height: 240px;
+    height: 350px;
     flex-direction: column;
     flex-wrap: wrap;
+    padding-top: 110px;
     padding-bottom: 20px;
+    background-position: left 483px bottom -310px;
+    background-size:  910px 910px;
   }
 }
 

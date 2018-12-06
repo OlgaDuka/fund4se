@@ -1,5 +1,5 @@
 .leaders {
-  @include container();
+  @include container(0, 0, 50px, 50px, 27px, 27px);
   margin-bottom: 99px;
 
   @include tablet {
