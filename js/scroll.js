@@ -1,4 +1,5 @@
 'use strict';
+
 $(document).ready(function () {
   var limit = $(window).height() / 3;
   var $backToTop = $('#footer__up-btn');

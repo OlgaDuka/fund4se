@@ -484,7 +484,63 @@ input[type=tel] {
   margin: 0; }
 
 .contacts__link {
-  color: #1b1b1b; }
+  color: #1b1b1b;
+  text-decoration: none;
+  position: relative; }
+  .contacts__link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #1b1b1b;
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out; }
+  .contacts__link:hover {
+    color: #1b1b1b; }
+  .contacts__link:hover::before {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    background-color: #1b1b1b;
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left; }
+  .contacts__link:active {
+    opacity: 0.5; }
+
+.contacts__link--mailto {
+  color: #1b1b1b;
+  text-decoration: none;
+  position: relative; }
+  .contacts__link--mailto::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #1b1b1b;
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out; }
+  .contacts__link--mailto:hover {
+    color: #1b1b1b; }
+  .contacts__link--mailto:hover::before {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left; }
 
 .contacts__link--call {
   text-decoration: none;
@@ -1067,18 +1123,70 @@ input[type=tel] {
 
 .footer__link--mailto {
   color: #1b1b1b;
+  text-decoration: none;
+  position: relative;
   font-family: "Roboto-bold", Arial, sans-serif;
   font-size: 16px;
   line-height: 26px;
   font-weight: 700; }
+  .footer__link--mailto::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #1b1b1b;
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out; }
+  .footer__link--mailto:hover {
+    color: #1b1b1b; }
+  .footer__link--mailto:hover::before {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left; }
 
 .footer__link--call {
-  color: #1b1b1b;
-  text-decoration: none;
   font-family: "Roboto-bold", Arial, sans-serif;
   font-size: 16px;
   line-height: 26px;
-  font-weight: 700; }
+  font-weight: 700;
+  color: #1b1b1b;
+  text-decoration: none;
+  position: relative; }
+  .footer__link--call::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #1b1b1b;
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out; }
+  .footer__link--call:hover {
+    color: #1b1b1b; }
+  .footer__link--call:hover::before {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    background-color: #1b1b1b;
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left; }
+  .footer__link--call:active {
+    opacity: 0.5; }
 
 .footer__menu .menu__list {
   -webkit-box-orient: vertical;
@@ -1093,9 +1201,7 @@ input[type=tel] {
   width: 48px;
   height: 48px;
   font-size: 0;
-  background-color: #c96164;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out; }
+  background-color: #c96164; }
   .footer__up-btn::before {
     content: '';
     position: absolute;
@@ -1103,9 +1209,7 @@ input[type=tel] {
     left: 3px;
     width: 48px;
     height: 48px;
-    border: 1px solid #c96164;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out; }
+    border: 1px solid #c96164; }
   .footer__up-btn::after {
     content: '';
     position: absolute;
@@ -2608,7 +2712,7 @@ input[type=tel] {
           right: -51px;
           top: 69px;
           width: 100px;
-          height: 403px;
+          height: 200px;
           border-top: 1px solid #c96164;
           border-right: 1px solid #c96164;
           z-index: -1; }
@@ -2990,16 +3094,16 @@ input[type=tel] {
       padding-right: 50px; }
     .team__title {
       margin-bottom: 58px;
-      width: 100%; }
+      padding-left: 123px;
+      width: auto; }
       .team__title::before {
-        left: auto;
-        top: 19px;
-        left: 230px;
-        width: 35%;
+        content: "";
+        width: 100px;
         height: 1px;
-        border: none;
-        border-top: 1px solid #c96164;
-        z-index: -1; }
+        position: absolute;
+        top: 17px;
+        left: 0;
+        border-bottom: 1px solid #c96164; }
     .team__wrap {
       max-width: 100%;
       -webkit-box-orient: horizontal;
@@ -3550,7 +3654,6 @@ input[type=tel] {
         right: -91px;
         top: 107px;
         width: 100px;
-        height: 531px;
         border-top: 1px solid #c96164;
         border-right: 1px solid #c96164;
         z-index: -1; }
@@ -3960,11 +4063,16 @@ input[type=tel] {
       padding-left: 50px;
       padding-right: 50px; }
     .team__title {
-      margin-bottom: 108px; }
+      margin-bottom: 108px;
+      padding-left: 190px; }
       .team__title::before {
-        top: 27px;
-        left: 314px;
-        height: 532px; }
+        content: "";
+        width: 143px;
+        height: 1px;
+        position: absolute;
+        top: 26px;
+        left: 0;
+        border-bottom: 1px solid #c96164; }
     .team__wrap {
       max-width: 100%; } }
 
