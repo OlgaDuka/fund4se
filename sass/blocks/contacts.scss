@@ -49,7 +49,6 @@
   @include desktop {
     min-height: 440px;
   }
-
 }
 
 
@@ -128,11 +127,12 @@
 }
 
 .contacts__link {
-  color: $default-font-color;
+
+  @include underline-appear-hover(1px, 0, $default-font-color, $default-font-color);
 }
 
 .contacts__link--mailto {
-
+  @include underline-lose-hover(1px, 0, $default-font-color, $default-font-color);
 }
 
 .contacts__link--call {

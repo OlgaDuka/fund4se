@@ -13,28 +13,17 @@
 
   @include tablet {
     margin-bottom: 58px;
-    width: 100%;
+    padding-left: 123px;
+    width: auto;
 
-    &::before {
-      left: auto;
-      top: 19px;
-      left: 230px;
-      width: 35%;
-      height: 1px;
-      border: none;
-      border-top: 1px solid $red-peach;
-      z-index: -1;
-    }
+    @include red-line(100px, 17px);
   }
 
   @include desktop {
     margin-bottom: 108px;
+    padding-left: 190px;
 
-    &::before {
-      top: 27px;
-      left: 314px;
-      height: 532px;
-    }
+    @include red-line(143px, 26px);
   }
 }
 

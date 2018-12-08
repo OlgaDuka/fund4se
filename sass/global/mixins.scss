@@ -318,4 +318,8 @@
     background-color: $color-hover;
     transform-origin: bottom left;
   }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
