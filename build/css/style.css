@@ -1784,22 +1784,22 @@ input[type=tel] {
   .requirements__industry--img1 {
     background-image: url("../img/svg-sprite/industry1.svg");
     background-position: left 10px top 10px;
-    background-size: 50px 50px; }
+    background-size: 60px 60px; }
   .requirements__industry--img2 {
     background-image: url("../img/svg-sprite/industry2.svg");
-    background-size: 33px 37px;
+    background-size: 50px 55px;
     background-position: left 18px top 15px; }
   .requirements__industry--img3 {
     background-image: url("../img/svg-sprite/industry3.svg");
-    background-size: 42px 37px;
+    background-size: 55px 52px;
     background-position: left 17px top 21px; }
   .requirements__industry--img4 {
     background-image: url("../img/svg-sprite/industry4.svg");
-    background-size: 40px 27px;
-    background-position: left 20px top 24px; }
+    background-size: 60px 47px;
+    background-position: left 20px top 20px; }
   .requirements__industry--img5 {
     background-image: url("../img/svg-sprite/industry5.svg");
-    background-size: 38px 36px;
+    background-size: 52px 50px;
     background-position: left 24px top 18px; }
 
 .requirements__market {
@@ -2855,19 +2855,19 @@ input[type=tel] {
       line-height: 20px;
       font-weight: 300; }
     .requirements__industry--img1 {
-      background-position: left 15px top 14px;
-      background-size: 40px 40px; }
+      background-position: left 15px top 10px;
+      background-size: 55px 55px; }
     .requirements__industry--img2 {
-      background-size: 30px 35px;
+      background-size: 45px 50px;
       background-position: left 20px top 13px; }
     .requirements__industry--img3 {
-      background-size: 35px 33px;
+      background-size: 50px 48px;
       background-position: left 21px top 17px; }
     .requirements__industry--img4 {
-      background-size: 35px 22px;
-      background-position: left 17px top 22px; }
+      background-size: 50px 42px;
+      background-position: left 20px top 15px; }
     .requirements__industry--img5 {
-      background-size: 33px 30px;
+      background-size: 48px 45px;
       background-position: left 20px top 16px; }
     .requirements__market {
       width: 172px;
@@ -3037,7 +3037,7 @@ input[type=tel] {
       .target__list::after {
         width: 100%;
         height: 350px;
-        background-image: url("../img/svg-sprite/target.svg");
+        background-image: url("../img/svg-sprite/target-tablet.svg");
         background-position: center; }
     .target__item {
       width: 140px;
@@ -3797,18 +3797,18 @@ input[type=tel] {
       font-weight: 300; }
     .requirements__industry--img1 {
       background-position: left 25px top 21px;
-      background-size: 55px 55px; }
+      background-size: 75px 75px; }
     .requirements__industry--img2 {
-      background-size: 40px 45px;
+      background-size: 65px 70px;
       background-position: left 30px top 27px; }
     .requirements__industry--img3 {
-      background-size: 47px 42px;
+      background-size: 70px 65px;
       background-position: left 22px top 26px; }
     .requirements__industry--img4 {
-      background-size: 46px 35px;
+      background-size: 75px 65px;
       background-position: left 29px top 28px; }
     .requirements__industry--img5 {
-      background-size: 44px 42px;
+      background-size: 70px 65px;
       background-position: left 22px top 18px; }
     .requirements__market {
       width: 232px;
@@ -3988,30 +3988,39 @@ input[type=tel] {
       height: 450px; }
       .target__list::after {
         height: 100%;
-        background-position: top left; }
+        background-image: url("../img/svg-sprite/target-desktop.svg"); }
     .target__item {
-      width: 250px;
-      font-family: "Roboto-light", Arial, sans-serif;
-      font-size: 24px;
-      line-height: 35px;
-      font-weight: 300; }
-      .target__item:nth-child(1) {
-        top: 10px;
-        left: 150px; }
-      .target__item:nth-child(2) {
-        top: 185px;
-        left: 300px; }
-      .target__item:nth-child(3) {
-        top: 10px;
-        left: 760px;
-        text-align: left; }
-      .target__item:nth-child(4) {
-        top: 192px;
-        left: 910px;
-        text-align: left; }
-      .target__item:nth-child(5) {
-        bottom: 15px;
-        left: 150px; }
+      display: none;
+      /*width: 250px;
+
+    @include font-light(24px, 35px);
+
+    &:nth-child(1) {
+      top: 10px;
+      left: 150px;
+    }
+
+    &:nth-child(2) {
+      top: 185px;
+      left: 300px;
+    }
+
+    &:nth-child(3) {
+      top: 10px;
+      left: 760px;
+      text-align: left;
+    }
+
+    &:nth-child(4) {
+      top: 192px;
+      left: 910px;
+      text-align: left;
+    }
+
+    &:nth-child(5) {
+      bottom: 15px;
+      left: 150px;
+    } */ }
     .team {
       max-width: 1680px;
       padding-left: 50px;
