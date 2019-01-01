@@ -1,21 +1,23 @@
 'use strict';
 
-$(document).ready(function () {
-  var limit = $(window).height() / 3;
-  var $backToTop = $('#footer__up-btn');
+var $j = jQuery.noConflict();
 
-  // Появление и исчезновение кнопки "наверх" на первом экране
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > limit) {
-      $backToTop.fadeIn();
+$j(document).ready(function () {
+  var limit = $j(window).height() / 3;
+  var backToTop = $j('#footer__up-btn');
+
+  // Appearing and disappearing of the 'up' button on the first screen
+  $j(window).scroll(function () {
+    if ($j(this).scrollTop() > limit) {
+      backToTop.fadeIn();
     } else {
-      $backToTop.fadeOut();
+      backToTop.fadeOut();
     }
   });
 
-   // Мягкий скролл к началу сайта
-  $backToTop.click(function () {
-    $('body,html').animate({scrollTop: 0}, 1500);
+   // Soft scroll to the top
+  backToTop.click(function () {
+    $j('body,html').animate({scrollTop: 0}, 100);
     return false;
   });
 });

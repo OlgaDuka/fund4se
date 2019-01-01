@@ -1,10 +1,7 @@
 .leaders {
   @include container(18px, 18px, 50px, 50px, 27px, 27px);
-  margin-bottom: 99px;
-
-  @include tablet {
-    margin-bottom: 0;
-  }
+  padding-top: 0;
+  padding-bottom: 0;
 
   @include desktop {
     margin-bottom: 83px;
@@ -17,12 +14,12 @@
 
   @include tablet {
     margin-bottom: 40px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   @include desktop {
-    margin-bottom: 113px;
-    flex-direction: row;
-    justify-content: space-between;
+    margin-bottom: 50px;
   }
 }
 
@@ -30,6 +27,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 
   @include tablet {
     flex-wrap: nowrap;

@@ -83,50 +83,50 @@
       width: 17px;
     }
   }
+}
 
-  &--active {
+.current-menu-item {
+
+  a {
+    @include font-bold(24px, 53px);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -48px;
+    top: 22px;
+    width: 30px;
+    height: 10px;
+    background-image: url('../img/svg-sprite/arrow-red.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  @include tablet {
 
     a {
-      @include font-bold(24px, 53px);
+      @include font-bold(12px, 14px);
     }
 
     &::before {
-      content: "";
-      position: absolute;
-      left: -48px;
-      top: 22px;
-      width: 30px;
-      height: 10px;
-      background-image: url('../img/svg-sprite/arrow-red.svg');
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
+      left: -17px;
+      top: 9px;
+      width: 12px;
+    }
+  }
+
+  @include desktop {
+
+    a {
+      @include font-bold(15px, 18px);
     }
 
-    @include tablet {
-
-      a {
-        @include font-bold(12px, 14px);
-      }
-
-      &::before {
-        left: -17px;
-        top: 9px;
-        width: 12px;
-      }
-    }
-
-    @include desktop {
-
-      a {
-        @include font-bold(15px, 18px);
-      }
-
-      &::before {
-        left: -22px;
-        top: 8px;
-        width: 17px;
-      }
+    &::before {
+      left: -22px;
+      top: 8px;
+      width: 17px;
     }
   }
 }

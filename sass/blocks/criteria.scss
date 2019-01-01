@@ -92,14 +92,16 @@
 }
 
 .criteria__item {
+  width: 100%;
   margin-bottom: 38px;
   padding-left: 22px;
   padding-right: 18px;
 
-  @include title-light($navi-blue, 24px, 39px, 20px, 33px, 36px, 59px);
+  @include title-light($navi-blue, 18px, 30px, 14px, 23px, 20px, 33px, transparent, none);
   border-left: 1px solid $red-peach;
 
   @include tablet {
+    width: 48%;
     margin-bottom: 25px;
     padding-left: 30px;
     padding-right: 0;

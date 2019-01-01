@@ -66,6 +66,7 @@
     position: absolute;
     bottom: 42px;
     right: 0;
+    outline-color: transparent;
   }
 
   @include desktop {
@@ -87,6 +88,10 @@
   @include font-regular(24px, 28px);
   border: none;
   border-bottom: 1px solid $gray;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .feedback__textarea {
@@ -110,10 +115,9 @@
   }
 }
 
-.feedback__input-box input:focus ~ label,
-.feedback__input-box textarea:focus ~ label,
+.feedback__label--focus,
 .feedback__input-box input:valid ~ label {
-  top: -5px;
+  top: -20px;
   left: 0;
   @include font-light(14px, 16px);
 }
@@ -135,7 +139,7 @@
     display: none;
   }
 
-  &:hover label span {
+  &:hover label {
     color: $red-peach;
   }
 
@@ -149,13 +153,11 @@
     width: 100%;
     height: 100%;
     cursor: pointer;
+    @include font-light(16px, 19px);
+    text-decoration: underline;
+    color: $blue;
+    line-height: 50px;
 
-    span {
-      @include font-light(16px, 19px);
-      text-decoration: underline;
-      color: $blue;
-      line-height: 50px;
-    }
 
     &::before {
       content: "";
@@ -182,40 +184,19 @@
   color: $blue;
 }
 
-//
-//.feedback__input-box input:-webkit-autofill {
-//  @include heliosc-bold;
-//  border: 1px solid transparent;
-//  -webkit-box-shadow: inset 0 0 0 50px #fff !important; /* Цвет фона */
-//  -webkit-text-fill-color: $main-bg !important; /* цвет текста */
-//}
 
-//.feedback__input-box input:-webkit-autofill ~ label {
-//  @include heliosc-bold;
-//  color: $main-bg;
-//}
-
-/*
-.feedback__input-box input.error {
-  border: 1px solid #ff5a4b !important;
+.feedback__input-box input:-webkit-autofill {
+  @include font-regular(24px, 28px);
+  -webkit-box-shadow: inset 0 0 0 50px #fff !important; /* Цвет фона */
+  -webkit-text-fill-color: $sky-blue !important; /* цвет текста */
+  outline: none;
 }
 
+div.wpcf7-validation-errors,
+div.wpcf7-mail-sent-ok {
+  width: 68%;
+}
 
-.feedback__input-box input.error ~ label.error {
-  display: block;
-  margin-left: 25px;
-  @include heliosc-bold;
-  font-size: 11px;
-  line-height: 15px;
-  color: $light-bg;
-  text-transform: uppercase;
-  text-align: left;
-  position: unset;
-  margin-top: 10px;
-
-  @include desktop {
-    position: absolute;
-    left: 0;
-    top: 60px;
-  }
-} */
+div.wpcf7-response-output {
+  margin: 0;
+}

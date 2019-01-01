@@ -1,6 +1,5 @@
 .contacts {
   @include container();
-  margin-bottom: 63px;
   width: 100%;
   height: auto;
   min-height: 486px;
@@ -17,7 +16,7 @@
   }
 
   @include tablet {
-    margin-bottom: 65px;
+    margin-bottom: 30px;
     min-height: 260px;
     background-size: contain;
     background-image: url("../img/map-tablet@1x.jpg");
@@ -29,7 +28,7 @@
 
   @include desktop {
     min-height: 440px;
-    margin-bottom: 100px;
+    margin-bottom: 0;
     background-image: url("../img/map-desktop@1x.jpg");
 
     @include retina(2) {

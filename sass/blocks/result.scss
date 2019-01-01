@@ -1,6 +1,6 @@
 .result {
   @include container();
-  margin-bottom: 105px;
+  padding-bottom: 185px;
   padding-top: 390px;
   display: flex;
   flex-direction: column;
@@ -21,13 +21,12 @@
     background-position: top 40px right 200px;
     background-size: 372px;
   }
-
 }
 
 .result__text {
   margin-bottom: 38px;
   position: relative;
-  @include title-light($navi-blue, 24px, 39px, 24px, 39px, 36px, 59px, transparent, none);
+  @include title-light($navi-blue, 18px, 30px, 14px, 23px, 20px, 33px, transparent, none);
 
   @include red-line(80px, -30px);
 

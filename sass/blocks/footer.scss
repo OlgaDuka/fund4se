@@ -16,7 +16,7 @@
     flex-wrap: wrap;
     padding-top: 72px;
     padding-bottom: 20px;
-    background-position: left 300px bottom -33px;
+    background-position: left 300px bottom -41px;
     background-size:  862px 274px;
   }
 
@@ -169,6 +169,7 @@
   height: 48px;
   font-size: 0;
   background-color: $button;
+  z-index: 1000;
 
   &::before {
     content: '';
@@ -206,5 +207,4 @@
   &:active {
     background-color: $button-active;
   }
-
 }
