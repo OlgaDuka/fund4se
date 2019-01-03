@@ -7,7 +7,7 @@
   }
 
   @include desktop {
-    margin-bottom: 140px;
+    margin-bottom: 50px;
   }
 }
 
@@ -26,7 +26,8 @@
 
   @include desktop {
     margin-left: 170px;
-    margin-bottom: 94px;
+    margin-top: 20px;
+    margin-bottom: 50px;
 
     @include red-line(143px, 25px, -170px);
   }
@@ -65,7 +66,7 @@
   @include tablet {
     position: absolute;
     bottom: 42px;
-    right: 0;
+    right: 60px;
     outline-color: transparent;
   }
 

@@ -5,10 +5,6 @@
   @include tablet {
     margin-bottom: 68px;
   }
-
-  @include desktop {
-    margin-bottom: 119px;
-  }
 }
 
 .strategy__title {
@@ -27,6 +23,7 @@
   }
 
   @include desktop {
+    margin-bottom: 0;
     padding-left: 190px;
 
     @include red-line(143px, 26px);
@@ -136,7 +133,7 @@
 
   @include desktop {
     width: 250px;
-    margin-top: 119px;
+    margin-top: 70px;
     margin-right: 87px;
     margin-left: 70px;
 
@@ -151,7 +148,7 @@
 
     &:nth-child(2) {
       width: 256px;
-      margin-top: 241px;
+      margin-top: 200px;
       margin-right: 90px;
     }
 

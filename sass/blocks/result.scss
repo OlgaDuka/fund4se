@@ -10,14 +10,14 @@
   background-size: 285px;
 
   @include tablet {
-    margin-bottom: 34px;
+    padding-bottom: 90px;
     padding-top: 0;
     background-position: top 30px right 50px;
     background-size: 244px;
   }
 
   @include desktop {
-    margin-bottom: 145px;
+    padding-bottom: 230px;
     background-position: top 40px right 200px;
     background-size: 372px;
   }
@@ -43,10 +43,10 @@
   }
 
   @include desktop {
-    margin-bottom: 22px;
+    margin-bottom: 30px;
     width: 47%;
 
-    @include red-line(72px, -106px);
+    @include red-line(72px, -50px);
 
     &:last-child::before {
       top: -25px;

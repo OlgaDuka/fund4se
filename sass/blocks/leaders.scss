@@ -4,7 +4,7 @@
   padding-bottom: 0;
 
   @include desktop {
-    margin-bottom: 83px;
+    margin-bottom: 30px;
   }
 }
 
@@ -36,7 +36,7 @@
 }
 
 .leaders__title {
-  width: 210px;
+  width: 100%;
   margin-bottom: 13px;
   position: relative;
 
@@ -67,16 +67,15 @@
 
   @include tablet {
     margin-bottom: 40px;
-    margin-left: 123px;
-    width: 381px;
+    width: 55%;
 
-    @include font-light(12px, 20px);
+    @include font-light(14px, 23px);
   }
 
   @include desktop {
     margin-top: 30px;
     margin-left: 0;
-    width: 566px;
+    width: 55%;
 
     @include font-light(20px, 33px);
   }

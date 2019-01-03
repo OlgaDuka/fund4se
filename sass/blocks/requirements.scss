@@ -18,14 +18,14 @@
 
   @include tablet {
     width: 550px;
-    margin-bottom: 74px;
+    margin-bottom: 40px;
     padding-left: 124px;
     @include red-line(100px, 18px);
   }
 
   @include desktop {
     width: 765px;
-    margin-bottom: 119px;
+    margin-bottom: 50px;
     padding-left: 180px;
     @include red-line(145px, 21px);
   }
@@ -40,10 +40,10 @@
 
 .requirements__item {
   margin-left: 57px;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
   position: relative;
 
-  @include title($navi-blue, 36px, 42px, 24px, 28px, 36px, 42px, transparent, none);
+  @include title($navi-blue, 30px, 36px, 20px, 24px, 30px, 36px, transparent, none);
 
   &::before {
     content: attr(data-num);
@@ -85,7 +85,7 @@
   }
 
   @include tablet {
-    margin-bottom: 45px;
+    margin-bottom: 20px;
     margin-left: 30px;
 
     &::before {
@@ -136,7 +136,7 @@
   }
 
   @include desktop {
-    margin-bottom: 95px;
+    margin-bottom: 30px;
     margin-left: 172px;
 
     &::before {
@@ -206,13 +206,12 @@
 
   @include tablet {
     margin-left: 0;
-
-    &--market {
-      margin-bottom: 66px;
-    }
+    margin-top: 30px;
+    margin-bottom: 30px;
 
     &--industry {
       max-width: 700px;
+      justify-content: space-between;
 
       &::after {
         content: "";
@@ -223,18 +222,13 @@
 
   @include desktop {
     margin-left: 8px;
-    margin-top: 72px;
-
-    &--market {
-      margin-bottom: 166px;
-    }
-
-    &--technology {
-      margin-top: 82px;
-    }
+    margin-top: 50px;
+    margin-bottom: 50px;
 
     &--industry {
       max-width: 1100px;
+      margin-bottom: 0;
+
       &::after {
         content: "";
         width: 278px;
@@ -489,7 +483,7 @@
   @include desktop {
     width: 167px;
     height: 300px;
-    margin-bottom: 85px;
+    margin-bottom: 40px;
     margin-left: 0;
     margin-right: 0;
     padding-top: 275px;
@@ -576,7 +570,7 @@
 
   @include desktop {
     height: 320px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     margin-left: 0;
     margin-right: 0;
     padding-top: 272px;

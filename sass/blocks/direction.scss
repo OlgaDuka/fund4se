@@ -23,6 +23,7 @@
   @include font-thin(36px, 59px);
 
   @include tablet {
+    margin-top: 0;
     margin-bottom: 11px;
 
     @include font-thin(30px, 49px);

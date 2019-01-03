@@ -1,13 +1,9 @@
 .target {
   @include container();
-  margin-bottom: 136px;
+  margin-bottom: 100px;
 
   @include tablet {
     margin-bottom: 79px;
-  }
-
-  @include desktop {
-    margin-bottom: 137px;
   }
 }
 
@@ -26,7 +22,7 @@
 
   @include desktop {
     padding-left: 187px;
-    margin-bottom: 140px;
+    margin-bottom: 70px;
 
     @include red-line(143px, 24px);
   }

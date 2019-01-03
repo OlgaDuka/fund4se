@@ -19,7 +19,7 @@
 
   @include container(0, 0, 50px, 0, 50px, 0);
   padding-top: 53%;
-  padding-bottom: 93px;
+  padding-bottom: 60px;
   width: 100%;
   height: auto;
   display: flex;
@@ -55,7 +55,7 @@
   }
 
   @include tablet {
-    margin-bottom: 78px;
+    margin-bottom: 40px;
     padding-top: 0;
     padding-bottom: 0;
     height: 227px;
@@ -82,7 +82,7 @@
   }
 
   @include desktop {
-    margin-bottom: 119px;
+    margin-bottom: 80px;
     height: 382px;
 
     &--about,

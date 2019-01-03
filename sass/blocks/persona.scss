@@ -12,7 +12,7 @@
     margin-bottom: 0;
 
     &--lider1 {
-      max-width: 325px;
+      max-width: 400px;
       margin-right: 24px;
       flex-direction: row-reverse;
       justify-content: flex-end;
@@ -20,7 +20,7 @@
     }
 
     &--lider2 {
-      max-width: 325px;
+      max-width: 400px;
       margin-top: 125px;
       margin-right: 6px;
     }
@@ -48,7 +48,7 @@
   position: relative;
 
   @include tablet {
-    width: 178px;
+    width: 250px;
     margin-left: 34px;
     margin-top: -5px;
 
