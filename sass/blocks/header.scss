@@ -1,5 +1,5 @@
 .header {
-  @include container(18px, 18px, 21px, 33px, 44px, 57px);
+  @include container(18px, 18px, 21px, 33px, 44px, 30px);
   width: 100%;
   padding-top: 0;
   display: flex;
@@ -21,17 +21,24 @@
     flex-wrap: wrap;
   }
 
-  @include tablet {
-    height: 62px;
-  }
-
   @include desktop {
-    height: 88px;
+    height: 80px;
   }
 }
 
 .header__logo {
+  width: 100px;
+  height: 28px;
 
+  @include tablet {
+    width: 94px;
+    height: 26px;
+  }
+
+  @include desktop {
+    width: 140px;
+    height: 38px;
+  }
 }
 
 .header__burger {

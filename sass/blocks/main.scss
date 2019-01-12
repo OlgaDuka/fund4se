@@ -8,10 +8,10 @@
 
   &--contacts {
     margin-top: 104px;
-  }
 
-  @include tablet {
-    margin-top: 62px;
+    @include tablet {
+      margin-top: 54px;
+    }
   }
 
   @include desktop {

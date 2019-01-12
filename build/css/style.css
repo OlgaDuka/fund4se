@@ -483,6 +483,9 @@ input[type=tel] {
 .contacts__text {
   margin: 0; }
 
+.contacts__links {
+  margin-top: 20px; }
+
 .contacts__link {
   color: #1b1b1b;
   text-decoration: none;
@@ -965,15 +968,12 @@ input[type=tel] {
   border-bottom: 1px solid #e5e5e5; }
   .feedback__input:focus,
   .feedback__textarea:focus {
-    outline: none; }
-
-.feedback__textarea {
-  margin-top: 25px;
-  height: 50px; }
+    outline: none;
+    border-bottom-color: #c96164; }
 
 .feedback__label {
   position: absolute;
-  top: 30px;
+  top: 17px;
   left: 0;
   padding-top: 10px;
   -webkit-transition: top 0.6s;
@@ -1036,7 +1036,7 @@ input[type=tel] {
       content: "";
       position: absolute;
       left: 0;
-      top: 12px;
+      top: 10px;
       width: 24px;
       height: 24px;
       background-image: url("../img/svg-sprite/attached-file.svg");
@@ -1091,17 +1091,14 @@ div.wpcf7-response-output {
   background-size: 900px 430px; }
 
 .footer__logo {
-  margin-top: 0;
-  width: 138px;
-  height: 40px;
-  margin-bottom: 13px;
-  margin-left: 3px; }
+  margin-top: 3px;
+  width: 140px;
+  height: 39px;
+  margin-bottom: 15px;
+  margin-left: 0; }
 
 .footer__text {
   width: 276px; }
-  .footer__text:nth-of-type(2) {
-    margin-top: 5px;
-    margin-bottom: -6px; }
 
 .footer__contacts {
   width: 120px;
@@ -1113,10 +1110,12 @@ div.wpcf7-response-output {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  .footer__menu .menu__list .menu-item a {
+    color: #315f87; }
 
 .footer__up-btn {
   position: fixed;
-  right: 40px;
+  right: 5px;
   bottom: 60px;
   width: 48px;
   height: 48px;
@@ -1189,6 +1188,10 @@ div.wpcf7-response-output {
     height: auto;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+
+.header__logo {
+  width: 100px;
+  height: 28px; }
 
 .header__burger {
   margin-left: auto;
@@ -1315,8 +1318,6 @@ div.wpcf7-response-output {
   font-weight: 300; }
 
 .logo {
-  width: 95px;
-  height: 27px;
   background-color: #fff;
   background-image: url("../img/svg-sprite/logo-main.svg");
   background-repeat: no-repeat;
@@ -2023,18 +2024,20 @@ div.wpcf7-response-output {
     .contacts__map {
       min-height: 260px; }
     .contacts__wrap {
+      width: 290px;
+      height: 216px;
       top: 20px;
       left: 70px; }
       .contacts__wrap::after {
         width: 42px;
         height: 42px;
-        right: -37px;
+        right: -30px;
         top: -8px;
         background-size: 42px 42px; }
     .contacts__title {
       margin-bottom: 4px; }
-  .contacts__links {
-    margin-top: 4px; }
+    .contacts__links {
+      margin-top: 4px; }
     .content {
       max-width: 1270px;
       padding-left: 50px;
@@ -2290,7 +2293,7 @@ div.wpcf7-response-output {
       padding-left: 50px;
       padding-right: 50px; }
     .feedback {
-      margin-bottom: 30px; }
+      margin-bottom: 15px; }
     .feedback__title {
       font-family: "Roboto-thin", Arial, sans-serif;
       font-size: 30px;
@@ -2303,7 +2306,7 @@ div.wpcf7-response-output {
         font-weight: 700; }
     .feedback__title {
       margin-left: 128px;
-      margin-bottom: 66px; }
+      margin-bottom: 22px; }
       .feedback__title::before {
         content: "";
         width: 101px;
@@ -2315,12 +2318,12 @@ div.wpcf7-response-output {
     .feedback__form {
       padding-top: 0;
       padding-left: 192px;
-      background-position: left top 12px;
-      background-size: 150px 150px;
+      background-position: left top 20px;
+      background-size: 148px 148px;
       position: relative; }
     .feedback__btn {
       position: absolute;
-      bottom: 42px;
+      bottom: 38px;
       right: 60px;
       outline-color: transparent; }
     .feedback__file-upload {
@@ -2330,42 +2333,112 @@ div.wpcf7-response-output {
       padding-left: 50px;
       padding-right: 50px; }
     .footer {
-      height: 232px;
-      -webkit-box-orient: vertical;
+      height: 142px;
+      -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      padding-top: 72px;
-      padding-bottom: 20px;
-      background-position: left 300px bottom -41px;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding-top: 17px;
+      padding-bottom: 0;
+      background-position: left 300px top 0;
       background-size: 862px 274px; }
     .footer__logo {
-      width: 140px;
-      height: 42px;
+      width: 90px;
+      height: 25px;
       margin-top: 5px;
       margin-left: 0; }
+  .footer__wrap {
+    width: 180px; }
+    .footer__wrap .footer__text {
+      width: 100%; }
     .footer__text {
-      margin-top: 10px;
-      margin-bottom: 0;
-      width: 230px;
-      padding-right: 25px;
+      margin: 0;
+      width: 210px;
       font-family: "Roboto-light", Arial, sans-serif;
       font-size: 12px;
       line-height: 20px;
       font-weight: 300; }
-      .footer__text:nth-of-type(2) {
-        margin-top: 0;
-        margin-left: 30px;
-        padding-right: 50px; }
     .footer__contacts {
-      width: 230px;
       margin-top: 10px;
       margin-bottom: 0;
-      margin-left: 30px;
-      padding-right: 120px;
-      width: 240px; }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+      .footer__contacts .contacts__link--mailto {
+        font-family: "Roboto-light", Arial, sans-serif;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 300;
+        color: #1b1b1b;
+        text-decoration: none;
+        position: relative; }
+        .footer__contacts .contacts__link--mailto::before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          -webkit-transform: scaleX(1);
+                  transform: scaleX(1);
+          height: 1px;
+          bottom: 2px;
+          left: 0;
+          background-color: #1b1b1b;
+          -webkit-transform-origin: bottom left;
+                  transform-origin: bottom left;
+          -webkit-transition: -webkit-transform 0.3s ease-out;
+          transition: -webkit-transform 0.3s ease-out;
+          transition: transform 0.3s ease-out;
+          transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out; }
+        .footer__contacts .contacts__link--mailto:hover {
+          color: #1b1b1b; }
+        .footer__contacts .contacts__link--mailto:hover::before {
+          -webkit-transform: scaleX(0);
+                  transform: scaleX(0);
+          -webkit-transform-origin: bottom left;
+                  transform-origin: bottom left; }
+      .footer__contacts .contacts__link--call {
+        font-family: "Roboto-bold", Arial, sans-serif;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 700;
+        color: #1b1b1b;
+        text-decoration: none;
+        position: relative; }
+        .footer__contacts .contacts__link--call::before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          -webkit-transform: scaleX(0);
+                  transform: scaleX(0);
+          height: 1px;
+          bottom: 2px;
+          left: 0;
+          background-color: #1b1b1b;
+          -webkit-transform-origin: bottom left;
+                  transform-origin: bottom left;
+          -webkit-transition: -webkit-transform 0.3s ease-out;
+          transition: -webkit-transform 0.3s ease-out;
+          transition: transform 0.3s ease-out;
+          transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out; }
+        .footer__contacts .contacts__link--call:hover {
+          color: #1b1b1b; }
+        .footer__contacts .contacts__link--call:hover::before {
+          -webkit-transform: scaleX(1);
+                  transform: scaleX(1);
+          background-color: #1b1b1b;
+          -webkit-transform-origin: bottom left;
+                  transform-origin: bottom left; }
+        .footer__contacts .contacts__link--call:active {
+          opacity: 0.5; }
     .footer__menu .menu__list {
       margin: 0;
       padding: 0;
@@ -2380,8 +2453,9 @@ div.wpcf7-response-output {
       max-width: 1270px;
       padding-left: 21px;
       padding-right: 33px; }
-    .header {
-      height: 62px; }
+    .header__logo {
+      width: 94px;
+      height: 26px; }
     .header__burger {
       display: none; }
     .header__contacts {
@@ -2454,11 +2528,8 @@ div.wpcf7-response-output {
       font-size: 14px;
       line-height: 23px;
       font-weight: 300; }
-    .logo {
-      width: 100px;
-      height: 28px; }
-    .main {
-      margin-top: 62px; }
+      .main--contacts {
+        margin-top: 54px; }
     .main__hero {
       max-width: 1270px;
       padding-left: 50px;
@@ -2967,23 +3038,25 @@ div.wpcf7-response-output {
       padding-right: 50px; }
     .contacts {
       min-height: 400px;
-      margin-bottom: 0;
+      margin-bottom: 37px;
       background-image: url("../img/map-desktop@1x.jpg"); }
     .contacts__map {
       min-height: 400px; }
     .contacts__wrap {
-      top: 100px;
-      left: 253px; }
+      width: 304px;
+      height: 256px;
+      top: 74px;
+      left: 166px; }
       .contacts__wrap::after {
         width: 72px;
         height: 72px;
-        right: -54px;
-        top: -37px;
+        right: -36px;
+        top: -35px;
         background-size: 72px 72px; }
     .contacts__title {
       margin-bottom: 10px; }
-  .contacts__links {
-    margin-top: 18px; }
+    .contacts__links {
+      margin-top: 18px; }
     .content {
       max-width: 1680px;
       padding-left: 50px;
@@ -3201,7 +3274,7 @@ div.wpcf7-response-output {
       padding-left: 50px;
       padding-right: 50px; }
     .feedback {
-      margin-bottom: 50px; }
+      margin-bottom: 40px; }
     .feedback__title {
       font-family: "Roboto-thin", Arial, sans-serif;
       font-size: 42px;
@@ -3213,9 +3286,9 @@ div.wpcf7-response-output {
         line-height: 49px;
         font-weight: 700; }
     .feedback__title {
-      margin-left: 170px;
-      margin-top: 20px;
-      margin-bottom: 50px; }
+      margin-left: 167px;
+      margin-top: 55px;
+      margin-bottom: 48px; }
       .feedback__title::before {
         content: "";
         width: 143px;
@@ -3227,42 +3300,47 @@ div.wpcf7-response-output {
     .feedback__form {
       padding-top: 0;
       padding-left: 417px;
-      background-position: left top 12px;
-      background-size: 314px 312px; }
+      background-position: left top;
+      background-size: 320px 320px; }
+    .feedback__btn {
+      bottom: 44px; }
     .footer {
       max-width: 1680px;
       padding-left: 50px;
       padding-right: 50px; }
     .footer {
-      height: 350px;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      background-position: left 483px bottom 0; }
+      height: 190px;
+      padding-top: 17px;
+      background-position: left 400px top 0; }
     .footer__logo {
-      width: 144px;
-      height: 44px; }
+      width: 140px;
+      height: 40px;
+      margin-top: 22px; }
+  .footer__wrap {
+    width: 320px; }
     .footer__text {
       margin-top: 20px;
-      width: 310px;
-      padding-right: 35px;
+      width: 280px;
       font-family: "Roboto-light", Arial, sans-serif;
       font-size: 16px;
       line-height: 26px;
       font-weight: 300; }
-      .footer__text:nth-of-type(2) {
-        width: 320px;
-        margin-top: 73px;
-        margin-left: 0;
-        padding-right: 20px; }
-    .footer__contacts {
-      margin-left: 0; }
+    .footer__contacts .contacts__link--mailto {
+      font-family: "Roboto-light", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 300; }
+    .footer__contacts .contacts__link--call {
+      font-family: "Roboto-bold", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 700; }
+  .footer__menu {
+    width: 130px; }
     .footer__menu .menu__list {
-      margin-top: 73px;
-      width: 170px;
+      margin-top: 17px;
+      margin-right: 0;
+      width: 130px;
       font-family: "Roboto-light", Arial, sans-serif;
       font-size: 16px;
       line-height: 26px;
@@ -3270,9 +3348,12 @@ div.wpcf7-response-output {
     .header {
       max-width: 1680px;
       padding-left: 44px;
-      padding-right: 57px; }
+      padding-right: 30px; }
     .header {
-      height: 88px; }
+      height: 80px; }
+    .header__logo {
+      width: 140px;
+      height: 38px; }
     .invitation {
       max-width: 1680px;
       padding-left: 50px;
@@ -3330,9 +3411,6 @@ div.wpcf7-response-output {
       font-size: 20px;
       line-height: 33px;
       font-weight: 300; }
-    .logo {
-      width: 155px;
-      height: 45px; }
     .main {
       margin-top: 88px; }
     .main__hero {

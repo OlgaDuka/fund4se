@@ -28,7 +28,7 @@
 
   @include desktop {
     min-height: 400px;
-    margin-bottom: 0;
+    margin-bottom: 37px;
     background-image: url("../img/map-desktop@1x.jpg");
 
     @include retina(2) {
@@ -72,27 +72,31 @@
   }
 
   @include tablet {
+    width: 290px;
+    height: 216px;
     top: 20px;
     left: 70px;
 
     &::after {
       width: 42px;
       height: 42px;
-      right: -37px;
+      right: -30px;
       top: -8px;
       background-size: 42px 42px;
     }
   }
 
   @include desktop {
-    top: 100px;
-    left: 253px;
+    width: 304px;
+    height: 256px;
+    top: 74px;
+    left: 166px;
 
     &::after {
       width: 72px;
       height: 72px;
-      right: -54px;
-      top: -37px;
+      right: -36px;
+      top: -35px;
       background-size: 72px 72px;
     }
   }
@@ -116,6 +120,8 @@
 }
 
 .contacts__links {
+  margin-top: 20px;
+
   @include tablet {
     margin-top: 4px;
   }

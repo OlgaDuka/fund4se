@@ -1,19 +1,7 @@
 .logo {
-  width: 95px;
-  height: 27px;
   background-color: $white;
   background-image: url("../img/svg-sprite/logo-main.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  @include tablet {
-    width: 100px;
-    height: 28px;
-  }
-
-  @include desktop {
-    width: 155px;
-    height: 45px;
-  }
 }
