@@ -560,7 +560,7 @@ input[type=tel] {
   padding-top: 0;
   padding-bottom: 0;
   max-width: 768px;
-  margin-bottom: 25px; }
+  margin-bottom: 18px; }
 
 .content__main {
   margin: 0;
@@ -598,15 +598,21 @@ input[type=tel] {
   color: #0f254c;
   font-family: "Roboto-thin", Arial, sans-serif;
   font-size: 32px;
-  line-height: 37px;
+  line-height: 38px;
   font-weight: 100; }
   .content__title span {
     font-family: "Roboto-bold", Arial, sans-serif;
     font-size: 32px;
-    line-height: 37px;
+    line-height: 38px;
     font-weight: 700;
     border-bottom: 1px solid #c96164;
     text-transform: lowercase; }
+
+.content__text {
+  font-family: "Roboto-light", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 300; }
 
 .content__link {
   width: 194px;
@@ -752,7 +758,7 @@ input[type=tel] {
   padding-top: 0;
   padding-bottom: 0;
   max-width: 768px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -762,7 +768,8 @@ input[type=tel] {
           flex-direction: column; }
 
 .directions__title {
-  margin-bottom: 7px;
+  margin-top: 33px;
+  margin-bottom: 5px;
   color: #c96164;
   font-family: "Roboto-thin", Arial, sans-serif;
   font-size: 36px;
@@ -785,11 +792,15 @@ input[type=tel] {
   width: 100%; }
 
 .directions__info {
-  margin-bottom: 24px; }
+  margin-bottom: 20px; }
 
 .directions__desc {
   margin-top: 10px;
-  margin-bottom: 25px; }
+  margin-bottom: 21px;
+  font-family: "Roboto-light", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 300; }
 
 .directions__link {
   width: 158px;
@@ -959,7 +970,7 @@ input[type=tel] {
 .feedback__textarea {
   width: 100%;
   height: 65px;
-  color: #315f87;
+  color: #002B67;
   font-family: "Roboto-regular", Arial, sans-serif;
   font-size: 24px;
   line-height: 28px;
@@ -979,7 +990,7 @@ input[type=tel] {
   -webkit-transition: top 0.6s;
   transition: top 0.6s;
   pointer-events: none;
-  color: #315f87;
+  color: #002B67;
   font-family: "Roboto-thin", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -1030,7 +1041,7 @@ input[type=tel] {
     line-height: 19px;
     font-weight: 300;
     text-decoration: underline;
-    color: #315f87;
+    color: #002B67;
     line-height: 50px; }
     .feedback__file-upload label::before {
       content: "";
@@ -1047,7 +1058,7 @@ input[type=tel] {
   margin-bottom: 15px;
   background: #fff;
   border: 0;
-  color: #315f87; }
+  color: #002B67; }
 
 .feedback__input-box input:-webkit-autofill {
   font-family: "Roboto-regular", Arial, sans-serif;
@@ -1309,7 +1320,7 @@ div.wpcf7-response-output {
     border-bottom: 1px solid #c96164; }
 
 .leaders__text {
-  color: #315f87;
+  color: #002B67;
   margin-bottom: 46px;
   padding: 0;
   font-family: "Roboto-light", Arial, sans-serif;
@@ -1407,10 +1418,10 @@ div.wpcf7-response-output {
   line-height: 26px;
   font-weight: 300; }
   .main__text--blue {
-    color: #315f87; }
+    color: #002B67; }
 
 .menu {
-  color: #0f254c; }
+  color: #002B67; }
   .menu--opened {
     width: 100%; }
     .menu--opened .menu__list {
@@ -1439,7 +1450,7 @@ div.wpcf7-response-output {
 .menu-item {
   position: relative; }
   .menu-item a {
-    color: #0f254c;
+    color: #002B67;
     text-decoration: none;
     font-family: "Roboto-light", Arial, sans-serif;
     font-size: 24px;
@@ -1530,7 +1541,7 @@ div.wpcf7-response-output {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #315f87;
+  color: #002B67;
   position: absolute;
   top: -150px;
   left: 110px; }
@@ -1691,7 +1702,7 @@ div.wpcf7-response-output {
       width: 134px; }
 
 .requirements__industry {
-  color: #315f87;
+  color: #002B67;
   width: 134px;
   height: 170px;
   margin-bottom: 20px;
@@ -1729,7 +1740,7 @@ div.wpcf7-response-output {
     background-position: left 24px top 18px; }
 
 .requirements__market {
-  color: #315f87;
+  color: #002B67;
   width: 140px;
   height: 248px;
   padding-top: 143px;
@@ -1756,7 +1767,7 @@ div.wpcf7-response-output {
     background-image: url("../img/svg-sprite/market2.svg"); }
 
 .requirements__technology {
-  color: #315f87;
+  color: #002B67;
   width: 142px;
   height: 220px;
   margin-bottom: 25px;
@@ -1787,7 +1798,7 @@ div.wpcf7-response-output {
     background-image: url("../img/svg-sprite/technology3.svg"); }
 
 .requirements__possess {
-  color: #315f87;
+  color: #002B67;
   width: 142px;
   height: 200px;
   margin-bottom: 20px;
@@ -1900,7 +1911,7 @@ div.wpcf7-response-output {
 .strategy__item {
   padding-top: 0;
   padding-bottom: 94px;
-  color: #315f87;
+  color: #002B67;
   font-family: "Roboto-light", Arial, sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -1976,7 +1987,7 @@ div.wpcf7-response-output {
   margin-left: 80px;
   margin-bottom: 48px;
   width: 180px;
-  color: #315f87;
+  color: #002B67;
   font-family: "Roboto-light", Arial, sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -2043,8 +2054,9 @@ div.wpcf7-response-output {
       padding-left: 50px;
       padding-right: 0; }
     .content {
-      margin-bottom: 31px; }
+      margin-bottom: 23px; }
     .content__main {
+      margin-top: 8px;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: reverse;
           -ms-flex-direction: row-reverse;
@@ -2064,7 +2076,7 @@ div.wpcf7-response-output {
     .content__info {
       margin-left: 0;
       margin-right: 0;
-      max-width: 50%; }
+      max-width: 45%; }
     .content__title {
       font-family: "Roboto-thin", Arial, sans-serif;
       font-size: 24px;
@@ -2078,12 +2090,12 @@ div.wpcf7-response-output {
     .content__title {
       margin-top: 25px;
       margin-bottom: 14px; }
-  .content__text {
-    margin-bottom: 18px;
-    font-family: "Roboto-light", Arial, sans-serif;
-    font-size: 12px;
-    line-height: 20px;
-    font-weight: 300; }
+    .content__text {
+      margin-bottom: 18px;
+      font-family: "Roboto-light", Arial, sans-serif;
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 300; }
     .content__link {
       width: 148px;
       height: 38px;
@@ -2219,7 +2231,7 @@ div.wpcf7-response-output {
       -webkit-box-align: stretch;
           -ms-flex-align: stretch;
               align-items: stretch;
-      margin-bottom: 64px; }
+      margin-bottom: 35px; }
     .directions__title {
       margin-top: 0;
       margin-bottom: 11px;
@@ -2228,7 +2240,7 @@ div.wpcf7-response-output {
       line-height: 49px;
       font-weight: 100; }
     .directions__business {
-      width: 48%; }
+      width: 44%; }
     .directions__desc {
       font-family: "Roboto-light", Arial, sans-serif;
       font-size: 12px;
@@ -3062,7 +3074,9 @@ div.wpcf7-response-output {
       padding-left: 50px;
       padding-right: 0; }
     .content {
-      margin-bottom: 40px; }
+      margin-bottom: 95px; }
+    .content__main {
+      margin-top: 0; }
     .content__img-wrap {
       margin-left: 0; }
       .content__img-wrap::after {
@@ -3072,7 +3086,8 @@ div.wpcf7-response-output {
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%); }
     .content__info {
-      max-width: 38%; }
+      max-width: 40.5%;
+      margin-right: 6%; }
       .content__info .content__title,
       .content__info .content__title span {
         font-size: 46px;
@@ -3088,14 +3103,14 @@ div.wpcf7-response-output {
         line-height: 54px;
         font-weight: 700; }
     .content__title {
-      margin-top: 55px;
+      margin-top: 50px;
       margin-bottom: 34px; }
-  .content__text {
-    margin-bottom: 28px;
-    font-family: "Roboto-light", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 300; }
+    .content__text {
+      margin-bottom: 28px;
+      font-family: "Roboto-light", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 300; }
     .content__link {
       width: 194px;
       height: 48px;
@@ -3201,7 +3216,7 @@ div.wpcf7-response-output {
       padding-left: 50px;
       padding-right: 50px; }
     .directions {
-      margin-bottom: 100px; }
+      margin-bottom: 60px; }
     .directions__title {
       margin-bottom: 13px;
       font-family: "Roboto-thin", Arial, sans-serif;

@@ -1,5 +1,5 @@
 .menu {
-  color: $navi-blue;
+  color: $blue;
 
   &--opened {
     width: 100%;
@@ -40,7 +40,7 @@
   position: relative;
 
   a {
-    color: $navi-blue;
+    color: $blue;
     text-decoration: none;
 
     @include font-light(24px, 53px);

@@ -1,6 +1,6 @@
 .directions {
   @include container();
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
 
@@ -8,16 +8,17 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    margin-bottom: 64px;
+    margin-bottom: 35px;
   }
 
   @include desktop {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
   }
 }
 
 .directions__title {
-  margin-bottom: 7px;
+  margin-top: 33px;
+  margin-bottom: 5px;
   color: $red-peach;
 
   @include font-thin(36px, 59px);
@@ -44,7 +45,7 @@
   flex-direction: column;
 
   @include tablet {
-    width: 48%;
+    width: 44%;
   }
 
 }
@@ -54,12 +55,13 @@
 }
 
 .directions__info {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .directions__desc {
   margin-top: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
+  @include font-light(16px, 27px);
 
   @include tablet {
     @include font-light(12px, 20px);
