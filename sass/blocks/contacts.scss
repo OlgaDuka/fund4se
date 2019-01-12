@@ -27,7 +27,7 @@
   }
 
   @include desktop {
-    min-height: 440px;
+    min-height: 400px;
     margin-bottom: 0;
     background-image: url("../img/map-desktop@1x.jpg");
 
@@ -46,7 +46,7 @@
   }
 
   @include desktop {
-    min-height: 440px;
+    min-height: 400px;
   }
 }
 

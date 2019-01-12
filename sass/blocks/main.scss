@@ -6,6 +6,10 @@
   background-color: $white;
   flex-grow: 1;
 
+  &--contacts {
+    margin-top: 104px;
+  }
+
   @include tablet {
     margin-top: 62px;
   }
@@ -48,10 +52,6 @@
 
       @include font-light(20px, 33px);
     }
-  }
-
-  &--contacts {
-    @include header-img('contacts');
   }
 
   @include tablet {

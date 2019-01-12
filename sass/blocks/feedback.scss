@@ -12,10 +12,12 @@
 }
 
 .feedback__title {
+  margin-top: 22px;
+  margin-bottom: 36px;
   position: relative;
   @include title($navi-blue, 42px, 49px, 30px, 35px, 42px, 49px, transparent, none);
 
-  @include red-line(80px, -34px);
+  @include red-line(80px, -22px);
 
   @include tablet {
     margin-left: 128px;
@@ -34,13 +36,13 @@
 }
 
 .feedback__form {
-  padding-top: 344px;
+  padding-top: 330px;
   display: flex;
   flex-direction: column;
   background-image: url("../img/svg-sprite/investment.svg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 290px 290px;
+  background-size: 293px 293px;
 
   @include tablet {
     padding-top: 0;

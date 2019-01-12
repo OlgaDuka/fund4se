@@ -1,14 +1,14 @@
 .footer {
   @include container();
   width: 100%;
-  padding-bottom: 112px;
-  padding-top: 72px;
+  padding-bottom: 30px;
+  padding-top: 48px;
   display: flex;
   flex-direction: column;
   background-image: url("../img/svg-sprite/f4n.svg");
   background-repeat: no-repeat;
-  background-position: left 0 bottom 0;
-  background-size:  1000px 548px;
+  background-position: left 20px bottom -30px;
+  background-size:  900px 430px;
 
   @include tablet {
     height: 232px;

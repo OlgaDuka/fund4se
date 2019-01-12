@@ -853,6 +853,8 @@ input[type=tel] {
   margin-bottom: 100px; }
 
 .feedback__title {
+  margin-top: 22px;
+  margin-bottom: 36px;
   position: relative;
   color: #0f254c;
   font-family: "Roboto-thin", Arial, sans-serif;
@@ -871,12 +873,12 @@ input[type=tel] {
     width: 80px;
     height: 1px;
     position: absolute;
-    top: -34px;
+    top: -22px;
     left: 0;
     border-bottom: 1px solid #c96164; }
 
 .feedback__form {
-  padding-top: 344px;
+  padding-top: 330px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -887,7 +889,7 @@ input[type=tel] {
   background-image: url("../img/svg-sprite/investment.svg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 290px 290px; }
+  background-size: 293px 293px; }
 
 .feedback__btn {
   border: none;
@@ -1074,8 +1076,8 @@ div.wpcf7-response-output {
   padding-bottom: 0;
   max-width: 768px;
   width: 100%;
-  padding-bottom: 112px;
-  padding-top: 72px;
+  padding-bottom: 30px;
+  padding-top: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1085,8 +1087,8 @@ div.wpcf7-response-output {
           flex-direction: column;
   background-image: url("../img/svg-sprite/f4n.svg");
   background-repeat: no-repeat;
-  background-position: left 0 bottom 0;
-  background-size: 1000px 548px; }
+  background-position: left 20px bottom -30px;
+  background-size: 900px 430px; }
 
 .footer__logo {
   margin-top: 0;
@@ -1174,6 +1176,8 @@ div.wpcf7-response-output {
           align-items: center;
   background-color: #fff;
   height: 54px;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
   position: fixed;
   top: 0;
   left: 50%;
@@ -1311,8 +1315,8 @@ div.wpcf7-response-output {
   font-weight: 300; }
 
 .logo {
-  width: 124px;
-  height: 34px;
+  width: 95px;
+  height: 27px;
   background-color: #fff;
   background-image: url("../img/svg-sprite/logo-main.svg");
   background-repeat: no-repeat;
@@ -1328,6 +1332,8 @@ div.wpcf7-response-output {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1; }
+  .main--contacts {
+    margin-top: 104px; }
 
 .main__hero {
   margin: 0 auto;
@@ -1367,8 +1373,6 @@ div.wpcf7-response-output {
       font-size: 20px;
       line-height: 33px;
       font-weight: 300; }
-  .main__hero--contacts {
-    background-image: url("../img/bg-contacts-mobile@1x.jpg"); }
 
 .main__title {
   color: #c96164;
@@ -1985,9 +1989,7 @@ div.wpcf7-response-output {
   .main__hero--investors {
     background-image: url("../img/bg-investors-mobile@2x.jpg"); }
   .main__hero--startups {
-    background-image: url("../img/bg-startups-mobile@2x.jpg"); }
-  .main__hero--contacts {
-    background-image: url("../img/bg-contacts-mobile@2x.jpg"); } }
+    background-image: url("../img/bg-startups-mobile@2x.jpg"); } }
 
 @media (min-width: 768px) {
     .actionplan {
@@ -2467,8 +2469,6 @@ div.wpcf7-response-output {
         background-image: url("../img/bg-investors-tablet@1x.jpg"); }
       .main__hero--startups {
         background-image: url("../img/bg-startups-tablet@1x.jpg"); }
-      .main__hero--contacts {
-        background-image: url("../img/bg-contacts-tablet@1x.jpg"); }
     .main__hero {
       margin-bottom: 40px;
       padding-top: 0;
@@ -2922,9 +2922,7 @@ div.wpcf7-response-output {
     .main__hero--investors {
       background-image: url("../img/bg-investors-tablet@2x.jpg"); }
     .main__hero--startups {
-      background-image: url("../img/bg-startups-tablet@2x.jpg"); }
-    .main__hero--contacts {
-      background-image: url("../img/bg-contacts-tablet@2x.jpg"); } }
+      background-image: url("../img/bg-startups-tablet@2x.jpg"); } }
 
 @media (min-width: 920px) {
     .content__info .content__title,
@@ -2968,11 +2966,11 @@ div.wpcf7-response-output {
       padding-left: 50px;
       padding-right: 50px; }
     .contacts {
-      min-height: 440px;
+      min-height: 400px;
       margin-bottom: 0;
       background-image: url("../img/map-desktop@1x.jpg"); }
     .contacts__map {
-      min-height: 440px; }
+      min-height: 400px; }
     .contacts__wrap {
       top: 100px;
       left: 253px; }
@@ -3347,8 +3345,6 @@ div.wpcf7-response-output {
         background-image: url("../img/bg-investors-desktop@1x.jpg"); }
       .main__hero--startups {
         background-image: url("../img/bg-startups-desktop@1x.jpg"); }
-      .main__hero--contacts {
-        background-image: url("../img/bg-contacts-desktop@1x.jpg"); }
     .main__hero {
       margin-bottom: 80px;
       height: 382px; }
@@ -3747,9 +3743,7 @@ div.wpcf7-response-output {
     .main__hero--investors {
       background-image: url("../img/bg-investors-desktop@2x.jpg"); }
     .main__hero--startups {
-      background-image: url("../img/bg-startups-desktop@2x.jpg"); }
-    .main__hero--contacts {
-      background-image: url("../img/bg-contacts-desktop@2x.jpg"); } }
+      background-image: url("../img/bg-startups-desktop@2x.jpg"); } }
 
 @media (min-width: 1680px) {
     .content__info {
