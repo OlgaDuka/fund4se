@@ -7,36 +7,32 @@
   display: flex;
   flex-direction: column;
 
+  &--lider2 {
+    margin-bottom: 0;
+  }
+
   @include tablet {
     flex-direction: row;
+    max-width: 100%;
+    margin-bottom: 32px;
+
+    &--lider2 {
+      margin-bottom: 12px;
+    }
+  }
+
+  @include desktop {
+    max-width: 47%;
     margin-bottom: 0;
 
     &--lider1 {
-      max-width: 400px;
-      margin-right: 24px;
       flex-direction: row-reverse;
       justify-content: flex-end;
       position: relative;
     }
 
     &--lider2 {
-      max-width: 400px;
-      margin-top: 125px;
-      margin-right: 6px;
-    }
-  }
-
-  @include desktop {
-
-    &--lider1 {
-      max-width: 547px;
-      margin-right: 57px;
-    }
-
-    &--lider2 {
-      max-width: 547px;
-      margin-top: 186px;
-      margin-right: 0;
+      margin-top: 77px;
     }
   }
 }
@@ -48,14 +44,21 @@
   position: relative;
 
   @include tablet {
-    width: 250px;
+    width: 100%;
     margin-left: 34px;
     margin-top: -5px;
+  }
+
+  @include desktop {
+    width: 65%;
+    margin-left: 41px;
+    margin-right: 0;
+    margin-top: -2px;
 
     &--right {
       align-items: flex-end;
       margin-left: 0;
-      margin-right: 34px;
+      margin-right: 41px;
 
       .persona__title,
       .persona__email,
@@ -70,36 +73,13 @@
       }
     }
   }
-
-  @include desktop {
-    width: 292px;
-    margin-left: 40px;
-    margin-top: -2px;
-
-    .persona__email,
-    .persona__post {
-      margin-left: 50px;
-    }
-
-    &--right {
-      align-items: flex-end;
-      margin-left: 0;
-      margin-right: 41px;
-
-      .persona__email,
-      .persona__post {
-        margin-left: auto;
-        margin-right: 47px;
-      }
-    }
-  }
 }
 
 .persona__title {
   margin-top: 0;
   margin-bottom: 10px;
 
-  @include title($navi-blue, 24px, 28px, 24px, 28px, 36px, 42px, transparent, uppercase);
+  @include title($navi-blue, 24px, 28px, 24px, 28px, 32px, 36px, transparent, uppercase);
 
   @include desktop {
     margin-bottom: 15px;
@@ -116,11 +96,11 @@
 
   @include tablet {
     position: static;
-    width: 170px;
+    width: 250px;
   }
 
   @include desktop {
-    width: 180px;
+    width: 285px;
   }
 }
 
@@ -157,17 +137,17 @@
 .persona__desc {
   width: 284px;
   margin-top: 10px;
-  @include font-light(18px, 30px);
+  @include font-light(14px, 23px);
 
   @include tablet {
+    margin-top: 15px;
     width: 100%;
 
-    @include font-light(14px, 23px);
+    @include font-light(12px, 20px);
   }
 
   @include desktop {
-    width: 270px;
-    margin-top: 23px;
-    @include font-light(20px, 33px);
+    margin-top: 15px;
+    @include font-light(14px, 23px);
   }
 }

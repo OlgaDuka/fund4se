@@ -1,5 +1,5 @@
 .leaders {
-  @include container(18px, 18px, 50px, 50px, 27px, 27px);
+  @include container();
   padding-top: 0;
   padding-bottom: 0;
 
@@ -13,13 +13,12 @@
   flex-direction: column;
 
   @include tablet {
-    margin-bottom: 40px;
-    flex-direction: row;
-    justify-content: space-between;
+    margin-bottom: 0;
   }
 
   @include desktop {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
+    flex-direction: row;
   }
 }
 
@@ -29,22 +28,24 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @include tablet {
+  @include desktop {
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 
 .leaders__title {
   width: 100%;
-  margin-bottom: 13px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   position: relative;
 
   @include title($navi-blue, 42px, 49px, 30px, 35px, 42px, 49px, transparent, none);
 
-  @include red-line(80px, -37px);
+  @include red-line(80px, -23px);
 
   @include tablet {
+    margin-bottom: 16px;
     padding-left: 123px;
     width: auto;
 
@@ -52,30 +53,33 @@
   }
 
   @include desktop {
-    padding-left: 190px;
+    padding-left: 187px;
 
     @include red-line(143px, 26px);
   }
 }
 
 .leaders__text {
-  color: $blue;
+  color: $navi-blue;
   margin-bottom: 46px;
   padding: 0;
 
   @include font-light(18px, 29px);
 
   @include tablet {
-    margin-bottom: 40px;
-    width: 55%;
+    margin-top: 0;
+    margin-bottom: 43px;
+    padding-left: 123px;
 
-    @include font-light(14px, 23px);
+    @include font-light(12px, 20px);
   }
 
   @include desktop {
-    margin-top: 30px;
+    margin-top: 25px;
+    margin-bottom: 15px;
     margin-left: 0;
-    width: 55%;
+    padding-left: 80px;
+    width: 66%;
 
     @include font-light(20px, 33px);
   }

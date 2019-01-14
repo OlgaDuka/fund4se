@@ -1,18 +1,22 @@
 .strategy {
   @include container();
-  margin-bottom: 17px;
+  margin-bottom: 0;
 
   @include tablet {
-    margin-bottom: 68px;
+    margin-bottom: 18px;
+  }
+
+  @include desktop {
+    margin-bottom: 53px;
   }
 }
 
 .strategy__title {
   width: 230px;
-  margin-bottom: 89px;
+  margin-bottom: 47px;
   position: relative;
 
-  @include red-line(80px, -37px);
+  @include red-line(80px, -23px);
 
   @include tablet {
     margin-bottom: 36px;
@@ -24,7 +28,7 @@
 
   @include desktop {
     margin-bottom: 0;
-    padding-left: 190px;
+    padding-left: 187px;
 
     @include red-line(143px, 26px);
   }
@@ -60,7 +64,7 @@
 
 .strategy__item {
   padding-top: 0;
-  padding-bottom: 94px;
+  padding-bottom: 45px;
   color: $blue;
   @include font-light(18px, 30px);
   position: relative;
@@ -72,11 +76,11 @@
   &::before {
     content: "";
     position: absolute;
-    top: -195px;
-    left: -61px;
+    top: -120px;
+    left: -40px;
     height: 324px;
     width: 150px;
-    @include font-thin(222px, 364px);
+    @include font-thin(160px, 262px);
     color: $default-font-color;
     opacity: 0.08;
   }
@@ -102,15 +106,15 @@
   }
 
   @include tablet {
-    width: 179px;
-    margin-top: 20px;
+    width: 165px;
+    margin-top: 0;
     padding-top: 0;
     padding-bottom: 0;
 
-    @include font-light(14px, 23px);
+    @include font-light(12px, 20px);
 
     &::before {
-      top: -120px;
+      top: -100px;
       left: -40px;
       height: 324px;
       width: 150px;
@@ -123,47 +127,47 @@
     }
 
     &:nth-child(4) {
-      margin-top: 38px;
+      margin-top: 15px;
     }
 
     &:nth-child(5) {
-      margin-top: 90px;
+      margin-top: 45px;
     }
   }
 
   @include desktop {
     width: 250px;
-    margin-top: 70px;
+    margin-top: 40px;
     margin-right: 87px;
     margin-left: 70px;
 
-    @include font-light(20px, 33px);
+    @include font-light(18px, 30px);
 
     &::before {
-      top: -230px;
-      left: -80px;
+      top: -160px;
+      left: -85px;
 
-      @include font-thin(288px, 472px);
+      @include font-thin(220px, 364px);
     }
 
     &:nth-child(2) {
       width: 256px;
-      margin-top: 200px;
+      margin-top: 135px;
       margin-right: 90px;
     }
 
     &:nth-child(3) {
-      margin-top: 117px;
+      margin-top: 38px;
       margin-right: 0;
     }
 
     &:nth-child(4) {
-      margin-top: 117px;
+      margin-top: 50px;
       margin-left: 72px;
     }
 
     &:nth-child(5) {
-      margin-top: 208px;
+      margin-top: 73px;
     }
   }
 }
