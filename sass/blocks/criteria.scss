@@ -5,40 +5,40 @@
 .criteria__title {
   position: relative;
 
-  @include title($navi-blue, 36px, 49px, 30px, 35px, 42px, 49px, transparent, none);
+  @include title($navi-blue, 30px, 35px, 30px, 35px, 42px, 49px, transparent, none);
 
   @include red-line(77px, -30px);
 
   @include tablet {
     max-width: 487px;
     margin-left: 123px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 
     @include red-line(101px, 18px, -123px);
   }
 
   @include desktop {
     max-width: 820px;
-    margin-left: 186px;
-    margin-bottom: 40px;
+    margin-left: 180px;
+    margin-bottom: 54px;
 
-    @include red-line(143px, 18px, -186px);
+    @include red-line(143px, 24px, -180px);
   }
 }
 
 .criteria__wrap-img {
-  margin-bottom: 31px;
+  margin-bottom: 7px;
   display: flex;
   flex-direction: column;
 
   @include tablet {
-    margin-bottom: 20px;
+    margin-bottom: 7px;
     flex-direction: row;
     justify-content: space-between;
   }
 
   @include desktop {
-    margin-bottom: 40px;
+    margin-bottom: 22px;
   }
 }
 
@@ -80,28 +80,28 @@
   flex-direction: column;
 
   @include tablet {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   @include desktop {
-    margin-bottom: 60px;
+    margin-bottom: 0;
   }
 }
 
 .criteria__item {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
   padding-left: 22px;
   padding-right: 18px;
 
-  @include title-light($navi-blue, 18px, 30px, 14px, 23px, 20px, 33px, transparent, none);
+  @include title-light($navi-blue, 18px, 30px, 18px, 30px, 20px, 33px, transparent, none);
   border-left: 1px solid $red-peach;
 
   @include tablet {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     padding-left: 30px;
     padding-right: 0;
     max-width: 49%;
@@ -110,7 +110,7 @@
 
   @include desktop {
     margin-bottom: 30px;
-    padding-left: 63px;
-
+    padding-left: 42px;
+    padding-right: 5%;
   }
 }

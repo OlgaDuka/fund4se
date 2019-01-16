@@ -1,33 +1,69 @@
 .actionplan {
   @include container(0, 0);
-  margin-bottom: 112px;
+  margin-bottom: 0px;
 
   @include tablet {
-    margin-bottom: 100px;
+    margin-bottom: 18px;
   }
 
   @include desktop {
-    margin-bottom: 130px;
+    margin-bottom: 60px;
   }
 }
 
 .actionplan__img img {
   width: 100%;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+
+  @include tablet {
+    margin-bottom: 48px;
+  }
 
   @include desktop {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.actionplan__wrap {
+  @include desktop {
+    max-height: 230px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
   }
 }
 
 .actionplan__text {
+  margin-top: 0;
+  margin-bottom: 5px;
   padding-left: 20px;
   padding-right: 20px;
+  position: relative;
 
-  @include title-light($navi-blue, 18px, 30px, 14px, 23px, 20px, 33px, $red-peach);
+  @include title-light($navi-blue, 18px, 30px, 20px, 33px, 20px, 33px, $red-peach);
 
   @include tablet {
+    padding-top: 20px;
     padding-left: 0;
     padding-right: 0;
+    width: 80%;
+
+    &:first-of-type {
+      @include red-line(70px, -7px);
+      width: 100%;
+    }
+  }
+
+  @include desktop {
+    width: 46.5%;
+    padding-top: 0;
+    margin-bottom: 25px;
+
+    &:first-of-type {
+      @include red-line(0, 0);
+      width: 46.5%;
+    }
+
   }
 }

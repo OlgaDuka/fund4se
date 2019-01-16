@@ -38,11 +38,19 @@
   }
 
   &--investors {
+    padding-bottom: 44px;
     @include header-img('investors');
 
     .main__text {
-
       @include font-light(20px, 33px);
+
+      @include tablet {
+        margin-top: 50px;
+      }
+
+      @include desktop {
+        margin-top: 95px;
+      }
     }
   }
 
@@ -68,6 +76,10 @@
      .main__text {
         @include font-light(12px, 20px);
       }
+    }
+
+    &--investors {
+      margin-bottom: 46px;
     }
   }
 
