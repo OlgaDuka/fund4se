@@ -55,6 +55,7 @@
   }
 
   &--startups {
+    padding-bottom: 65px;
     @include header-img('startups');
 
     .main__text {

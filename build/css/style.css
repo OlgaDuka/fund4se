@@ -1244,7 +1244,7 @@ div.wpcf7-response-output {
   max-width: 768px;
   margin-bottom: 80px;
   width: 284px;
-  height: 436px;
+  height: 256px;
   background-image: url("../img/svg-sprite/bg-red-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -1254,13 +1254,13 @@ div.wpcf7-response-output {
   color: #fff;
   padding: 28px 18px;
   font-family: "Roboto-light", Arial, sans-serif;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 24px;
+  line-height: 28px;
   font-weight: 300; }
   .invitation__text span {
     font-family: "Roboto-bold", Arial, sans-serif;
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 24px;
+    line-height: 28px;
     font-weight: 700; }
 
 .leaders {
@@ -1384,6 +1384,7 @@ div.wpcf7-response-output {
       line-height: 33px;
       font-weight: 300; }
   .main__hero--startups {
+    padding-bottom: 65px;
     background-image: url("../img/bg-startups-mobile@1x.jpg"); }
     .main__hero--startups .main__text {
       font-family: "Roboto-light", Arial, sans-serif;
@@ -1612,16 +1613,17 @@ div.wpcf7-response-output {
   max-width: 768px; }
 
 .requirements__title {
+  margin-bottom: 40px;
   position: relative;
   color: #0f254c;
   font-family: "Roboto-thin", Arial, sans-serif;
-  font-size: 42px;
-  line-height: 49px;
+  font-size: 30px;
+  line-height: 35px;
   font-weight: 100; }
   .requirements__title span {
     font-family: "Roboto-bold", Arial, sans-serif;
-    font-size: 42px;
-    line-height: 49px;
+    font-size: 30px;
+    line-height: 35px;
     font-weight: 700;
     border-bottom: 1px solid transparent;
     text-transform: none; }
@@ -1640,18 +1642,18 @@ div.wpcf7-response-output {
   list-style: none; }
 
 .requirements__item {
-  margin-left: 57px;
-  margin-bottom: 30px;
+  padding-left: 35px;
+  margin-bottom: 28px;
   position: relative;
   color: #0f254c;
   font-family: "Roboto-thin", Arial, sans-serif;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 24px;
+  line-height: 30px;
   font-weight: 100; }
   .requirements__item span {
     font-family: "Roboto-bold", Arial, sans-serif;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 24px;
+    line-height: 30px;
     font-weight: 700;
     border-bottom: 1px solid transparent;
     text-transform: none; }
@@ -1660,18 +1662,18 @@ div.wpcf7-response-output {
     color: #c96164;
     position: absolute;
     top: 0;
-    left: -57px; }
+    left: 0; }
   .requirements__item--img1 {
     margin-bottom: 50px;
-    padding-bottom: 130px; }
+    padding-bottom: 115px; }
   .requirements__item--img2 {
-    margin-bottom: 107px;
-    padding-bottom: 190px; }
+    margin-bottom: 50px;
+    padding-bottom: 165px; }
   .requirements__item--img1::after, .requirements__item--img2::after {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 35px;
     width: 114px;
     height: 91px;
     background-image: url("../img/svg-sprite/saving.svg");
@@ -1685,8 +1687,8 @@ div.wpcf7-response-output {
     background-size: 106px 145px; }
 
 .requirements__sublist {
-  margin-left: -57px;
-  margin-top: 42px;
+  margin-left: -40px;
+  margin-top: 30px;
   padding: 0;
   list-style: none;
   display: -webkit-box;
@@ -1698,7 +1700,7 @@ div.wpcf7-response-output {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .requirements__sublist--market {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
@@ -1709,6 +1711,8 @@ div.wpcf7-response-output {
     .requirements__sublist--industry::after {
       content: "";
       width: 134px; }
+  .requirements__sublist--technology {
+    margin-top: 25px; }
 
 .requirements__industry {
   color: #002B67;
@@ -1778,9 +1782,9 @@ div.wpcf7-response-output {
 .requirements__technology {
   color: #002B67;
   width: 142px;
-  height: 220px;
+  height: 180px;
   margin-bottom: 25px;
-  padding-top: 180px;
+  padding-top: 145px;
   padding-left: 12px;
   padding-right: 12px;
   font-family: "Roboto-light", Arial, sans-serif;
@@ -1790,28 +1794,27 @@ div.wpcf7-response-output {
   text-align: center;
   background-repeat: no-repeat; }
   .requirements__technology--img1 {
-    background-position: left 10px top;
-    background-size: 114px 163px;
+    background-position: left 20px top;
+    background-size: 100px 120px;
     background-image: url("../img/svg-sprite/technology1.svg"); }
   .requirements__technology--img2 {
-    background-position: left 10px top 10px;
-    background-size: 114px 145px;
+    background-position: left 20px top;
+    background-size: 100px 120px;
     background-image: url("../img/svg-sprite/technology2.svg"); }
   .requirements__technology--img3 {
     -ms-flex-item-align: end;
         align-self: flex-end;
-    height: 180px;
-    padding-top: 140px;
-    background-position: left 10px top 10px;
-    background-size: 114px 115px;
+    padding-top: 150px;
+    background-position: left 20px top;
+    background-size: 125px 125px;
     background-image: url("../img/svg-sprite/technology3.svg"); }
 
 .requirements__possess {
   color: #002B67;
   width: 142px;
-  height: 200px;
+  height: 180px;
   margin-bottom: 20px;
-  padding-top: 150px;
+  padding-top: 140px;
   padding-left: 0;
   padding-right: 0;
   font-family: "Roboto-light", Arial, sans-serif;
@@ -1821,16 +1824,17 @@ div.wpcf7-response-output {
   text-align: center;
   background-repeat: no-repeat; }
   .requirements__possess--img1 {
-    background-position: left 10px top;
-    background-size: 114px 138px;
+    background-position: left 25px top;
+    background-size: 100px 120px;
     background-image: url("../img/svg-sprite/possess1.svg"); }
   .requirements__possess--img2 {
-    background-position: left 10px top 20px;
-    background-size: 114px 105px;
+    background-position: left 10px top;
+    background-size: 125px 115px;
     background-image: url("../img/svg-sprite/possess2.svg"); }
   .requirements__possess--img3 {
+    padding-top: 165px;
     background-position: left 10px top 20px;
-    background-size: 114px 116px;
+    background-size: 130px 120px;
     background-image: url("../img/svg-sprite/possess3.svg"); }
 
 .strategy {
@@ -2453,7 +2457,7 @@ div.wpcf7-response-output {
       padding-left: 50px;
       padding-right: 50px; }
     .invitation {
-      margin-bottom: 68px;
+      margin-bottom: 25px;
       width: 668px;
       height: 198px;
       background-image: url("../img/svg-sprite/bg-red-tablet.svg"); }
@@ -2644,7 +2648,7 @@ div.wpcf7-response-output {
       padding-left: 50px;
       padding-right: 50px; }
     .requirements {
-      margin-bottom: 85px; }
+      margin-bottom: 67px; }
     .requirements__title {
       font-family: "Roboto-thin", Arial, sans-serif;
       font-size: 30px;
@@ -2656,8 +2660,9 @@ div.wpcf7-response-output {
         line-height: 35px;
         font-weight: 700; }
     .requirements__title {
+      margin-top: 50px;
+      margin-bottom: 35px;
       width: 550px;
-      margin-bottom: 40px;
       padding-left: 124px; }
       .requirements__title::before {
         content: "";
@@ -2669,51 +2674,57 @@ div.wpcf7-response-output {
         border-bottom: 1px solid #c96164; }
     .requirements__item {
       font-family: "Roboto-thin", Arial, sans-serif;
-      font-size: 20px;
-      line-height: 24px;
+      font-size: 24px;
+      line-height: 30px;
       font-weight: 100; }
       .requirements__item span {
         font-family: "Roboto-bold", Arial, sans-serif;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 24px;
+        line-height: 30px;
         font-weight: 700; }
     .requirements__item {
       margin-bottom: 20px;
-      margin-left: 30px; }
-      .requirements__item::before {
-        left: -30px; }
+      padding-left: 30px; }
       .requirements__item--img1 {
-        margin-top: 82px;
+        margin-top: 63px;
         padding-bottom: 30px;
-        padding-left: 0;
-        padding-right: 300px;
-        max-width: 600px; }
+        padding-right: 200px;
+        max-width: 650px; }
       .requirements__item--img2 {
-        margin-top: 100px;
-        padding-bottom: 30px;
-        padding-left: 0;
-        padding-right: 300px;
-        max-width: 600px; }
+        margin-top: 80px;
+        margin-bottom: 20px;
+        padding-bottom: 0;
+        padding-right: 200px;
+        max-width: 650px; }
       .requirements__item--img1::after, .requirements__item--img2::after {
         top: -20px;
         left: auto;
         right: 0; }
       .requirements__item--img1::after {
         width: 152px;
-        height: 100px;
-        background-position: left 30px bottom 5px;
-        background-size: 120px 100px; }
+        height: 120px;
+        background-position: left 20px bottom 0;
+        background-size: 133px 120px; }
       .requirements__item--img2::after {
         width: 136px;
-        height: 140px;
+        height: 160px;
         right: 20px;
-        background-position: left 34px bottom;
-        background-size: 102px 140px; }
+        background-position: left 40px bottom 30px;
+        background-size: 90px 130px; }
+      .requirements__item:nth-of-type(1), .requirements__item:nth-of-type(2) {
+        margin-bottom: 0; }
     .requirements__sublist {
       margin-left: 0;
       margin-top: 30px;
       margin-bottom: 30px; }
+      .requirements__sublist--market {
+        margin-top: 20px;
+        margin-bottom: 8px; }
+      .requirements__sublist--technology {
+        margin-bottom: 0; }
       .requirements__sublist--industry {
+        margin-top: 25px;
+        margin-bottom: 0;
         max-width: 700px;
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
@@ -2748,57 +2759,75 @@ div.wpcf7-response-output {
       background-position: left 20px top 16px; }
     .requirements__market {
       width: 172px;
-      height: 260px;
-      margin-left: 0px;
+      height: 270px;
+      margin-left: 0;
       margin-right: 56px;
-      padding-top: 160px;
+      padding-top: 170px;
       padding-left: 0;
       padding-right: 0;
-      background-position: left 25px top;
+      background-position: left 35px top 10px;
       background-size: 122px 122px; }
       .requirements__market span {
         font-family: "Roboto-bold", Arial, sans-serif;
         font-size: 36px;
         line-height: 42px;
         font-weight: 700; }
+      .requirements__market--img2 {
+        margin-left: 5px;
+        padding-top: 150px;
+        background-position: left 25px top 0;
+        background-size: 122px 122px; }
     .requirements__technology {
-      width: 160px;
-      height: 240px;
-      margin-bottom: 15px;
-      padding-top: 200px;
+      width: 142px;
+      height: 185px;
+      margin-top: 20px;
+      margin-bottom: 0;
+      padding-top: 150px;
       padding-left: 12px;
       padding-right: 12px;
       -ms-flex-pack: distribute;
-          justify-content: space-around; }
+          justify-content: space-around;
+      text-align: center; }
       .requirements__technology--img1 {
-        margin-left: 30px;
-        background-position: left 0 top;
-        background-size: 122px 171px;
+        margin-left: 10px;
+        background-position: left 20px top;
+        background-size: 100px 120px;
         background-image: url("../img/svg-sprite/technology1.svg"); }
       .requirements__technology--img2 {
-        background-position: left 18px top 10px;
-        background-size: 122px 155px;
+        margin-left: 30px;
+        background-position: left 20px top;
+        background-size: 100px 120px;
         background-image: url("../img/svg-sprite/technology2.svg"); }
       .requirements__technology--img3 {
-        margin-right: 15px;
-        background-position: left 23px top 40px;
+        width: 160px;
+        margin-left: 0;
+        margin-right: 10px;
+        background-position: left 25px top;
         background-size: 114px 115px;
         background-image: url("../img/svg-sprite/technology3.svg"); }
-    .requirements__possess--img1 {
-      width: 180px;
-      background-position: left 40px top 0;
-      background-size: 95px 115px;
-      background-image: url("../img/svg-sprite/possess1.svg"); }
-    .requirements__possess--img2 {
-      margin-right: 10px;
-      background-position: left 10px top 3px;
-      background-size: 122px 112px;
-      background-image: url("../img/svg-sprite/possess2.svg"); }
-    .requirements__possess--img3 {
-      margin-right: 30px;
-      background-position: left 10px top -5px;
-      background-size: 122px 124px;
-      background-image: url("../img/svg-sprite/possess3.svg"); }
+    .requirements__possess {
+      margin-bottom: 0;
+      font-family: "Roboto-light", Arial, sans-serif;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 300;
+      height: 200px;
+      padding-top: 150px; }
+      .requirements__possess--img1 {
+        width: 180px;
+        background-position: left 40px top 0;
+        background-size: 95px 115px;
+        background-image: url("../img/svg-sprite/possess1.svg"); }
+      .requirements__possess--img2 {
+        margin-right: 10px;
+        background-position: left 10px top 3px;
+        background-size: 122px 112px;
+        background-image: url("../img/svg-sprite/possess2.svg"); }
+      .requirements__possess--img3 {
+        margin-right: 30px;
+        background-position: left 10px top -5px;
+        background-size: 122px 124px;
+        background-image: url("../img/svg-sprite/possess3.svg"); }
     .strategy {
       max-width: 1270px;
       padding-left: 50px;
@@ -2932,7 +2961,7 @@ div.wpcf7-response-output {
       line-height: 26px;
       font-weight: 300; }
     .requirements__item {
-      margin-left: 123px; } }
+      padding-left: 123px; } }
 
 @media (min-width: 1270px) {
     .mobile-only {
@@ -3526,7 +3555,7 @@ div.wpcf7-response-output {
         font-weight: 700; }
     .requirements__title {
       width: 765px;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
       padding-left: 180px; }
       .requirements__title::before {
         content: "";
@@ -3538,19 +3567,19 @@ div.wpcf7-response-output {
         border-bottom: 1px solid #c96164; }
     .requirements__item {
       font-family: "Roboto-thin", Arial, sans-serif;
-      font-size: 30px;
-      line-height: 36px;
+      font-size: 36px;
+      line-height: 42px;
       font-weight: 100; }
       .requirements__item span {
         font-family: "Roboto-bold", Arial, sans-serif;
-        font-size: 30px;
-        line-height: 36px;
+        font-size: 36px;
+        line-height: 42px;
         font-weight: 700; }
     .requirements__item {
       margin-bottom: 30px;
-      margin-left: 172px; }
+      padding-left: 180px; }
       .requirements__item::before {
-        left: -50px; }
+        left: 130px; }
       .requirements__item--img1 {
         margin-bottom: 140px;
         padding-bottom: 40px;
@@ -3577,59 +3606,63 @@ div.wpcf7-response-output {
         background-size: 157px 215px; }
     .requirements__sublist {
       margin-left: 8px;
-      margin-top: 50px;
+      margin-top: 43px;
       margin-bottom: 50px; }
       .requirements__sublist--industry {
         max-width: 1100px;
-        margin-bottom: 0; }
+        margin-bottom: 20px; }
         .requirements__sublist--industry::after {
           content: "";
           width: 278px; }
+      .requirements__sublist--market {
+        margin-top: 30px; }
     .requirements__industry {
       width: 278px;
-      height: 201px;
-      margin-bottom: 57px;
-      padding-top: 113px;
+      height: 180px;
+      margin-bottom: 48px;
+      padding-top: 100px;
       padding-left: 29px;
       font-family: "Roboto-light", Arial, sans-serif;
-      font-size: 24px;
-      line-height: 35px;
+      font-size: 20px;
+      line-height: 29px;
       font-weight: 300; }
     .requirements__industry--img1 {
-      background-position: left 25px top 21px;
-      background-size: 75px 75px; }
+      background-position: left 15px top 13px;
+      background-size: 65px 65px; }
     .requirements__industry--img2 {
-      background-size: 65px 70px;
-      background-position: left 30px top 27px; }
+      background-size: 50px 55px;
+      background-position: left 25px top 20px; }
     .requirements__industry--img3 {
-      background-size: 70px 65px;
-      background-position: left 22px top 26px; }
+      background-size: 60px 55px;
+      background-position: left 25px top 20px; }
     .requirements__industry--img4 {
-      background-size: 75px 65px;
-      background-position: left 29px top 28px; }
+      background-size: 65px 55px;
+      background-position: left 29px top 20px; }
     .requirements__industry--img5 {
-      background-size: 70px 65px;
+      padding-right: 20px;
+      background-size: 60px 55px;
       background-position: left 22px top 18px; }
     .requirements__market {
-      width: 232px;
-      height: 385px;
+      width: 172px;
+      height: 255px;
       margin-right: 112px;
-      padding-top: 295px;
+      padding-top: 170px;
       font-family: "Roboto-light", Arial, sans-serif;
-      font-size: 24px;
-      line-height: 28px;
+      font-size: 20px;
+      line-height: 24px;
       font-weight: 300;
-      background-position: left top;
-      background-size: 232px 232px; }
+      background-position: left 25px top 15px;
+      background-size: 124px 124px; }
       .requirements__market span {
         font-family: "Roboto-bold", Arial, sans-serif;
-        font-size: 42px;
-        line-height: 49px;
+        font-size: 36px;
+        line-height: 42px;
         font-weight: 700; }
       .requirements__market--img2 {
-        padding-top: 270px;
-        background-position: left 15px top 15px;
-        background-size: 202px 202px; }
+        width: 210px;
+        padding-top: 147px;
+        margin-left: 85px;
+        background-position: left 47px top; }
     .requirements__technology {
       width: 167px;
       height: 300px;

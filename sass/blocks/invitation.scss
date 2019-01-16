@@ -2,14 +2,14 @@
   @include container();
   margin-bottom: 80px;
   width: 284px;
-  height: 436px;
+  height: 256px;
   background-image: url("../img/svg-sprite/bg-red-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top center;
 
   @include tablet {
-    margin-bottom: 68px;
+    margin-bottom: 25px;
     width: 668px;
     height: 198px;
     background-image: url("../img/svg-sprite/bg-red-tablet.svg");
@@ -28,10 +28,10 @@
 .invitation__text {
   color: $white;
   padding: 28px 18px;
-  @include font-light(32px, 38px);
+  @include font-light(24px, 28px);
 
   span {
-    @include font-bold(32px, 38px);
+    @include font-bold(24px, 28px);
   }
 
   @include tablet {
