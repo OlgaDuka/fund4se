@@ -16,10 +16,11 @@
   }
 
   @include desktop {
-    margin-bottom: 70px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     width: 1270px;
-    height: 283px;
-    background-image: url("../img/svg-sprite/bg-red.svg");
+    height: 163px;
+    background-image: url("../img/svg-sprite/bg-red-desktop.svg");
     background-size: 1170px;
   }
 
@@ -45,11 +46,6 @@
   }
 
   @include desktop {
-    padding: 50px 71px 0 74px;
-    @include font-light(42px, 49px);
-
-    span {
-      @include font-bold(42px, 49px);
-    }
+    padding: 30px 75px;
   }
 }

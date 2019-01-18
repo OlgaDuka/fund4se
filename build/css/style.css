@@ -2689,13 +2689,13 @@ div.wpcf7-response-output {
         margin-top: 63px;
         padding-bottom: 30px;
         padding-right: 200px;
-        max-width: 650px; }
+        max-width: 95%; }
       .requirements__item--img2 {
         margin-top: 80px;
         margin-bottom: 20px;
         padding-bottom: 0;
         padding-right: 200px;
-        max-width: 650px; }
+        max-width: 95%; }
       .requirements__item--img1::after, .requirements__item--img2::after {
         top: -20px;
         left: auto;
@@ -2775,8 +2775,7 @@ div.wpcf7-response-output {
       .requirements__market--img2 {
         margin-left: 5px;
         padding-top: 150px;
-        background-position: left 25px top 0;
-        background-size: 122px 122px; }
+        background-position: left 25px top 0; }
     .requirements__technology {
       width: 142px;
       height: 185px;
@@ -3344,22 +3343,14 @@ div.wpcf7-response-output {
       padding-left: 50px;
       padding-right: 50px; }
     .invitation {
-      margin-bottom: 70px;
+      margin-top: 50px;
+      margin-bottom: 50px;
       width: 1270px;
-      height: 283px;
-      background-image: url("../img/svg-sprite/bg-red.svg");
+      height: 163px;
+      background-image: url("../img/svg-sprite/bg-red-desktop.svg");
       background-size: 1170px; }
     .invitation__text {
-      padding: 50px 71px 0 74px;
-      font-family: "Roboto-light", Arial, sans-serif;
-      font-size: 42px;
-      line-height: 49px;
-      font-weight: 300; }
-      .invitation__text span {
-        font-family: "Roboto-bold", Arial, sans-serif;
-        font-size: 42px;
-        line-height: 49px;
-        font-weight: 700; }
+      padding: 30px 75px; }
     .leaders {
       max-width: 1680px;
       padding-left: 50px;
@@ -3542,7 +3533,7 @@ div.wpcf7-response-output {
       padding-left: 50px;
       padding-right: 50px; }
     .requirements {
-      margin-bottom: 125px; }
+      margin-bottom: 45px; }
     .requirements__title {
       font-family: "Roboto-thin", Arial, sans-serif;
       font-size: 42px;
@@ -3576,34 +3567,35 @@ div.wpcf7-response-output {
         line-height: 42px;
         font-weight: 700; }
     .requirements__item {
+      width: 100%;
       margin-bottom: 30px;
       padding-left: 180px; }
       .requirements__item::before {
         left: 130px; }
       .requirements__item--img1 {
-        margin-bottom: 140px;
+        margin-right: 0;
+        margin-bottom: 70px;
+        margin-top: 48px;
         padding-bottom: 40px;
-        padding-right: 473px;
-        max-width: 923px; }
+        padding-right: 260px;
+        max-width: 95%; }
       .requirements__item--img2 {
+        margin-top: 93px;
         margin-bottom: 0;
-        padding-right: 500px;
-        max-width: 950px; }
-      .requirements__item--img1::before, .requirements__item--img2::before {
-        top: 18px; }
+        padding-right: 260px;
+        max-width: 95%; }
       .requirements__item--img1::after {
-        width: 215px;
-        height: 163px;
+        width: 150px;
+        height: 135px;
         top: -40px;
-        background-position: left 2px bottom;
-        background-size: 200px 163px; }
+        background-position: right top 15px;
+        background-size: 150px 120px; }
       .requirements__item--img2::after {
-        width: 188px;
-        height: 230px;
-        top: -97px;
-        right: 57px;
-        background-position: left 10px bottom;
-        background-size: 157px 215px; }
+        width: 90px;
+        height: 120px;
+        top: -40px;
+        background-position: right top;
+        background-size: 90px 120px; }
     .requirements__sublist {
       margin-left: 8px;
       margin-top: 43px;
@@ -3616,6 +3608,11 @@ div.wpcf7-response-output {
           width: 278px; }
       .requirements__sublist--market {
         margin-top: 30px; }
+      .requirements__sublist--technology {
+        margin-top: 30px;
+        margin-bottom: 65px; }
+      .requirements__sublist--possess {
+        margin-bottom: 30px; }
     .requirements__industry {
       width: 278px;
       height: 180px;
@@ -3651,7 +3648,7 @@ div.wpcf7-response-output {
       font-size: 20px;
       line-height: 24px;
       font-weight: 300;
-      background-position: left 25px top 15px;
+      background-position: center top 15px;
       background-size: 124px 124px; }
       .requirements__market span {
         font-family: "Roboto-bold", Arial, sans-serif;
@@ -3662,64 +3659,65 @@ div.wpcf7-response-output {
         width: 210px;
         padding-top: 147px;
         margin-left: 85px;
-        background-position: left 47px top; }
+        background-position: center top; }
     .requirements__technology {
-      width: 167px;
-      height: 300px;
-      margin-bottom: 40px;
-      margin-left: 0;
-      margin-right: 0;
-      padding-top: 275px;
-      padding-left: 12px;
-      padding-right: 12px;
-      font-family: "Roboto-light", Arial, sans-serif;
-      font-size: 24px;
-      line-height: 28px;
-      font-weight: 300; }
-      .requirements__technology--img1 {
-        background-position: left top;
-        background-size: 160px 223px;
-        background-image: url("../img/svg-sprite/technology1.svg"); }
-      .requirements__technology--img2 {
-        margin-left: 35px;
-        background-position: left top 10px;
-        background-size: 167px 213px;
-        background-image: url("../img/svg-sprite/technology2.svg"); }
-      .requirements__technology--img3 {
-        margin-right: 65px;
-        width: 214px;
-        background-position: left top 10px;
-        background-size: 214px 217px;
-        background-image: url("../img/svg-sprite/technology3.svg"); }
-    .requirements__possess {
-      height: 320px;
-      margin-bottom: 40px;
-      margin-left: 0;
-      margin-right: 0;
-      padding-top: 272px;
+      height: 173px;
+      margin: 0;
+      padding-top: 153px;
       padding-left: 0;
       padding-right: 0;
       font-family: "Roboto-light", Arial, sans-serif;
-      font-size: 24px;
-      line-height: 28px;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 300; }
+      .requirements__technology--img1 {
+        width: 130px;
+        margin-left: 18px;
+        background-position: center top 5px;
+        background-size: 85px 120px;
+        background-image: url("../img/svg-sprite/technology1.svg"); }
+      .requirements__technology--img2 {
+        width: 110px;
+        margin-left: 5px;
+        background-position: center top 5px;
+        background-size: 95px 120px;
+        background-image: url("../img/svg-sprite/technology2.svg"); }
+      .requirements__technology--img3 {
+        width: 150px;
+        margin-right: 47px;
+        background-position: center top 5px;
+        background-size: 120px 120px;
+        background-image: url("../img/svg-sprite/technology3.svg"); }
+    .requirements__possess {
+      height: 180px;
+      margin-bottom: 40px;
+      margin-left: 0;
+      margin-right: 0;
+      padding-top: 160px;
+      padding-left: 0;
+      padding-right: 0;
+      font-family: "Roboto-light", Arial, sans-serif;
+      font-size: 20px;
+      line-height: 24px;
       font-weight: 300;
       text-align: center;
       background-repeat: no-repeat; }
       .requirements__possess--img1 {
-        width: 190px;
-        background-position: left 10px top 18px;
-        background-size: 168px 204px;
+        width: 170px;
+        background-position: center top 10px;
+        background-size: 100px 120px;
         background-image: url("../img/svg-sprite/possess1.svg"); }
       .requirements__possess--img2 {
-        width: 255px;
-        background-position: left 20px top 34px;
-        background-size: 204px 188px;
+        margin-right: 20px;
+        width: 220px;
+        background-position: center top 10px;
+        background-size: 130px 120px;
         background-image: url("../img/svg-sprite/possess2.svg"); }
       .requirements__possess--img3 {
-        margin-right: 70px;
-        width: 190px;
-        background-position: left top 35px;
-        background-size: 184px 188px;
+        margin-right: 45px;
+        width: 170px;
+        background-position: center top 10px;
+        background-size: 120px 120px;
         background-image: url("../img/svg-sprite/possess3.svg"); }
     .strategy {
       max-width: 1680px;

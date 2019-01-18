@@ -6,7 +6,7 @@
   }
 
   @include desktop {
-    margin-bottom: 125px;
+    margin-bottom: 45px;
   }
 }
 
@@ -94,7 +94,7 @@
       margin-top: 63px;
       padding-bottom: 30px;
       padding-right: 200px;
-      max-width: 650px;
+      max-width: 95%;
     }
 
     &--img2 {
@@ -102,7 +102,7 @@
       margin-bottom: 20px;
       padding-bottom: 0;
       padding-right: 200px;
-      max-width: 650px;
+      max-width: 95%;
     }
 
     &--img1::after,
@@ -138,6 +138,7 @@
   }
 
   @include desktop {
+    width: 100%;
     margin-bottom: 30px;
     padding-left: 180px;
 
@@ -146,38 +147,35 @@
     }
 
     &--img1 {
-      margin-bottom: 140px;
+      margin-right: 0;
+      margin-bottom: 70px;
+      margin-top: 48px;
       padding-bottom: 40px;
-      padding-right: 473px;
-      max-width: 923px;
+      padding-right: 260px;
+      max-width: 95%;
     }
 
     &--img2 {
+      margin-top: 93px;
       margin-bottom: 0;
-      padding-right: 500px;
-      max-width: 950px;
-    }
-
-    &--img1::before,
-    &--img2::before {
-      top: 18px;
+      padding-right: 260px;
+      max-width: 95%;
     }
 
     &--img1::after {
-      width: 215px;
-      height: 163px;
+      width: 150px;
+      height: 135px;
       top: -40px;
-      background-position: left 2px bottom;
-      background-size: 200px 163px;
+      background-position: right top 15px;
+      background-size: 150px 120px;
     }
 
     &--img2::after {
-      width: 188px;
-      height: 230px;
-      top: -97px;
-      right: 57px;
-      background-position: left 10px bottom;
-      background-size: 157px 215px;
+      width: 90px;
+      height: 120px;
+      top: -40px;
+      background-position: right top;
+      background-size: 90px 120px;
     }
   }
 }
@@ -254,6 +252,15 @@
 
     &--market {
       margin-top: 30px;
+    }
+
+    &--technology {
+      margin-top: 30px;
+      margin-bottom: 65px;
+    }
+
+    &--possess {
+      margin-bottom: 30px;
     }
   }
 }
@@ -421,7 +428,6 @@
       margin-left: 5px;
       padding-top: 150px;
       background-position: left 25px top 0;
-      background-size: 122px 122px;
     }
   }
 
@@ -431,7 +437,7 @@
     margin-right: 112px;
     padding-top: 170px;
     @include font-light(20px, 24px);
-    background-position: left 25px top 15px;
+    background-position: center top 15px;
     background-size: 124px 124px;
 
     span {
@@ -442,8 +448,7 @@
       width: 210px;
       padding-top: 147px;
       margin-left: 85px;
-      background-position: left 47px top ;
-
+      background-position: center top;
     }
   }
 }
@@ -516,34 +521,34 @@
   }
 
   @include desktop {
-    width: 167px;
-    height: 300px;
-    margin-bottom: 40px;
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 275px;
-    padding-left: 12px;
-    padding-right: 12px;
-    @include font-light(24px, 28px);
+    height: 173px;
+    margin: 0;
+    padding-top: 153px;
+    padding-left: 0;
+    padding-right: 0;
+    @include font-light(20px, 24px);
 
     &--img1 {
-      background-position: left top;
-      background-size: 160px 223px;
+      width: 130px;
+      margin-left: 18px;
+      background-position: center top 5px;
+      background-size: 85px 120px;
       background-image: url("../img/svg-sprite/technology1.svg");
     }
 
     &--img2 {
-      margin-left: 35px;
-      background-position: left top 10px;
-      background-size: 167px 213px;
+      width: 110px;
+      margin-left: 5px;
+      background-position: center top 5px;
+      background-size: 95px 120px;
       background-image: url("../img/svg-sprite/technology2.svg");
     }
 
     &--img3 {
-      margin-right: 65px;
-      width: 214px;
-      background-position: left top 10px;
-      background-size: 214px 217px;
+      width: 150px;
+      margin-right: 47px;
+      background-position: center top 5px;
+      background-size: 120px 120px;
       background-image: url("../img/svg-sprite/technology3.svg");
     }
   }
@@ -609,38 +614,38 @@
   }
 
   @include desktop {
-    height: 320px;
+    height: 180px;
     margin-bottom: 40px;
     margin-left: 0;
     margin-right: 0;
-    padding-top: 272px;
+    padding-top: 160px;
     padding-left: 0;
     padding-right: 0;
-    @include font-light(24px, 28px);
+    @include font-light(20px, 24px);
     text-align: center;
     background-repeat: no-repeat;
 
     &--img1 {
-      width: 190px;
-      background-position: left 10px top 18px;;
-      background-size: 168px 204px;
+      width: 170px;
+      background-position: center top 10px;
+      background-size: 100px 120px;
       background-image: url("../img/svg-sprite/possess1.svg");
     }
 
     &--img2 {
-      width: 255px;
-      background-position: left 20px top 34px;
-      background-size: 204px 188px;
+      margin-right: 20px;
+      width: 220px;
+      background-position: center top 10px;
+      background-size: 130px 120px;
       background-image: url("../img/svg-sprite/possess2.svg");
     }
 
     &--img3 {
-      margin-right: 70px;
-      width: 190px;
-      background-position: left top 35px;
-      background-size: 184px 188px;
+      margin-right: 45px;
+      width: 170px;
+      background-position: center top 10px;
+      background-size: 120px 120px;
       background-image: url("../img/svg-sprite/possess3.svg");
     }
   }
-
 }
