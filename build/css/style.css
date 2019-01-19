@@ -3347,7 +3347,7 @@ div.wpcf7-response-output {
     .leaders {
       margin-bottom: 30px; }
     .leaders__wrap {
-      margin-bottom: 48px;
+      margin-bottom: 20px;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
@@ -3467,7 +3467,7 @@ div.wpcf7-response-output {
                 justify-content: flex-end;
         position: relative; }
       .persona--lider2 {
-        margin-top: 77px; }
+        margin-top: 50px; }
     .persona__info {
       width: 65%;
       margin-left: 41px;
@@ -3535,7 +3535,7 @@ div.wpcf7-response-output {
         font-weight: 700; }
     .requirements__title {
       width: 765px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       padding-left: 180px; }
       .requirements__title::before {
         content: "";
@@ -3556,7 +3556,7 @@ div.wpcf7-response-output {
         line-height: 42px;
         font-weight: 700; }
     .requirements__item {
-      width: 100%;
+      width: 90%;
       margin-bottom: 30px;
       padding-left: 180px; }
       .requirements__item::before {
@@ -3567,12 +3567,12 @@ div.wpcf7-response-output {
         margin-top: 48px;
         padding-bottom: 40px;
         padding-right: 260px;
-        max-width: 83%; }
+        max-width: 85%; }
       .requirements__item--img2 {
         margin-top: 93px;
         margin-bottom: 0;
         padding-right: 260px;
-        max-width: 83%; }
+        max-width: 85%; }
       .requirements__item--img1::after {
         width: 150px;
         height: 135px;
@@ -3587,8 +3587,8 @@ div.wpcf7-response-output {
         background-size: 90px 120px; }
     .requirements__sublist {
       margin-left: 8px;
-      margin-top: 43px;
-      margin-bottom: 50px;
+      margin-top: 30px;
+      margin-bottom: 30px;
       max-width: 1170px; }
       .requirements__sublist--industry {
         max-width: 1100px;
@@ -3606,7 +3606,7 @@ div.wpcf7-response-output {
     .requirements__industry {
       width: 278px;
       height: 180px;
-      margin-bottom: 48px;
+      margin-bottom: 30px;
       padding-top: 100px;
       padding-left: 29px;
       font-family: "Roboto-light", Arial, sans-serif;

@@ -27,7 +27,7 @@
 
   @include desktop {
     width: 765px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding-left: 180px;
     @include red-line(145px, 21px);
   }
@@ -138,7 +138,7 @@
   }
 
   @include desktop {
-    width: 100%;
+    width: 90%;
     margin-bottom: 30px;
     padding-left: 180px;
 
@@ -152,14 +152,14 @@
       margin-top: 48px;
       padding-bottom: 40px;
       padding-right: 260px;
-      max-width: 83%;
+      max-width: 85%;
     }
 
     &--img2 {
       margin-top: 93px;
       margin-bottom: 0;
       padding-right: 260px;
-      max-width: 83%;
+      max-width: 85%;
     }
 
     &--img1::after {
@@ -237,8 +237,8 @@
 
   @include desktop {
     margin-left: 8px;
-    margin-top: 43px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     max-width: 1170px;
 
     &--industry {
@@ -291,7 +291,7 @@
   @include desktop {
     width: 278px;
     height: 180px;
-    margin-bottom: 48px;
+    margin-bottom: 30px;
     padding-top: 100px;
     padding-left: 29px;
     @include font-light(20px, 29px);
