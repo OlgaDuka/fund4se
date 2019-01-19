@@ -973,7 +973,7 @@ input[type=tel] {
 .feedback__textarea {
   width: 100%;
   height: 65px;
-  color: #002B67;
+  color: #315f87;
   font-family: "Roboto-regular", Arial, sans-serif;
   font-size: 24px;
   line-height: 28px;
@@ -993,7 +993,7 @@ input[type=tel] {
   -webkit-transition: top 0.6s;
   transition: top 0.6s;
   pointer-events: none;
-  color: #002B67;
+  color: #315f87;
   font-family: "Roboto-thin", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -1044,7 +1044,7 @@ input[type=tel] {
     line-height: 19px;
     font-weight: 300;
     text-decoration: underline;
-    color: #002B67;
+    color: #315f87;
     line-height: 50px; }
     .feedback__file-upload label::before {
       content: "";
@@ -1061,7 +1061,7 @@ input[type=tel] {
   margin-bottom: 15px;
   background: #fff;
   border: 0;
-  color: #002B67; }
+  color: #315f87; }
 
 .feedback__input-box input:-webkit-autofill {
   font-family: "Roboto-regular", Arial, sans-serif;
@@ -1426,10 +1426,10 @@ div.wpcf7-response-output {
   line-height: 27px;
   font-weight: 300; }
   .main__text--blue {
-    color: #002B67; }
+    color: #315f87; }
 
 .menu {
-  color: #002B67; }
+  color: #315f87; }
   .menu--opened {
     width: 100%; }
     .menu--opened .menu__list {
@@ -1458,7 +1458,7 @@ div.wpcf7-response-output {
 .menu-item {
   position: relative; }
   .menu-item a {
-    color: #002B67;
+    color: #315f87;
     text-decoration: none;
     font-family: "Roboto-light", Arial, sans-serif;
     font-size: 24px;
@@ -1473,9 +1473,9 @@ div.wpcf7-response-output {
   .menu-item:hover::before {
     content: "";
     position: absolute;
-    left: -48px;
+    left: -22px;
     top: 22px;
-    width: 30px;
+    width: 17px;
     height: 10px;
     background-image: url("../img/svg-sprite/arrow-red.svg");
     background-repeat: no-repeat;
@@ -1551,7 +1551,7 @@ div.wpcf7-response-output {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #002B67;
+  color: #315f87;
   position: absolute;
   top: -150px;
   left: 110px; }
@@ -1715,7 +1715,7 @@ div.wpcf7-response-output {
     margin-top: 25px; }
 
 .requirements__industry {
-  color: #002B67;
+  color: #315f87;
   width: 134px;
   height: 170px;
   margin-bottom: 20px;
@@ -1753,7 +1753,7 @@ div.wpcf7-response-output {
     background-position: left 24px top 18px; }
 
 .requirements__market {
-  color: #002B67;
+  color: #315f87;
   width: 140px;
   height: 248px;
   padding-top: 143px;
@@ -1765,7 +1765,7 @@ div.wpcf7-response-output {
   font-weight: 300;
   text-align: center;
   background-repeat: no-repeat;
-  background-position: left 13px top;
+  background-position: center top;
   background-size: 114px 113px; }
   .requirements__market span {
     display: block;
@@ -1780,7 +1780,7 @@ div.wpcf7-response-output {
     background-image: url("../img/svg-sprite/market2.svg"); }
 
 .requirements__technology {
-  color: #002B67;
+  color: #315f87;
   width: 142px;
   height: 180px;
   margin-bottom: 25px;
@@ -1792,25 +1792,23 @@ div.wpcf7-response-output {
   line-height: 21px;
   font-weight: 300;
   text-align: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: center top; }
   .requirements__technology--img1 {
-    background-position: left 20px top;
     background-size: 100px 120px;
     background-image: url("../img/svg-sprite/technology1.svg"); }
   .requirements__technology--img2 {
-    background-position: left 20px top;
     background-size: 100px 120px;
     background-image: url("../img/svg-sprite/technology2.svg"); }
   .requirements__technology--img3 {
+    width: 160px;
     -ms-flex-item-align: end;
         align-self: flex-end;
-    padding-top: 150px;
-    background-position: left 20px top;
     background-size: 125px 125px;
     background-image: url("../img/svg-sprite/technology3.svg"); }
 
 .requirements__possess {
-  color: #002B67;
+  color: #315f87;
   width: 142px;
   height: 180px;
   margin-bottom: 20px;
@@ -1822,18 +1820,15 @@ div.wpcf7-response-output {
   line-height: 21px;
   font-weight: 300;
   text-align: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: center top; }
   .requirements__possess--img1 {
-    background-position: left 25px top;
     background-size: 100px 120px;
     background-image: url("../img/svg-sprite/possess1.svg"); }
   .requirements__possess--img2 {
-    background-position: left 10px top;
-    background-size: 125px 115px;
+    background-size: 125px 120px;
     background-image: url("../img/svg-sprite/possess2.svg"); }
   .requirements__possess--img3 {
-    padding-top: 165px;
-    background-position: left 10px top 20px;
     background-size: 130px 120px;
     background-image: url("../img/svg-sprite/possess3.svg"); }
 
@@ -1876,7 +1871,7 @@ div.wpcf7-response-output {
 .strategy__item {
   padding-top: 0;
   padding-bottom: 45px;
-  color: #002B67;
+  color: #315f87;
   font-family: "Roboto-light", Arial, sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -1953,7 +1948,7 @@ div.wpcf7-response-output {
   margin-left: 80px;
   margin-bottom: 48px;
   width: 180px;
-  color: #002B67;
+  color: #315f87;
   font-family: "Roboto-light", Arial, sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -2765,7 +2760,7 @@ div.wpcf7-response-output {
       padding-top: 170px;
       padding-left: 0;
       padding-right: 0;
-      background-position: left 35px top 10px;
+      background-position: center top 10px;
       background-size: 122px 122px; }
       .requirements__market span {
         font-family: "Roboto-bold", Arial, sans-serif;
@@ -2775,9 +2770,8 @@ div.wpcf7-response-output {
       .requirements__market--img2 {
         margin-left: 5px;
         padding-top: 150px;
-        background-position: left 25px top 0; }
+        background-position: center top; }
     .requirements__technology {
-      width: 142px;
       height: 185px;
       margin-top: 20px;
       margin-bottom: 0;
@@ -2789,23 +2783,20 @@ div.wpcf7-response-output {
       text-align: center; }
       .requirements__technology--img1 {
         margin-left: 10px;
-        background-position: left 20px top;
         background-size: 100px 120px;
         background-image: url("../img/svg-sprite/technology1.svg"); }
       .requirements__technology--img2 {
         margin-left: 30px;
-        background-position: left 20px top;
         background-size: 100px 120px;
         background-image: url("../img/svg-sprite/technology2.svg"); }
       .requirements__technology--img3 {
-        width: 160px;
         margin-left: 0;
         margin-right: 10px;
-        background-position: left 25px top;
         background-size: 114px 115px;
         background-image: url("../img/svg-sprite/technology3.svg"); }
     .requirements__possess {
       margin-bottom: 0;
+      width: 180px;
       font-family: "Roboto-light", Arial, sans-serif;
       font-size: 20px;
       line-height: 24px;
@@ -2813,18 +2804,16 @@ div.wpcf7-response-output {
       height: 200px;
       padding-top: 150px; }
       .requirements__possess--img1 {
-        width: 180px;
-        background-position: left 40px top 0;
         background-size: 95px 115px;
         background-image: url("../img/svg-sprite/possess1.svg"); }
       .requirements__possess--img2 {
         margin-right: 10px;
-        background-position: left 10px top 3px;
+        background-position: center top 3px;
         background-size: 122px 112px;
         background-image: url("../img/svg-sprite/possess2.svg"); }
       .requirements__possess--img3 {
         margin-right: 30px;
-        background-position: left 10px top -5px;
+        background-position: center top -5px;
         background-size: 122px 124px;
         background-image: url("../img/svg-sprite/possess3.svg"); }
     .strategy {
@@ -3343,7 +3332,7 @@ div.wpcf7-response-output {
       padding-left: 50px;
       padding-right: 50px; }
     .invitation {
-      margin-top: 50px;
+      margin-top: 80px;
       margin-bottom: 50px;
       width: 1270px;
       height: 163px;
@@ -3578,12 +3567,12 @@ div.wpcf7-response-output {
         margin-top: 48px;
         padding-bottom: 40px;
         padding-right: 260px;
-        max-width: 95%; }
+        max-width: 83%; }
       .requirements__item--img2 {
         margin-top: 93px;
         margin-bottom: 0;
         padding-right: 260px;
-        max-width: 95%; }
+        max-width: 83%; }
       .requirements__item--img1::after {
         width: 150px;
         height: 135px;
@@ -3599,7 +3588,8 @@ div.wpcf7-response-output {
     .requirements__sublist {
       margin-left: 8px;
       margin-top: 43px;
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      max-width: 1170px; }
       .requirements__sublist--industry {
         max-width: 1100px;
         margin-bottom: 20px; }
@@ -3640,7 +3630,6 @@ div.wpcf7-response-output {
       background-size: 60px 55px;
       background-position: left 22px top 18px; }
     .requirements__market {
-      width: 172px;
       height: 255px;
       margin-right: 112px;
       padding-top: 170px;
@@ -3669,26 +3658,25 @@ div.wpcf7-response-output {
       font-family: "Roboto-light", Arial, sans-serif;
       font-size: 20px;
       line-height: 24px;
-      font-weight: 300; }
+      font-weight: 300;
+      background-position: center top 5px; }
       .requirements__technology--img1 {
         width: 130px;
         margin-left: 18px;
-        background-position: center top 5px;
         background-size: 85px 120px;
         background-image: url("../img/svg-sprite/technology1.svg"); }
       .requirements__technology--img2 {
         width: 110px;
         margin-left: 5px;
-        background-position: center top 5px;
         background-size: 95px 120px;
         background-image: url("../img/svg-sprite/technology2.svg"); }
       .requirements__technology--img3 {
         width: 150px;
         margin-right: 47px;
-        background-position: center top 5px;
         background-size: 120px 120px;
         background-image: url("../img/svg-sprite/technology3.svg"); }
     .requirements__possess {
+      width: 170px;
       height: 180px;
       margin-bottom: 40px;
       margin-left: 0;
@@ -3701,22 +3689,18 @@ div.wpcf7-response-output {
       line-height: 24px;
       font-weight: 300;
       text-align: center;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      background-position: center top 10px; }
       .requirements__possess--img1 {
-        width: 170px;
-        background-position: center top 10px;
         background-size: 100px 120px;
         background-image: url("../img/svg-sprite/possess1.svg"); }
       .requirements__possess--img2 {
         margin-right: 20px;
         width: 220px;
-        background-position: center top 10px;
         background-size: 130px 120px;
         background-image: url("../img/svg-sprite/possess2.svg"); }
       .requirements__possess--img3 {
         margin-right: 45px;
-        width: 170px;
-        background-position: center top 10px;
         background-size: 120px 120px;
         background-image: url("../img/svg-sprite/possess3.svg"); }
     .strategy {
