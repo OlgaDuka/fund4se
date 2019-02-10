@@ -20,7 +20,7 @@
   @include desktop {
     max-width: 820px;
     margin-left: 180px;
-    margin-bottom: 54px;
+    margin-bottom: 20px;
 
     @include red-line(143px, 24px, -180px);
   }
@@ -38,7 +38,7 @@
   }
 
   @include desktop {
-    margin-bottom: 22px;
+    margin-bottom: 15px;
   }
 }
 
@@ -109,7 +109,7 @@
   }
 
   @include desktop {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding-left: 42px;
     padding-right: 5%;
   }

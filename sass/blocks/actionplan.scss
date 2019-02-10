@@ -20,7 +20,7 @@
   }
 
   @include desktop {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -41,7 +41,7 @@
   padding-right: 20px;
   position: relative;
 
-  @include title-light($navi-blue, 18px, 30px, 20px, 33px, 20px, 33px, $red-peach);
+  @include title-light($navi-blue, 18px, 30px, 20px, 33px, 18px, 28px, $red-peach);
 
   @include tablet {
     padding-top: 20px;
