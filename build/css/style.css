@@ -412,7 +412,7 @@ input[type=tel] {
   padding-top: 0;
   padding-bottom: 0;
   max-width: 768px;
-  margin-bottom: 0px; }
+  margin-bottom: 70px; }
 
 .actionplan__img img {
   width: 100%;
@@ -440,8 +440,8 @@ input[type=tel] {
 .contacts {
   margin: 0 auto;
   min-width: 320px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 0;
+  padding-right: 0;
   padding-top: 0;
   padding-bottom: 0;
   max-width: 768px;
@@ -461,11 +461,11 @@ input[type=tel] {
 .contacts__wrap {
   width: 284px;
   height: 250px;
-  padding: 5px 0 22px 27px;
+  padding: 5px 0 22px 10px;
   background-color: #fff;
   position: absolute;
   top: 57px;
-  left: 18px; }
+  left: 5%; }
   .contacts__wrap::after {
     content: "";
     width: 72px;
@@ -1059,6 +1059,7 @@ input[type=tel] {
 
 .feedback__filename {
   margin-bottom: 15px;
+  width: 90%;
   background: #fff;
   border: 0;
   color: #002B67; }
@@ -3297,9 +3298,9 @@ div.wpcf7-response-output {
       padding-top: 17px;
       background-position: left 400px top 0; }
     .footer__logo {
-      width: 140px;
-      height: 40px;
-      margin-top: 22px; }
+      width: 170px;
+      height: 48px;
+      margin-top: 18px; }
   .footer__wrap {
     width: 320px; }
     .footer__text {
@@ -3336,8 +3337,8 @@ div.wpcf7-response-output {
     .header {
       height: 88px; }
     .header__logo {
-      width: 140px;
-      height: 38px; }
+      width: 160px;
+      height: 44px; }
     .invitation {
       max-width: 1680px;
       padding-left: 50px;
